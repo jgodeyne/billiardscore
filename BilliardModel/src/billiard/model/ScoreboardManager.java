@@ -6,6 +6,7 @@
 package billiard.model;
 
 import billiard.common.hazelcast.SyncManager;
+import com.hazelcast.core.IList;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +17,8 @@ import java.util.List;
 public class ScoreboardManager {
     private static final String SCOREBOARDS_LIST = "scoreboards";
 
-    private static String scoreboardId;
-    private static List<String> scoreboards;
+    private static IList<String> scoreboards;
+    private static List<String> localScoreboards;
     
     private static ScoreboardManager instance;
 
@@ -25,7 +26,7 @@ public class ScoreboardManager {
         if(SyncManager.hazelcastEnabled) {
             scoreboards = SyncManager.getHazelCastInstance().getList(SCOREBOARDS_LIST);
         } else {
-            scoreboards = new ArrayList();
+            localScoreboards = new ArrayList();
         }
     }
     
@@ -36,16 +37,27 @@ public class ScoreboardManager {
         return instance;
     }
 
-    public void setScoreboardId(String scoreboardId) {
-        ScoreboardManager.scoreboardId = scoreboardId;
-        scoreboards.add(scoreboardId);
+    public void addScoreboard(String scoreboardId) {
+        if(SyncManager.isHazelcastEnabled()) {
+            scoreboards.add(scoreboardId);
+        } else {
+            localScoreboards.add(scoreboardId);
+        }
     }
     
     public void removeScoreboard(String id) {
-        scoreboards.remove(id);
+        if(SyncManager.hazelcastEnabled) {
+            scoreboards.remove(id);
+        }else{
+            localScoreboards.remove(id);
+        }
     }
     
     public ArrayList<String> listScoreboards() {
-        return new ArrayList(scoreboards);
+        if(SyncManager.hazelcastEnabled) {
+            return new ArrayList(scoreboards);
+        } else {
+            return new ArrayList(localScoreboards);
+        }
     }
 }

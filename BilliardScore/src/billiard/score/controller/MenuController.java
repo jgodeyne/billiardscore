@@ -13,6 +13,7 @@ import billiard.model.MatchManager;
 import billiard.score.BilliardScore;
 import billiard.common.AppProperties;
 import billiard.common.hazelcast.SyncManager;
+import billiard.model.ScoreboardManager;
 import com.hazelcast.core.ITopic;
 import com.hazelcast.core.Message;
 import com.hazelcast.core.MessageListener;
@@ -24,13 +25,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 /**
  * FXML Controller class
@@ -46,6 +47,8 @@ public class MenuController implements Initializable, ControllerInterface {
             
     @FXML
     private Circle ledConnected;
+    @FXML
+    private Tooltip ttConnected;
 
     /**
      * Initializes the controller class.
@@ -172,5 +175,16 @@ public class MenuController implements Initializable, ControllerInterface {
         action = BilliardScore.MenuOptions.IMPORT;
         actionObject = PermittedValues.ActionObject.TEAM_COMP;
         close();
+    }
+
+    @FXML
+    private void onShowningttConnected(WindowEvent event) {
+        int nbrOfScoreboards = ScoreboardManager.getInstance().listScoreboards().size();
+        String tooltip = "Nbr of Scoreboards: " + nbrOfScoreboards;
+        int idx = 0;
+        for (String name : ScoreboardManager.getInstance().listScoreboards()) {
+            tooltip += System.lineSeparator() + ++idx +": " + name;
+        }
+        ttConnected.setText(tooltip);
     }
 }

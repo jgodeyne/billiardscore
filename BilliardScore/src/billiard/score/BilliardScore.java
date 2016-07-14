@@ -91,7 +91,7 @@ public class BilliardScore extends Application {
             
             scoreboardId = AppProperties.getInstance().getScoreboardId();
             //logger.log(Level.FINEST, "Start => scoreboardId: {0}", scoreboardId);
-            ScoreboardManager.getInstance().setScoreboardId(scoreboardId);
+            ScoreboardManager.getInstance().addScoreboard(scoreboardId);
             
             matchManager = MatchManager.getInstance();
             individualCompetitionManager = IndividualCompetitionManager.getInstance();
