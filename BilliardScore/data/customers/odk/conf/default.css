@@ -1,0 +1,171 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 25-mrt-2015, 10:22:46
+    Author     : jean
+*/
+.default-font {
+    -fx-font-family: System;
+    -fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+.transparrent {
+    -fx-background-color: rgba(217,209,207,0.3);
+}
+
+// Classes directly defined by javafx
+.button {
+    -fx-pref-width: 100px;
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+
+.choice-box {
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+
+.combo-box {
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+
+.label {
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+
+.text-field {
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;        
+}
+
+.web-view {
+    -fx-font-family: System;
+    //-fx-font-size: 16px;
+    -fx-text-fill: #231F20;    
+}
+
+// Custom classes for default javafx controls
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-padding: 10;
+}
+
+.hbox {
+    -fx-spacing: 10;
+}
+
+.vbox {
+    -fx-spacing: 10;
+}
+
+
+/* Custome classes */
+
+.hbox-with-buttons {
+    -fx-alignment: top-center;
+    -fx-spacing: 10;
+}
+
+.dimmer-background-green {
+    -fx-background-color: rgba(255,255,255,0.3);
+}
+
+/* Message Dialog Styles */
+.messagebox-pane {
+    -fx-background-color: #D9D1CF;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 350px;
+    -fx-padding: 20px;
+}
+
+/* Menu Window Styles */
+.menu-pane {
+    -fx-background-color: #D9D1CF;
+}
+
+.menu-hbox {
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-padding: 10px;
+    -fx-spacing: 50px;
+}
+
+/* Entry Form Dialog Styles */
+.entryform-pane {
+    -fx-background-color: #D9D1CF;
+    -fx-padding: 10;
+}
+
+/* Scoreboard Styles */
+.scoreboard-pane {
+    -fx-background-color: #000000;
+}
+
+.player1-alignment {
+    -fx-alignment: CENTER;
+}
+
+.player2-alignment {
+    -fx-alignment: CENTER;    
+}
+
+.player-name {
+    -fx-font-size: 64px;
+    -fx-font-weigth: bold;
+    -fx-text-fill: yellow;
+}
+
+.player-info {
+    -fx-font-size: 28px;    
+    -fx-text-fill: white;
+}
+
+.player-tsp {
+    -fx-font-size: 28px;    
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;    
+}
+
+.player-points {
+    -fx-font-size: 200px;    
+    -fx-text-fill: #C8B7A7;
+    -fx-pref-width: 380px;
+}
+
+.player-innings {
+    -fx-font-size: 150px;
+    -fx-pref-width: 200px;
+    -fx-text-fill: orange
+}
+
+.player-score-info {
+    -fx-font-size: 18px;  
+    -fx-text-fill: white;
+}
+
+.run-entry {
+    -fx-font-size: 36px;
+    -fx-max-width: 200px;
+    -fx-background-color: #D9D1CF;
+    -fx-text-fill: orangered;
+}
+
+.dimmer {
+    -fx-fill: rgba(255,255,255,0.3);
+}
+
+.banner {
+   // -fx-background-color: #666666;
+}
+
+

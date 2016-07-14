@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name>2e Klasse B</name>
+    <league>MLBB</league>
+    <group>2B</group>
+    <pointsystem>MP</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <discipline>Libre</discipline>
+    <nbrofplayers>3</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers/>
+    <team>
+        <name>BIEJ DE VOGEL 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>710</lic>
+            <name>Meuwissen, Har</name>
+            <discipline>Libre</discipline>
+            <tsp>115</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3027</lic>
+            <name>Noorbeek, Nico</name>
+            <discipline>Libre</discipline>
+            <tsp>85</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>2760</lic>
+            <name>Kurstjens, Berr</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3546</lic>
+            <name>Wit de, Harry</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3545</lic>
+            <name>Mans, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3543</lic>
+            <name>Bremmers, Leon</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>987</lic>
+            <name>Mans, Wil</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>2762</lic>
+            <name>Pol van, Har</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3862</lic>
+            <name>Werens, Leo</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3277</lic>
+            <name>Kaam van, Jean-Pierre</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>2727</lic>
+            <name>Geraets, Jack</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3544</lic>
+            <name>Geelen, Frank</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3842</lic>
+            <name>Beckers, Sem</name>
+            <discipline>Libre</discipline>
+            <tsp>29</tsp>
+        </player>
+    </team>
+    <team>
+        <name>CENTR. N'WEERT 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>3505</lic>
+            <name>Aerts, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>180</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>2385</lic>
+            <name>Pols, Louis</name>
+            <discipline>Libre</discipline>
+            <tsp>130</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3507</lic>
+            <name>Burgt van de, Lambert</name>
+            <discipline>Libre</discipline>
+            <tsp>110</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3516</lic>
+            <name>Rietjens, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3591</lic>
+            <name>Versluis, Leo</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3414</lic>
+            <name>Poell, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3783</lic>
+            <name>Knapen, Mart</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3505</lic>
+            <name>Aerts, Jo     (BS)</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3823</lic>
+            <name>Doren van, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>19</lic>
+            <name>Vossen, Theo</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>3520</lic>
+            <name>Vullings, Twan</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3506</lic>
+            <name>Berlo van, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>3685</lic>
+            <name>Pothoven, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>3783</lic>
+            <name>Knapen, Mart</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>20</lic>
+            <name>Smeets, Harrie</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>3414</lic>
+            <name>Poell, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>2573</lic>
+            <name>Tullemans, Harrie</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>1797</lic>
+            <name>Tullemans, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>3275</lic>
+            <name>Kruys van de, Tjeu</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3754</lic>
+            <name>Wullems, Eric</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3506</lic>
+            <name>Berlo van, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>20</lic>
+            <name>Smeets, Harrie</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3516</lic>
+            <name>Rietjens, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3591</lic>
+            <name>Versluis, Leo</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3512</lic>
+            <name>Hermans, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3511</lic>
+            <name>Heinemans, Harrie</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+    </team>
+    <team>
+        <name>EGCHEL 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>3888</lic>
+            <name>Philipsen, Had</name>
+            <discipline>Libre</discipline>
+            <tsp>95</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3884</lic>
+            <name>Bos, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3889</lic>
+            <name>Verstappen, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3890</lic>
+            <name>Zelen, Hans</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3891</lic>
+            <name>Zelen, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3892</lic>
+            <name>Zelen, Pieter</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3886</lic>
+            <name>Giesbertz, Lei</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3883</lic>
+            <name>Bos, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3885</lic>
+            <name>Gielen, Free</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3887</lic>
+            <name>Maessen, Ferry</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+    </team>
+    <team>
+        <name>HEEL 1</name>
+        <fixedplayers>1:2:3:4</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>2066</lic>
+            <name>Smits, Antoine</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3167</lic>
+            <name>Bijlmakers, Marcel</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3409</lic>
+            <name>Steuten, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3447</lic>
+            <name>Bloem, Lars</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>315</lic>
+            <name>Stoop, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>303</lic>
+            <name>Derksen, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>300</lic>
+            <name>Smeets, Wiel</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>1905</lic>
+            <name>Hoenen, Nico</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>2786</lic>
+            <name>Delissen, Hans</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3700</lic>
+            <name>Delissen, Frans</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>308</lic>
+            <name>Meuter, Louis</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3486</lic>
+            <name>Hendriks, Erik</name>
+            <discipline>Libre</discipline>
+            <tsp>35</tsp>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>1904</lic>
+            <name>Henckens, Frank</name>
+            <discipline>Libre</discipline>
+            <tsp>32</tsp>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2822</lic>
+            <name>Scheeren, Roel</name>
+            <discipline>Libre</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>308</lic>
+            <name>Meuter, Louis</name>
+            <discipline>Libre</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>319</lic>
+            <name>Verber, Wiel</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2182</lic>
+            <name>Coolen, Ruud</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2719</lic>
+            <name>Engelen, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2079</lic>
+            <name>Ass van, Gunther</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2993</lic>
+            <name>Moorsel van, Guly</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3615</lic>
+            <name>Coolen, Kay</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2822</lic>
+            <name>Scheeren, Roel</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3409</lic>
+            <name>Steuten, Peter</name>
+            <discipline>Drieband</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2719</lic>
+            <name>Engelen, Jac</name>
+            <discipline>Drieband</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>319</lic>
+            <name>Verber, Wiel</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3167</lic>
+            <name>Bijlmakers, Marcel</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2066</lic>
+            <name>Smits, Antoine</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2993</lic>
+            <name>Moorsel van, Guly</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1905</lic>
+            <name>Hoenen, Nico</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3700</lic>
+            <name>Delissen, Frans</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2786</lic>
+            <name>Delissen, Hans</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+    </team>
+    <team>
+        <name>KOT 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>1084</lic>
+            <name>Sillen, G_</name>
+            <discipline>Libre</discipline>
+            <tsp>165</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>1330</lic>
+            <name>Spee, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>125</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>542</lic>
+            <name>Gorts, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>120</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>533</lic>
+            <name>Bremmers, Chris</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>534</lic>
+            <name>Bremmers, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>1437</lic>
+            <name>Schuman, John</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>1839</lic>
+            <name>Brouns, Harrie</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>167</lic>
+            <name>Dieterich, Joop</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>1058</lic>
+            <name>Linssen, Victor</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>1508</lic>
+            <name>Geene, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>3040</lic>
+            <name>Schaefer, Sef</name>
+            <discipline>Libre</discipline>
+            <tsp>33</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3301</lic>
+            <name>Meisters, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>2553</lic>
+            <name>Quillettes de, Arthur</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2581</lic>
+            <name>Spooremakers, Ger</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>553</lic>
+            <name>Naus, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>3487</lic>
+            <name>Maessen, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>3114</lic>
+            <name>Beeren, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>3299</lic>
+            <name>Moberts, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>2711</lic>
+            <name>Vossen, Victor</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>2300</lic>
+            <name>Arntz, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>2581</lic>
+            <name>Spooremakers, Ger</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>22</order>
+            <lic>238</lic>
+            <name>Vogels, Ton</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>23</order>
+            <lic>1086</lic>
+            <name>Opbroek, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>24</order>
+            <lic>552</lic>
+            <name>Cox, Jim</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>25</order>
+            <lic>3418</lic>
+            <name>Gageldonk van, Geert</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>26</order>
+            <lic>2455</lic>
+            <name>Clerx, Mieke</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>27</order>
+            <lic>3030</lic>
+            <name>Melick van, Hans</name>
+            <discipline>Libre</discipline>
+            <tsp>25</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1079</lic>
+            <name>Koopmans, Loek</name>
+            <discipline>Libre</discipline>
+            <tsp>135</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>544</lic>
+            <name>Herregodts, Ger</name>
+            <discipline>Libre</discipline>
+            <tsp>90</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3372</lic>
+            <name>Wolters, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>169</lic>
+            <name>Meinen, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>280</lic>
+            <name>Heiligers, Ron</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2300</lic>
+            <name>Arntz, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3123</lic>
+            <name>Moberts, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>552</lic>
+            <name>Cox, Jim</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1086</lic>
+            <name>Opbroek, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3796</lic>
+            <name>Diels, Nick</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1104</lic>
+            <name>Maessen, Eric</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2455</lic>
+            <name>Clerx, Mieke</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2154</lic>
+            <name>Eck van, Hub</name>
+            <discipline>Libre</discipline>
+            <tsp>31</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>169</lic>
+            <name>Meinen, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>533</lic>
+            <name>Bremmers, Chris</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>534</lic>
+            <name>Bremmers, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>167</lic>
+            <name>Dieterich, Joop</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1437</lic>
+            <name>Schuman, John</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3301</lic>
+            <name>Meisters, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3487</lic>
+            <name>Maessen, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1075</lic>
+            <name>Broens, John</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3123</lic>
+            <name>Moberts, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1508</lic>
+            <name>Geene, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>553</lic>
+            <name>Naus, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3040</lic>
+            <name>Schaefer, Sef</name>
+            <discipline>Libre</discipline>
+            <tsp>33</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3114</lic>
+            <name>Beeren, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3299</lic>
+            <name>Moberts, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2482</lic>
+            <name>Spitzki, Dieter</name>
+            <discipline>Libre</discipline>
+            <tsp>35</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2154</lic>
+            <name>Eck van, Hub</name>
+            <discipline>Libre</discipline>
+            <tsp>31</tsp>
+        </player>
+    </team>
+    <team>
+        <name>LOT 2</name>
+        <fixedplayers>5:6:7:8</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>1816</lic>
+            <name>Vullers, Frien</name>
+            <discipline>Libre</discipline>
+            <tsp>90</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>1814</lic>
+            <name>Schreurs, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3679</lic>
+            <name>Schreurs, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3290</lic>
+            <name>Beurskens, Rick</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>2882</lic>
+            <name>Joosten, Bert</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>2749</lic>
+            <name>Smeets, Frank</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>1775</lic>
+            <name>Schreurs, Eric</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3709</lic>
+            <name>Smeets, Ton</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3708</lic>
+            <name>Smeets, Rico</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3710</lic>
+            <name>Aelmans, Berry</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3288</lic>
+            <name>Roy van, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>844</lic>
+            <name>Verstappen, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>271</lic>
+            <name>Horne van, Hans</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>474</lic>
+            <name>Keijzer, Martin</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>268</lic>
+            <name>Gubbels, Har</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3711</lic>
+            <name>Ververs, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3291</lic>
+            <name>Beurskens, Sjors</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1772</lic>
+            <name>Achten, Will</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2266</lic>
+            <name>Delissen, Twan</name>
+            <discipline>Libre</discipline>
+            <tsp>35</tsp>
+        </player>
+    </team>
+    <team>
+        <name>MANESLUST 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>645</lic>
+            <name>Smeets, Dr_</name>
+            <discipline>Libre</discipline>
+            <tsp>105</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>636</lic>
+            <name>Klaessen, Ton</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>1921</lic>
+            <name>Heynen, Pieter</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>649</lic>
+            <name>Sijbers, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3069</lic>
+            <name>Janssen, Theo</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>75</lic>
+            <name>Janssen, Nico</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>78</lic>
+            <name>Sillekens, Dr_</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>2383</lic>
+            <name>Keijsers, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3815</lic>
+            <name>Giesberts, Eric</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3590</lic>
+            <name>Heber, Roel</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>2989</lic>
+            <name>Bouwman, Maarten</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>642</lic>
+            <name>Smits, Jac</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3445</lic>
+            <name>Broek op het, Geert</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1922</lic>
+            <name>Metsemakers, Sjuul</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3446</lic>
+            <name>Rijks, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>31</tsp>
+        </player>
+    </team>
+    <team>
+        <name>ODILIA 1</name>
+        <fixedplayers>1:2:3:4</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>118</lic>
+            <name>Wirtz, Wiel</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>777</lic>
+            <name>Goedbloed, Jan-Willem</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>788</lic>
+            <name>Tijssen, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3115</lic>
+            <name>Stevens, Mike</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>777</lic>
+            <name>Goedbloed, Jan-Willem</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>2999</lic>
+            <name>Zeelen, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>2750</lic>
+            <name>Kessels, Ton</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>843</lic>
+            <name>Verkooyen, John</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3836</lic>
+            <name>Vliet van de, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3023</lic>
+            <name>Demarteau, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>787</lic>
+            <name>Stoks, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>2288</lic>
+            <name>Bouweriks, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>126</lic>
+            <name>Wirtz, Leon</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>790</lic>
+            <name>Welters, Frans</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2750</lic>
+            <name>Kessels, Ton</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>775</lic>
+            <name>Fieten, John</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3023</lic>
+            <name>Demarteau, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>787</lic>
+            <name>Stoks, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2288</lic>
+            <name>Bouweriks, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>788</lic>
+            <name>Tijssen, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>775</lic>
+            <name>Fieten, John</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3835</lic>
+            <name>Peters, Geert</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2671</lic>
+            <name>Smets, Louis</name>
+            <discipline>Libre</discipline>
+            <tsp>31</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2218</lic>
+            <name>Croonenberg, Thei</name>
+            <discipline>Libre</discipline>
+            <tsp>29</tsp>
+        </player>
+    </team>
+    <team>
+        <name>ONA 1</name>
+        <fixedplayers>1:2:3:4</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>802</lic>
+            <name>Greyn, Hans</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>811</lic>
+            <name>Munnecom, Ren_</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3297</lic>
+            <name>Weijden, van der Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3405</lic>
+            <name>Meijer, Ron</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3694</lic>
+            <name>Bilzen van, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>465</lic>
+            <name>Klaessen, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>2337</lic>
+            <name>Caris, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>742</lic>
+            <name>Smeets, Wiel</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>295</lic>
+            <name>Dierx, Ger</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>810</lic>
+            <name>Lurvink, Peter</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>807</lic>
+            <name>Jeurninck, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3818</lic>
+            <name>Timmermans, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>295</lic>
+            <name>Dierx, Ger</name>
+            <discipline>Libre</discipline>
+            <tsp>24</tsp>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>463</lic>
+            <name>Smeets, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>2901</lic>
+            <name>Hansen, Tjeu</name>
+            <discipline>Libre</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3412</lic>
+            <name>Bilzen van, Ronald</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>806</lic>
+            <name>Jeurninck, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2901</lic>
+            <name>Hansen, Tjeu</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>463</lic>
+            <name>Smeets, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2621</lic>
+            <name>Ophoven van, John</name>
+            <discipline>Libre</discipline>
+            <tsp>31</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1251</lic>
+            <name>Bouwels, Leo</name>
+            <discipline>Drieband</discipline>
+            <tsp>24</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>811</lic>
+            <name>Munnecom, Ren_</name>
+            <discipline>Drieband</discipline>
+            <tsp>24</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>465</lic>
+            <name>Klaessen, Jo</name>
+            <discipline>Drieband</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3694</lic>
+            <name>Bilzen van, Jo</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3412</lic>
+            <name>Bilzen van, Ronald</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2337</lic>
+            <name>Caris, Peter</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3405</lic>
+            <name>Meijer, Ron</name>
+            <discipline>Drieband</discipline>
+            <tsp>20</tsp>
+        </player>
+    </team>
+    <team>
+        <name>PRAIRIE DE 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>244</lic>
+            <name>Duisters, Albert</name>
+            <discipline>Libre</discipline>
+            <tsp>130</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>1631</lic>
+            <name>Wulms, Erik</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>1621</lic>
+            <name>Schreurs, Harry</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>2516</lic>
+            <name>Brouns, Lei</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>1933</lic>
+            <name>Briels, Dr�</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>1682</lic>
+            <name>Beurskens, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>2476</lic>
+            <name>Lier van, Roy</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1604</lic>
+            <name>Janssen, Jos</name>
+            <discipline>Libre</discipline>
+            <tsp>130</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1609</lic>
+            <name>Lier van, Tinus</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1595</lic>
+            <name>Corsten, Jo</name>
+            <discipline>Libre</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1629</lic>
+            <name>Verstappen, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1608</lic>
+            <name>Kessels, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3852</lic>
+            <name>Goor van den, Ber</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1616</lic>
+            <name>Louw de, Bart</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+    </team>
+    <team>
+        <name>RAMONA 3</name>
+        <fixedplayers>7:8:9:10</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>1157</lic>
+            <name>Frencken, Pierre</name>
+            <discipline>Libre</discipline>
+            <tsp>130</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>2911</lic>
+            <name>Ketelaars, Chris</name>
+            <discipline>Libre</discipline>
+            <tsp>95</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>994</lic>
+            <name>Wolters, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>690</lic>
+            <name>Baars, Henk</name>
+            <discipline>Libre</discipline>
+            <tsp>95</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>1175</lic>
+            <name>Mestrom, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>996</lic>
+            <name>Wouters, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3453</lic>
+            <name>Wolters, Antoon</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3365</lic>
+            <name>Faessen, Paul</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>986</lic>
+            <name>Kempen van, Sjaak</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3366</lic>
+            <name>Hintzen, Rob</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>3389</lic>
+            <name>Wouters, Nathalie</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3022</lic>
+            <name>Tissen, Chris</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>2306</lic>
+            <name>Wouters, Toos</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>3399</lic>
+            <name>Wolters, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3553</lic>
+            <name>Dekkers, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3538</lic>
+            <name>Heatubun, Bram</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2853</lic>
+            <name>Kempkens, Johan</name>
+            <discipline>Libre</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>992</lic>
+            <name>Tissen, Jeu</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2651</lic>
+            <name>Walstock, Hubert</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2726</lic>
+            <name>Frencken, Dave</name>
+            <discipline>Libre</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3803</lic>
+            <name>Munnichs, Huub</name>
+            <discipline>Libre</discipline>
+            <tsp>33</tsp>
+        </player>
+    </team>
+    <team>
+        <name>ROGGEL 2</name>
+        <fixedplayers>4:5:6:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>1031</lic>
+            <name>Eck van, Jo</name>
+            <discipline>K38/2</discipline>
+            <tsp>145</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>1044</lic>
+            <name>Vullers, Leo</name>
+            <discipline>K38/2</discipline>
+            <tsp>105</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>855</lic>
+            <name>Biermans, Hans</name>
+            <discipline>K38/2</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>1037</lic>
+            <name>Relouw, Frans</name>
+            <discipline>K38/2</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>2359</lic>
+            <name>Brink, Ad</name>
+            <discipline>K38/2</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>1029</lic>
+            <name>Boogaart v.d., Nic</name>
+            <discipline>K38/2</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>1028</lic>
+            <name>Bongers, Wim</name>
+            <discipline>K38/2</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1030</lic>
+            <name>Coenen, Derk</name>
+            <discipline>K38/2</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>2359</lic>
+            <name>Brink, Ad</name>
+            <discipline>K38/2</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1037</lic>
+            <name>Relouw, Frans</name>
+            <discipline>K38/2</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1038</lic>
+            <name>Scheenen, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1030</lic>
+            <name>Coenen, Derk</name>
+            <discipline>Libre</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1034</lic>
+            <name>Luijten, Jan</name>
+            <discipline>Libre</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1937</lic>
+            <name>Briels, Wim</name>
+            <discipline>Libre</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>3807</lic>
+            <name>Coenen, Piet</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>R</order>
+            <lic>1027</lic>
+            <name>Bekx, Herman</name>
+            <discipline>Libre</discipline>
+            <tsp>45</tsp>
+        </player>
+    </team>
+</competition>

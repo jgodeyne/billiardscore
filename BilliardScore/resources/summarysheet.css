@@ -1,0 +1,67 @@
+@page { 
+    size: A4 landscape;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+
+@media print {
+    body { font-size: 8pt; } }
+
+#heading {
+    text-align: center;
+    background-color: #CCC;
+    padding: 1px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+#intro {
+    margin-bottom: 5px;
+}
+#body {
+    margin-bottom: 5px;
+}
+#summary {
+    margin-bottom: 5px;
+}
+#footing {
+    text-align: center;
+    background-color: #CCC;
+    padding: 5px;
+}
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabel td {
+    margin: 0;
+    border: 1px solid black;
+}
+.label {
+    width: 25%;
+    background-color: #CCC;
+}
+.value {
+    width: 25%;
+}
+.naam {
+    white-space: nowrap;
+}
+
+.beurten {
+    background-color: #CCC;
+    text-align: right;
+    padding:3px;
+}
+.punten {
+    text-align: right;
+    padding:3px;
+}
+.handtekening {
+    height: 15mm;
+}
+td {
+    padding:5px;
+}

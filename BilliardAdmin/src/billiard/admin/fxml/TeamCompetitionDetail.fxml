@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" styleClass="entryform-pane" stylesheets="@../../../../resources/config_example/default.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billiard.admin.controller.TeamCompetitionDetailController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" styleClass="vbox">
+         <children>
+            <GridPane styleClass="grid-pane">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="%label.naam" GridPane.rowIndex="1" />
+                  <Label text="%label.cat.afd.grp" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="%label.discipline" GridPane.rowIndex="3" />
+                  <Label text="%label.biljart.formaat" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="%label.puntensysteem" GridPane.rowIndex="4" />
+                  <Label text="%label.aantal.spelers" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="%label.discipline.spelers" GridPane.rowIndex="5" />
+                  <Label text="%label.tsp.spelers" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="%label.ploegen" GridPane.rowIndex="6" />
+                  <ChoiceBox fx:id="cbLeague" prefWidth="150.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tfName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfGroup" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfContactName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfContactEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="cbDiscipline" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ChoiceBox fx:id="cbTableFormat" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="96.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ChoiceBox fx:id="cbPointSystem" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="tfNbrOfPlayers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="90.0" styleClass="text-field" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <TextField fx:id="tfDisciplinePlayers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="tfTspPlayers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Label text="%label.contact.naam" GridPane.rowIndex="2" />
+                  <Label text="%label.contact.email" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="%label.bond" />
+               </children>
+            </GridPane>
+            <ToolBar>
+               <items>
+                <Button fx:id="btnNew" mnemonicParsing="false" onAction="#OnActionButtonNew">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#onActionButtonEdit">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onActionButtonDelete">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+            <ListView fx:id="lvTeams" prefHeight="200.0" prefWidth="516.0" />
+            <HBox styleClass="hbox-with-buttons">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionButtonSave" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Yes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#onActionButtonCancel" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

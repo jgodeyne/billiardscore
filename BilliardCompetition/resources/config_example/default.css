@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 25-mrt-2015, 10:22:46
+    Author     : jean
+*/
+
+.root {
+    -fx-font-family: System;
+    -fx-font-size: 16px;
+}
+
+/* Custom classes for default javafx controls */
+.grid-pane {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-padding: 10;
+}
+
+.hbox {
+    -fx-spacing: 10;
+}
+
+.vbox {
+    -fx-spacing: 10;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+}
+/* Custome classes */
+
+.hbox-with-buttons {
+    -fx-alignment: top-center;
+    -fx-spacing: 10;
+}
+
+.def-button {
+    -fx-pref-width: 120px;
+}
+
+/* Message Dialog Styles */
+.messagebox-pane {
+    -fx-pref-width: 600px;
+    -fx-pref-height: 350px;
+    -fx-padding: 20px;
+}
+
+/* Menu Window Styles */
+.menu-hbox {
+    -fx-background-color: #0093ff;
+    -fx-padding: 10px;
+    -fx-spacing: 50px;
+}
+
+/* Entry Form Dialog Styles */
+.entryform-pane {
+    -fx-padding: 10;
+}
+
+/* Scoreboard Styles */
+.scoreboard-pane {
+    -fx-background-color: black;
+}
+
+.scoreboard-vbox {
+    -fx-spacing: 20;
+}
+.player1-alignment {
+    -fx-alignment: TOP_LEFT;
+}
+
+.player2-alignment {
+    -fx-alignment: TOP_RIGHT;    
+}
+
+.player-name {
+    -fx-font-size: 64px;
+    -fx-font-weigth: bold;
+    -fx-text-fill: yellow;
+}
+
+.player-info {
+    -fx-font-size: 36px;    
+    -fx-text-fill: white;
+}
+
+.player-tsp {
+    -fx-font-size: 64px;    
+    -fx-text-fill: white;
+}
+
+.player-points {
+    -fx-font-size: 224px;    
+    -fx-text-fill: burlywood;
+}
+
+.player-innings {
+    -fx-font-size: 164px;
+    -fx-text-fill: orange
+}
+
+.player-score-info {
+    -fx-font-size: 24px;  
+    -fx-text-fill: white;
+}
+
+.run-entry {
+    -fx-font-size: 80px;
+    -fx-pref-width: 200px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.remaining {
+    -fx-font-size: 80px;
+    -fx-text-fill: red;
+}
+
+.dimmer {
+    -fx-fill: rgba(255,255,255,0.3);
+}

@@ -1,0 +1,77 @@
+V2.0
+[x] Feature: Individuele competitie: Opzoeken speler in ledenlijst op lic of naam
+[x] Feature: Volledige redesign van look en feel
+[x] Feature: Importeren data bestanden voorbereid met BilliardAdmin
+[x] Feature: Opzoeken spelers uit ledenlijst voor zowel individueel als ploegen competitie
+
+V1.3
+[x] Feature: Vermeld versie nummer op hoofdscherm
+[x] Feature: Stuur CSV bestand met uitslag samen met PDF's
+[x] Feature: Bewaren pdf op een gekozen locatie
+[x] Feature: Inspeeltijd configureerbaar per bond
+[x] Feature: e-mail wachtwoord in instellingen verborgen
+[x] Feature: CSV bestand kolom te maken caramboles toevoegen en heading
+[x] Feature: Unplugged van netwerk versie
+[x] Feature: Wedstrijdblad tonen voor en gedurende de wedstrijd
+[x] Feature: Meerdere e-mail adressen voor het versturen
+[x] Feature: Bij gebruik van +/- ingaven melding geven bij nog 5 of nog 3 (3-Band)
+[x] Feature: Uitprinten wedstrijdblad met gegevens spelers ingevuld
+[x] Feature: Manueel invoeren wedstrijd uitslag
+[x] Bugfix: In CSV bestand TSP vergeten bij Team2
+
+V1.2.1
+[x] BugFix: Wit en Geel omwisselbaar afhankelijk van bond
+[x] BugFix: decimalen voor gemiddelde op wedstrijdblad en verzamelstaat
+[x] BugFix: Layout scoresheet zodat het volledig op A4 past
+[x] BugFix: Scoresheet: discipline bij uitslag info speler
+[x] BugFix: Summary sheet: zet blad orientatie van print job naar landscape
+[x] BugFix: bij wijziging score wordt de HR niet altijd correct aangepast
+[x] BugFix: bij wijzigen van laatste beurt blijf de wedstrijd gezien als beeindigd.
+
+V1.2
+[x] Bug: 32-bit versie teamcompetitie werkt niet
+[x] Bug: Indien team geslecteerd toch mogelijkheid speler manueel in te geven
+[x] Feature: Toevoegen concept bond en ledenlijst per bond
+[x] Feature: Teamcompetitie: speler opzoeken uit ledenlijst via lic
+[x] Feature: Logo op wedstrijdblad en verzamelstaat
+[x] Feature: Wedstrijdblad en verzamelstaat bewaren als pdf ipv html
+[x] Feature: Verzenden wedstrijdbladen en verzamelstaat via mail
+[x] Feature: Aanpassen configuratie (Titel1, titel2, club, mail settings, …)
+
+V1.1
+[x] Feature: Aanpassen banner en meerdere banners: image
+[x] Bug: Installatie op windows geeft problemen indien er een virus programma actief is. => ondertekende build.
+[x] Bug: Ingegeven reeks geeft een totaal hoger dan TSP
+[x] Bug: Competitie discipline wordt niet weergegeven op wedstrijdblad
+[x] Bug: Scorebord: exception als iets ander dan nummer wordt ingegeven
+[x] Feature: Wedstrijdnummer: veld groter maken zodat er een datum in past
+[x] Feature: Bij gelijkmakende beurt het aantal te maken punten tonen
+[x] Feature: Added css class for Player1 and Player2 alignment
+[x] Bug: Removed blue dimmer from scoreboard as it was preventing scoreboard backgroundcolor change
+[x] Feature: Invoer van reeks door gebruik van +/-
+[x] Feature: Enhance default look
+[x] Feature: Ondersteuning meertaligheid
+[x] Feature: Optie voor een shotclock van 40 sec
+[x] Feature: Dialoog voor het annuleren van een wedstrijd
+[x] Feature: Inspeeltijd aftellen
+[x] Bug: CTRL+ werkt niet zoals het hoort
+[x] Feature: Installer voor Windows 32bit
+
+V1.0
+[x] Ploegcompetitie: competitie, ploegen, spelers ophalen en gebruiken
+[x] Puntensysteem Ploegcompetitie: matchpunten, ontmoetingspunten of matchpunten + percentage caramboles
+[x] Check usage of discipline on the different levels competition, match and player for both individual and team
+[x] Networked scorebord (Hazelcast and JMS???)
+[x] Ploeg wedstrijd delen
+[x] Put into git
+[x] Score corrigeren
+[x] Improve error handing with message
+[x] Improve form validation
+[x] Opslaan wedstrijdbladen en verzamelstaten als html/pdf in archiefbestand
+[x] Aanpassen kleurenschema
+[x] Licentie controle
+[x] Wedstrijd en competitie unieke id geven (hazelcast getGenerateId)
+[x] Naamgeving archiefbestanden
+[x] Aantal spelers per ploeg
+[x] Vaste punten voor spelers
+[x] Import team gegevens vanuit KNBB website (Kadercompetitie)

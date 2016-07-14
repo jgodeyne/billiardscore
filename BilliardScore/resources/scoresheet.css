@@ -1,0 +1,75 @@
+@page { 
+    size: A4 portrait;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+
+@media print {
+    body { font-size: 8pt; } }
+
+#heading {
+    text-align: center;
+    background-color: #CCC;
+    padding: 1px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+#intro {
+    margin-bottom: 5px;
+}
+#body {
+    margin-bottom: 5px;
+}
+#summary {
+    margin-bottom: 5px;
+}
+#footing {
+    text-align: center;
+    background-color: #CCC;
+    padding: 5px;
+}
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabel td {
+    margin: 0;
+    border: 1px solid black;
+}
+
+td {
+    padding:2px;
+}
+
+.label {
+    background-color: #CCC;
+    width: 25%;
+    font-weight: bold;
+}
+.value {
+    width: 25%;
+}
+
+.handtekening {
+    height: 15mm;
+}
+
+.beurten {
+    width: 10mm;
+    text-align: right;
+    font-weight: bold;
+    background-color: #CCC;
+}
+
+.punten {
+    text-align: right;
+}
+
+.speler {
+    width: 50%;
+    font-weight: bold;
+    background-color: #CCC;
+}

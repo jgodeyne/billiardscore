@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="entryform-pane" stylesheets="@../../../../resources/config_example/default.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="billiard.common.controller.SearchMemberController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" styleClass="vbox" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" styleClass="hbox">
+               <children>
+                  <Label text="%label.filter" />
+                  <TextField fx:id="tfMemberName" prefHeight="32.0" prefWidth="227.0" />
+               </children>
+            </HBox>
+            <TableView fx:id="tableMembers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0">
+               <columns>
+                  <TableColumn fx:id="tcolMemberLic" editable="false" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="%hdng.lic" />
+                  <TableColumn fx:id="tcolMemberName" editable="false" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" text="%hdng.naam" />
+               </columns>
+            </TableView>
+            <HBox styleClass="hbox-with-buttons">
+               <children>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onActionSave" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Yes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onActionCancel" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name>NIDM N4D</name>
+    <contactname/>
+    <contactemail/>
+    <league>KBBB</league>
+    <group>N4D</group>
+    <pointsystem>COMPETITIONPOINTS</pointsystem>
+    <tableformat>2,85m</tableformat>
+    <discipline>Drieband (GB)</discipline>
+    <nbrofplayers>4</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers>27:27:22:22</tspplayers>
+    <team>
+        <name>RC GARNIER 3</name>
+        <fixedplayers>9:11:13:14:</fixedplayers>
+        <player>
+            <order>15</order>
+            <lic>8563</lic>
+            <name>SWINNEN Antoine</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>6144</lic>
+            <name>HUBENS Rudy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>8711</lic>
+            <name>PETIT Christophe</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>9149</lic>
+            <name>VANDERMEERSCH Jonas</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>2495</lic>
+            <name>SWINNEN Frans</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>2110</lic>
+            <name>KENNIS Michel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>2461</lic>
+            <name>VAN DEN BRANDE Jan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>2493</lic>
+            <name>SAVELKOUL Mike</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>7152</lic>
+            <name>VAN ROOSENDAEL Donnis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>2502</lic>
+            <name>VANDERCAPPELLEN Koen</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>2654</lic>
+            <name>DECLERCQ Jonnie</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>2586</lic>
+            <name>NICOLAES Johan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2674</lic>
+            <name>VAN PARIJS Christophe</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>2596</lic>
+            <name>VANDENPLAS Pierre</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>8604</lic>
+            <name>VAN DIJCK Jan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>8858</lic>
+            <name>SCHAAF Peter</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>5404</lic>
+            <name>VAN CAUWENBERGH Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>5745</lic>
+            <name>TREVELS Rudy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3646</lic>
+            <name>RAMAEKERS Benoit</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>7836</lic>
+            <name>SEGERS Pieter</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>2626</lic>
+            <name>DONVIL Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>Kon. BC ZANZIBAR 4</name>
+        <fixedplayers>14:17:18:20:</fixedplayers>
+        <player>
+            <order>16</order>
+            <lic>5164</lic>
+            <name>PUTTEMANS Arthur</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>7842</lic>
+            <name>CALUWAERTS Thomas</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>7401</lic>
+            <name>CHRISTIANI Dave</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>25</order>
+            <lic>2573</lic>
+            <name>GOVAERTS Francois</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2592</lic>
+            <name>VAN HOOF Guido</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>9085</lic>
+            <name>GEERLINGS Jacky</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>23</order>
+            <lic>9141</lic>
+            <name>VANGOIDSENHOVEN Bart</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>2427</lic>
+            <name>NIJNS Francois</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>2589</lic>
+            <name>STROOBANTS Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>2642</lic>
+            <name>THIBAUT Gaston</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>2521</lic>
+            <name>LEMOINE Willy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>2585</lic>
+            <name>MUES Jimmy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>9339</lic>
+            <name>WOLFS Marco</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>25814</lic>
+            <name>MIATTON Kenny</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>22</order>
+            <lic>7232</lic>
+            <name>VAN BAELEN Edwin</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>8422</lic>
+            <name>MEUSEN Wilco</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>3397</lic>
+            <name>VOLDERS Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>2460</lic>
+            <name>TOEBINTE Willy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>24</order>
+            <lic>9494</lic>
+            <name>BEERENS Henri</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>9099</lic>
+            <name>ELSEN Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>2576</lic>
+            <name>JAUBIN Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>25035</lic>
+            <name>FORTHOMME Roland</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>6457</lic>
+            <name>VANDERWEGEN Arthur</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>9625</lic>
+            <name>MALSERT Phillipe</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>26</order>
+            <lic>5604</lic>
+            <name>VANDERAUWERA Maurice</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>5606</lic>
+            <name>THON Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>C.R.B. LEOPOLD 2</name>
+        <fixedplayers>5:6:8:9:</fixedplayers>
+        <player>
+            <order>6</order>
+            <lic>8970</lic>
+            <name>FURST GUY Guy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>9212</lic>
+            <name>ROJAS Luis Edouardo</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>8552</lic>
+            <name>LADRIERE Christian</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>9213</lic>
+            <name>WOJCIK Didier</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>8550</lic>
+            <name>BUSTOS Miguel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>9211</lic>
+            <name>BRULEIN Ghislain</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>8226</lic>
+            <name>DE SCHRYVER Eddy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>9326</lic>
+            <name>FURST Frederic</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>4298</lic>
+            <name>VAN DEN HAUWE Filip</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>2021</lic>
+            <name>DEVOS JOHAN Johan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3385</lic>
+            <name>VANDENBULCKE Walter</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>7372</lic>
+            <name>VOS Jean Pierre</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3306</lic>
+            <name>RAIGOSO DIONISIO Jean-Louis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>2013</lic>
+            <name>CASALES Angelo</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>4218</lic>
+            <name>DEFRAEYE Nicky</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>Roy. BC LE PROGRES 1</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>3869</lic>
+            <name>FRYNS Martin</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>8256</lic>
+            <name>BECKERS Danny</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>5296</lic>
+            <name>BECKERS René</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>4938</lic>
+            <name>SCHMIT Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>6363</lic>
+            <name>TYCHON Francis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3870</lic>
+            <name>GERON René</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>6359</lic>
+            <name>ERNST Georges</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3883</lic>
+            <name>VOLDERS Didier</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3878</lic>
+            <name>PASTEGER Joseph</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>BC VOTTEM 1</name>
+        <fixedplayers>1:2:5:6:</fixedplayers>
+        <player>
+            <order>2</order>
+            <lic>7254</lic>
+            <name>LISMONT Daniel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>6055</lic>
+            <name>LIZIN Joél</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>3790</lic>
+            <name>LEMAIRE Jean</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>9486</lic>
+            <name>DUPONT Jean-Jacques</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3990</lic>
+            <name>SMAL Grégory</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>4210</lic>
+            <name>WILLEMSEN Stéphane</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>5564</lic>
+            <name>LENAERTS Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3761</lic>
+            <name>LHOEST Daniel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>4047</lic>
+            <name>MASSET Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>3493</lic>
+            <name>DEROANNE Charles</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>8293</lic>
+            <name>LALOIRE Eric</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3084</lic>
+            <name>LENAERTS Constant</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3814</lic>
+            <name>LEMESTREZ Sébastien</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3803</lic>
+            <name>DOHOGNE André</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>3626</lic>
+            <name>CONTI Antonino</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>3817</lic>
+            <name>PELLAERS Emile</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>3806</lic>
+            <name>DUMALIN Joseph</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>6754</lic>
+            <name>LECLERCQ Grégory</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>5644</lic>
+            <name>DELFOSSE Léon</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>3774</lic>
+            <name>FASTRE Joseph</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>3687</lic>
+            <name>DOCQUIER Francoise</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>BC COURONNE 2</name>
+        <fixedplayers>7:8:9:13:</fixedplayers>
+        <player>
+            <order>12</order>
+            <lic>8288</lic>
+            <name>WINCKELMANS Raphael</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>8865</lic>
+            <name>FORTON Christophe</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>6962</lic>
+            <name>VAN DE GUCHT Didier</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>8961</lic>
+            <name>DAMON Olivier</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2243</lic>
+            <name>DERAEDT Hubert</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>2231</lic>
+            <name>VAN DEN GHOER Eric</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>2131</lic>
+            <name>VANDENBUSSCHE Hedwig</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>2151</lic>
+            <name>VANDERPUTTEN Jos</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>2238</lic>
+            <name>WINCKELMANS Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>2139</lic>
+            <name>DE COSTER Willy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>2227</lic>
+            <name>TOURLOUSSE Robert</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>2237</lic>
+            <name>WINCKELMANS Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>2127</lic>
+            <name>VAN HAUT Georges</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>2213</lic>
+            <name>DEWAELHEYNS Jean-Pierre</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>2211</lic>
+            <name>DE TRENOYE Christian</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>8934</lic>
+            <name>BOUCHAT Fabrice</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>5963</lic>
+            <name>VAN MOER Guy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>7835</lic>
+            <name>DEMAERSCHALK Eric</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>9328</lic>
+            <name>PHILIPS Dylen</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>5129</lic>
+            <name>RUSSELLO Francesco</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>22</order>
+            <lic>8856</lic>
+            <name>LUFFIN André</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>2209</lic>
+            <name>DE MUYLDER Jozeph</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>SINT-TRUIDENSE BA 2</name>
+        <fixedplayers>6:7:8:9:</fixedplayers>
+        <player>
+            <order>11</order>
+            <lic>7065</lic>
+            <name>SACRE Johnny</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>23715</lic>
+            <name>MOTTET Frédéric</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>9244</lic>
+            <name>NAUS Johannes</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3210</lic>
+            <name>KESTENS Patrick</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3441</lic>
+            <name>SMET Michel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3350</lic>
+            <name>JANSSEN Maarten</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>8142</lic>
+            <name>BEELEN Benjamin</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>3260</lic>
+            <name>PEETERS Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>3293</lic>
+            <name>KUPPENS Egidius</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3109</lic>
+            <name>NISEN Jacques</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3207</lic>
+            <name>DUMONT Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3104</lic>
+            <name>DARCIS Dany</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>3203</lic>
+            <name>CLERINX Roger</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3289</lic>
+            <name>ENGELBOS Patrick</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>4533</lic>
+            <name>BRUGGHEMAN Kurt</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>MAASLANDSE BA 2</name>
+        <fixedplayers>5:7:8:10:</fixedplayers>
+        <player>
+            <order>14</order>
+            <lic>6188</lic>
+            <name>BECKERS Jos</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>6781</lic>
+            <name>GEL Ali Riza</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>9613</lic>
+            <name>WOLDRING Ilmar</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>8359</lic>
+            <name>DE BOER Tjaling-Hendrik</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>9457</lic>
+            <name>ZIELEMANS Roy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>9611</lic>
+            <name>ALBERTS Danny</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>3387</lic>
+            <name>DECKERS Hugo</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>1184</lic>
+            <name>VAN GEMERT Wilhelmus</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>3032</lic>
+            <name>RONDAS Trudo</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>1182</lic>
+            <name>OZYURT Adnan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>9052</lic>
+            <name>JACOBS Heinz</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3094</lic>
+            <name>SCHOEFS Antoine</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>8261</lic>
+            <name>DIRICKX Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3438</lic>
+            <name>MONNISSEN Robert</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>1199</lic>
+            <name>GERITS Gustaaf</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>3429</lic>
+            <name>BOREAS Daniel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>Roy. BC DISONAIS 2</name>
+        <fixedplayers>4:6:7:9:</fixedplayers>
+        <player>
+            <order>3</order>
+            <lic>5294</lic>
+            <name>AUSSEMS Maximilien</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>9487</lic>
+            <name>WILMET Jean Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>5295</lic>
+            <name>RANDAXHE Patrick</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>16</order>
+            <lic>7274</lic>
+            <name>WILKIN Freddy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>9111</lic>
+            <name>CLABOTS Geoffrey</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>6045</lic>
+            <name>PETERS Julien</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>9115</lic>
+            <name>MAHWIN Claude</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>9644</lic>
+            <name>TIXHON Olivier</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>9490</lic>
+            <name>HENNING Birner</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>7073</lic>
+            <name>FEYEREISEN Jean Claude</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>5292</lic>
+            <name>BOUTET Dany</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3491</lic>
+            <name>CLABOTS Alain</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>7916b</lic>
+            <name>WINTGENS Serge</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>7868</lic>
+            <name>MORAY Jean Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>6757</lic>
+            <name>WILLEMAERTS Bernard</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>3702</lic>
+            <name>HENNICO Raymond</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>9509</lic>
+            <name>SCHMITZ Edwin</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>Kon. BC KUNST &amp; VERMAAK 2</name>
+        <fixedplayers>5:6:7:8:</fixedplayers>
+        <player>
+            <order>12</order>
+            <lic>6672</lic>
+            <name>VERSTREKEN Fernand</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>9338</lic>
+            <name>PEETERMANS Gerrit</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>8565</lic>
+            <name>SALIEN Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>5598</lic>
+            <name>SCHOUTENS Eric</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>2362</lic>
+            <name>CORNELIS Theo</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>25148</lic>
+            <name>VANHERWEGEN William</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>2361</lic>
+            <name>CLAES Lucien</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>8241</lic>
+            <name>BERVOETS Francois</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>27846</lic>
+            <name>VERBIEREN Denis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>2437</lic>
+            <name>COEKAERTS Luc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>25592</lic>
+            <name>JANSSENS Eddy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>2379</lic>
+            <name>VERHEMELDONCK Dieter</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>2422</lic>
+            <name>BREMS Christiaan</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>2431</lic>
+            <name>VANHOUTVIN Willy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>2429</lic>
+            <name>NIJNS Patrick</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+    <team>
+        <name>BC HERSTALIEN 3</name>
+        <fixedplayers>9:12:19:20:</fixedplayers>
+        <player>
+            <order>16</order>
+            <lic>9641</lic>
+            <name>SCIBETTA Stefano</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>6750</lic>
+            <name>BROUX Thomas</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>5266</lic>
+            <name>WYN Christophe</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>14</order>
+            <lic>9423</lic>
+            <name>TEHEUX Michel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>13</order>
+            <lic>3582</lic>
+            <name>VAN LEEW Marc</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>3515</lic>
+            <name>WALLERAND Paul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>3533</lic>
+            <name>MARZIALE Pascal</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>25</order>
+            <lic>3576</lic>
+            <name>LALIEUX Marcel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>21</order>
+            <lic>3971</lic>
+            <name>QUERCI Raul</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>24</order>
+            <lic>4006</lic>
+            <name>VIGNERON Francis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>9</order>
+            <lic>3617</lic>
+            <name>GROENEN Jöel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>8402</lic>
+            <name>JETTEN Karina</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>17</order>
+            <lic>5650</lic>
+            <name>DUYSENS Jean</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>11</order>
+            <lic>3551</lic>
+            <name>HALLET Roger</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>19</order>
+            <lic>3593</lic>
+            <name>BRONZE Patrice</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>22</order>
+            <lic>8141</lic>
+            <name>PROOST Erik</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3490</lic>
+            <name>BISSOT Francis</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>3503</lic>
+            <name>GRENIER Guy</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>20</order>
+            <lic>2995</lic>
+            <name>QUETELARD Daniel</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>8517</lic>
+            <name>BEYERS Albert</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>10</order>
+            <lic>4016</lic>
+            <name>SIMON Raphael</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>15</order>
+            <lic>3840</lic>
+            <name>LEJEUNE Fabrice</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>23</order>
+            <lic>5403</lic>
+            <name>STAS Raymond</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>12</order>
+            <lic>3644</lic>
+            <name>MAYEUR Jeannot</name>
+            <discipline/>
+            <tsp/>
+        </player>
+        <player>
+            <order>18</order>
+            <lic>3606</lic>
+            <name>PEETERS Wilhem</name>
+            <discipline/>
+            <tsp/>
+        </player>
+    </team>
+</competition>
