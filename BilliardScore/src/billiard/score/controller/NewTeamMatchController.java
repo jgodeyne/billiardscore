@@ -220,7 +220,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                     tfLic.focusedProperty().addListener(new ChangeListener<Boolean>() {
                         @Override
                         public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                            if(!newValue && !tfLic.getText().isEmpty() && !league.isEmpty()) {
+                            if(!newValue && !tfLic.getText().isEmpty()) {
                                 try {
                                     lookupPlayer(intTeam, intPlayer);
                                 } catch (Exception ex) {
@@ -639,7 +639,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 if(!member.getTsps().isEmpty()) {
                     LOGGER.log(Level.FINEST, "lookupPlayer - (!member.getTsps().isEmpty()): {0}", member.getTsps().size());
                     TSPItem tspItem = null;
-                    if(!compItem.getDiscipline().isEmpty()) {
+                    if(null!=compItem && !compItem.getDiscipline().isEmpty()) {
                         tspItem = member.getTsp(compItem.getDiscipline());
                         LOGGER.log(Level.FINEST, "lookupPlayer - (!compItem.getDiscipline().isEmpty(): {0}", tspItem.getTsp());
                     }
