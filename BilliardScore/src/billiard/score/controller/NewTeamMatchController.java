@@ -163,7 +163,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 }
             }
 
-            mgr = TeamCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath());
+            mgr = TeamCompetitionDataManager.getInstance();
             if (!mgr.getCompetitionNames().isEmpty()) {
                 this.competition.getItems().addAll(mgr.getCompetitionNames());
             }
@@ -626,7 +626,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             league = AppProperties.getInstance().getDefaultLeague();
         }
         
-        LeagueDataManager ldmgr = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath());
+        LeagueDataManager ldmgr = LeagueDataManager.getInstance();
         LeagueItem leagueItem = ldmgr.getLeague(league);
         
         if(leagueItem!=null) {
@@ -638,14 +638,17 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 cbName.getSelectionModel().select(member.getName());
                 if(!member.getTsps().isEmpty()) {
                     LOGGER.log(Level.FINEST, "lookupPlayer - (!member.getTsps().isEmpty()): {0}", member.getTsps().size());
+                    ChoiceBox<String> cbDiscipline = getChoiceBoxPlayerDiscipline(intTeam, intPlayer);
                     TSPItem tspItem = null;
                     if(null!=compItem && !compItem.getDiscipline().isEmpty()) {
                         tspItem = member.getTsp(compItem.getDiscipline());
                         LOGGER.log(Level.FINEST, "lookupPlayer - (!compItem.getDiscipline().isEmpty(): {0}", tspItem.getTsp());
+                    } else if(null!=cbDiscipline.getValue()) {
+                        tspItem = member.getTsp(cbDiscipline.getSelectionModel().getSelectedItem());                        
                     }
+
                     if(tspItem!=null) {
                         TextField tfTSP = getTextFieldPlayerTsp(intTeam, intPlayer);
-                        ChoiceBox<String> cbDiscipline = getChoiceBoxPlayerDiscipline(intTeam, intPlayer);
                         tfTSP.setText(tspItem.getTsp());
                         cbDiscipline.getSelectionModel().select(tspItem.getDiscipline());
                     }

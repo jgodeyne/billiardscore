@@ -31,7 +31,7 @@ public class MatchManager {
     private static ITopic startMatchTopic;
 
     private MatchManager() {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             matches = SyncManager.getHazelCastInstance().getMap(MATCHES_MAP);
             startMatchTopic = SyncManager.getHazelCastInstance().getTopic(START_MATCH_TOPIC);
         } else {
@@ -48,7 +48,7 @@ public class MatchManager {
     }
 
     public void putMatch(Match match) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             matches.put(match.getId(), match);
         } else {
             localMatches.put(match.getId(), match);
@@ -56,7 +56,7 @@ public class MatchManager {
     }
     
     public void updateMatch(Match match) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             matches.replace(match.getId(), match);
         } else {
             localMatches.replace(match.getId(), match);
@@ -64,7 +64,7 @@ public class MatchManager {
     }
 
     public void removeMatch(Match match) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             matches.remove(match.getId());
         } else {
             localMatches.remove(match.getId());
@@ -72,7 +72,7 @@ public class MatchManager {
     }
     
     public Match getMatch(Match match) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             return matches.get(match.getId());
         } else {
             return localMatches.get(match.getId());
@@ -80,7 +80,7 @@ public class MatchManager {
     }
     
     public Match getMatch(long matchId) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             return matches.get(matchId);
         } else {
             return localMatches.get(matchId);
@@ -150,7 +150,7 @@ public class MatchManager {
     }
     
     public void addEntryListener(EntryListener listener) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             ((IMap) matches).addEntryListener(listener, true);
         }
     }

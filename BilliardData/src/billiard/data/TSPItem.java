@@ -40,7 +40,7 @@ public class TSPItem {
         return tsp;
     }
 
-    protected TSPItem copy() throws CloneNotSupportedException {
+    protected TSPItem copy() {
         TSPItem tspClone = new TSPItem();
         tspClone.setDiscipline(this.getDiscipline());
         tspClone.setTsp(this.getTsp());

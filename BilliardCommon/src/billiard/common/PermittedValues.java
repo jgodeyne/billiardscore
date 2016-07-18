@@ -24,7 +24,7 @@ public class PermittedValues {
     }
     
     public enum Action {
-        CLOSE, EDIT, NEW, DELETE, SAVE, OK, CANCEL, SELECT, EXPORT, IMPORT;
+        CLOSE, EDIT, NEW, DELETE, SAVE, OK, CANCEL, SELECT, EXPORT, IMPORT, SEND;
     }
     
     public enum ActionObject {

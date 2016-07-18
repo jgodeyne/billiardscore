@@ -55,7 +55,7 @@ public class AdminConfigurationController implements Initializable , ControllerI
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            LeagueDataManager leagueMngr = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath());
+            LeagueDataManager leagueMngr = LeagueDataManager.getInstance();
             cbLeague.getItems().addAll(leagueMngr.getLeagueNames());
             appProp = AppProperties.getInstance();
             tfBilliardScoreId.setText(appProp.getScoreboardId());

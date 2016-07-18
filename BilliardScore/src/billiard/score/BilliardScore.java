@@ -31,6 +31,7 @@ import billiard.model.pointssystem.PointSystemFactory;
 import billiard.common.InitAppConfig;
 import billiard.common.PermittedValues;
 import billiard.common.SceneUtil;
+import billiard.common.hazelcast.SendDataMessage;
 import billiard.data.LeagueDataManager;
 import billiard.data.LeagueItem;
 import billiard.model.Competition;
@@ -38,7 +39,9 @@ import billiard.model.pointssystem.PointsSystemInterface;
 import billiard.score.controller.AdminConfigurationController;
 import billiard.score.controller.EnterMatchResultController;
 import billiard.data.IndividualCompetitionDataManager;
+import billiard.data.IndividualCompetitionItem;
 import billiard.data.TeamCompetitionDataManager;
+import billiard.data.TeamCompetitionItem;
 import com.hazelcast.core.ITopic;
 import com.hazelcast.core.Message;
 import com.hazelcast.core.MessageListener;
@@ -48,6 +51,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -100,32 +104,75 @@ public class BilliardScore extends Application {
             
             matchQue = new ArrayDeque<>();
             
-            ITopic topic = null;
-            String topicId = "";
+            ITopic startMatchTopic = null;
+            String startMatchTopicId = "";
             if(SyncManager.isHazelcastEnabled()) {
-                topic = matchManager.getStartMatchTopic();
-                topicId = topic.addMessageListener(new MessageListener() {
+                startMatchTopic = matchManager.getStartMatchTopic();
+                startMatchTopicId = startMatchTopic.addMessageListener(new MessageListener() {
                     @Override
                     public void onMessage(Message message) {
-                        //logger.log(Level.FINEST, "StartMatchTopic.onMessage => message: {0}", message.toString());
-                        StartMatchMessage msg = (StartMatchMessage )message.getMessageObject();
-                        //logger.log(Level.FINEST, "StartMatchTopic.onMessage => Match received: {0} - {1}", new Object[] {msg.getScoreBoardId(),msg.getMatchId()});
-                        Match match = matchManager.getMatch(msg.getMatchId());
-                        //logger.log(Level.FINEST, "StartMatchTopic.onMessage => Match found: {0}", match.toString());
-                        try {
-                            if (msg.getScoreBoardId().equals(scoreboardId)) {
-                                if(!matchQue.contains(match)) {
-                                    matchQue.addLast(match);
+                        LOGGER.log(Level.FINEST, "BilliardScore.onMessage => message: {0}", message.toString());
+                        if(message.getMessageObject() instanceof StartMatchMessage) {
+                            StartMatchMessage msg = (StartMatchMessage )message.getMessageObject();
+                            LOGGER.log(Level.FINEST, "BilliardScore.onMessage => Match received: {0} - {1}", new Object[] {msg.getScoreBoardId(),msg.getMatchId()});
+                            try {
+                                if (msg.getScoreBoardId().equals(scoreboardId)) {
+                                    Match match = matchManager.getMatch(msg.getMatchId());
+                                    LOGGER.log(Level.FINEST, "BilliardScore.onMessage => Match found: {0}", match.toString());
+                                    if(!matchQue.contains(match)) {
+                                        matchQue.addLast(match);
+                                    }
                                 }
+                            } catch (Exception ex) {
+                                LOGGER.log(Level.SEVERE, "StartMatchTopic.onMessage exception: {0}", ex.getMessage());
+                                throw new RuntimeException(ex);
                             }
-                        } catch (Exception ex) {
-                            //logger.log(Level.SEVERE, "StartMatchTopic.onMessage exception: {0}", ex.getMessage());
-                            throw new RuntimeException(ex);
                         }
                     }
                 });
+                
+                ITopic sendDataTopic = SyncManager.getHazelCastInstance().getTopic("send_data");
+                sendDataTopic.addMessageListener(new MessageListener() {
+                    @Override
+                    public void onMessage(Message msg) {
+                        if(msg.getMessageObject() instanceof SendDataMessage) {
+                            SendDataMessage sdMsg = (SendDataMessage) msg.getMessageObject();
+                            LOGGER.log(Level.INFO, "SendDataTopic.onMessage ", sdMsg.getActionObject());
+                            String xmlString = (String) sdMsg.getDataObject();
+                            if(sdMsg.getActionObject().equals(PermittedValues.ActionObject.IND_COMP)) {
+                                try {
+                                    IndividualCompetitionItem icItem = IndividualCompetitionItem.fromXML(xmlString);
+                                    IndividualCompetitionDataManager.getInstance().writeFile(icItem);
+                                    IndividualCompetitionDataManager.getInstance().addCompetition(icItem);
+                                } catch (Exception ex) {
+                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
+                                    throw new RuntimeException(ex);
+                                }
+                            } else if(sdMsg.getActionObject().equals(PermittedValues.ActionObject.TEAM_COMP)) {
+                                try {
+                                    TeamCompetitionItem tcItem = TeamCompetitionItem.fromXML(xmlString);
+                                    TeamCompetitionDataManager.getInstance().writeFile(tcItem);
+                                    TeamCompetitionDataManager.getInstance().addCompetition(tcItem);
+                                } catch (Exception ex) {
+                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
+                                    throw new RuntimeException(ex);
+                                }
+                            } else if(sdMsg.getActionObject().equals(PermittedValues.ActionObject.LEAGUE)) {
+                                try {
+                                    LeagueItem leagueItem = LeagueItem.fromXML(xmlString);
+                                    LeagueDataManager.getInstance().writeFile(leagueItem);
+                                    LeagueDataManager.getInstance().addLeague(leagueItem);
+                                } catch (Exception ex) {
+                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
+                                    throw new RuntimeException(ex);
+                                }
+                            }
+                        }
+                    }
+                });                
             }
             
+                        
             
             do {
                 //logger.log(Level.FINEST, "choseAction => Start");
@@ -172,11 +219,10 @@ public class BilliardScore extends Application {
                 }
             } while(menuChoice!=0);
             
-            if(null!=topic) {
-                topic.removeMessageListener(topicId);
+            if(null!=startMatchTopic) {
+                startMatchTopic.removeMessageListener(startMatchTopicId);
             }
             ScoreboardManager.getInstance().removeScoreboard(scoreboardId);
-            SyncManager.stop();
             stage.close();
             //logger.log(Level.FINEST, "Start => End");
         } catch (Exception ex) {
@@ -189,10 +235,14 @@ public class BilliardScore extends Application {
 
             alert.showAndWait();
         } finally {
+            SyncManager.stop();
             Platform.exit();
         }
     }
 
+    /**
+     * @param args the command line arguments
+     */
     /**
      * @param args the command line arguments
      */
@@ -328,19 +378,19 @@ public class BilliardScore extends Application {
             fileChooser.setTitle(bundle.getString("titel.selecteer.ledenlijst.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath()).importLeague(inputFile);
+                LeagueDataManager.getInstance().importLeague(inputFile);
             }
         } else if(actionObject.equals(PermittedValues.ActionObject.IND_COMP)) {
             fileChooser.setTitle(bundle.getString("titel.selecteer.indcomp.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                IndividualCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath()).importCompetition(inputFile);
+                IndividualCompetitionDataManager.getInstance().importCompetition(inputFile);
             }
         } else if(actionObject.equals(PermittedValues.ActionObject.TEAM_COMP)) {
             fileChooser.setTitle(bundle.getString("titel.selecteer.teamcomp.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                TeamCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath()).importCompetition(inputFile);
+                TeamCompetitionDataManager.getInstance().importCompetition(inputFile);
             }
         }
     }
@@ -406,7 +456,7 @@ public class BilliardScore extends Application {
             selectedMatch = controller.getSelectedMatch();
             selectedMatch.reserve();
             matchManager.updateMatch(selectedMatch);
-            LeagueItem league = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath()).getLeague(competition.getLeague());
+            LeagueItem league = LeagueDataManager.getInstance().getLeague(competition.getLeague());
             PermittedValues.TurnIndicatorsColor turnindicatorsColor = null;
             int warmingupTime = 5;
             if(league!=null) {

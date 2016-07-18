@@ -43,6 +43,8 @@ public class TeamCompetitionAdminController implements Initializable, Controller
     private Button btnDelete;
     @FXML
     private Button btnExport;
+    @FXML
+    private Button btnSendData;
 
     /**
      * Initializes the controller class.
@@ -59,10 +61,12 @@ public class TeamCompetitionAdminController implements Initializable, Controller
                       btnUpdate.setDisable(true);
                       btnDelete.setDisable(true);
                       btnExport.setDisable(true);
+                      btnSendData.setDisable(true);
                   } else {
                       btnUpdate.setDisable(false);
                       btnDelete.setDisable(false);
                       btnExport.setDisable(false);
+                      btnSendData.setDisable(false);
                   }
               }
             });
@@ -126,7 +130,14 @@ public class TeamCompetitionAdminController implements Initializable, Controller
 
     @FXML
     private void onActionButtonImport(ActionEvent event) {
-        action = PermittedValues.Action.EXPORT;
+        action = PermittedValues.Action.IMPORT;
+        primaryStage.hide();
+    }
+
+    @FXML
+    private void onActionBtnSendData(ActionEvent event) {
+        competitionName = list.getSelectionModel().getSelectedItem();
+        action = PermittedValues.Action.SEND;
         primaryStage.hide();
     }
 }

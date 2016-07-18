@@ -21,7 +21,7 @@ public class TeamCompetitionManager extends CompetitionManager {
     private Map<Long, TeamCompetition> teamCompetitions;
 
     private TeamCompetitionManager() {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             teamCompetitions = SyncManager.getHazelCastInstance().getMap(COMPETITIONS_MAP);
         } else {
             teamCompetitions = new HashMap<>();
@@ -57,7 +57,7 @@ public class TeamCompetitionManager extends CompetitionManager {
 
     public ArrayList listTeamCompetitions() {
         ArrayList competitionList = new ArrayList();
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             teamCompetitions = SyncManager.getHazelCastInstance().getMap(COMPETITIONS_MAP);
         }
         if (null!=teamCompetitions) {

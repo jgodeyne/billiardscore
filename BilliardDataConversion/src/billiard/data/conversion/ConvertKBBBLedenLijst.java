@@ -49,7 +49,7 @@ public class ConvertKBBBLedenLijst {
         LeagueItem league = loadfile(inputFilePath);
         Paths.get("output/kbbb/").toFile().mkdirs();
         Path outputFilePath = Paths.get("output/kbbb/"+ LEAGUE_NAME + ".xml");
-        LeagueDataManager.writeData(league, outputFilePath);
+        LeagueDataManager.writeFile(league, outputFilePath);
     }
     
     private static LeagueItem loadfile(Path inputFilePath) throws Exception {

@@ -111,7 +111,7 @@ public class TeamCompetitionSummarySheetController {
         toolbar.getChildren().add(buttonPrint);
 
         if (AppProperties.getInstance().isEmailConfigured() && !competition.getLeague().isEmpty()) {
-            league = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath())
+            league = LeagueDataManager.getInstance()
                 .getLeague(competition.getLeague());
             if(league!=null) {
                 Button buttonSend = new Button(bundle.getString("btn.verzenden"));

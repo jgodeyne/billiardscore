@@ -99,7 +99,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            competitionManager = IndividualCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath());
+            competitionManager = IndividualCompetitionDataManager.getInstance();
             cbCompetition.getItems().addAll(competitionManager.getCompetitionNames());
             cbCompetition.getSelectionModel().clearSelection();
         } catch (Exception ex) {
@@ -113,7 +113,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
         try {
             String leagueName = AppProperties.getInstance().getDefaultLeague();
             LeagueDataManager ldmgr;
-            ldmgr = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath());
+            ldmgr = LeagueDataManager.getInstance();
             league = ldmgr.getLeague(leagueName);
             defaultLeague = league;
         } catch (Exception ex) {
@@ -181,7 +181,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
                             String leagueName;
                             leagueName = selectedCompetition.getLeague();
                             if(!leagueName.isEmpty()) {
-                                LeagueDataManager ldmgr = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath());
+                                LeagueDataManager ldmgr = LeagueDataManager.getInstance();
                                 league = ldmgr.getLeague(leagueName);
                                 if(null==league) {
                                     league = defaultLeague;

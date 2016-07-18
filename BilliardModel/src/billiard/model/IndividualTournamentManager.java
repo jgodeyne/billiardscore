@@ -27,7 +27,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     private static HashMap<Long, IndividualTournament> localTournaments;
 
     private IndividualTournamentManager() {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             individualTournaments =  SyncManager.getHazelCastInstance().getMap(INDIVIDUAL_TOURNAMENTS_MAP);
         }else{
             localTournaments = new HashMap<>();
@@ -42,7 +42,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
     
     public void putIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             individualTournaments.put(competition.getId(), competition);
         }else{
             localTournaments.put(competition.getId(), competition);
@@ -50,7 +50,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
     
     public void updateIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             individualTournaments.replace(competition.getId(), competition);
         }else{
             localTournaments.replace(competition.getId(), competition);
@@ -58,7 +58,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
 
     public void removeIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             individualTournaments.remove(competition.getId());
         }else{
             localTournaments.remove(competition.getId());
@@ -66,7 +66,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
     
     public IndividualTournament getIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             return individualTournaments.get(competition.getId());
         }else{
             return localTournaments.get(competition.getId());
@@ -74,7 +74,7 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
 
     public IndividualTournament getIndividualTournament(long competitionId) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             return individualTournaments.get(competitionId);
         }else{
             return localTournaments.get(competitionId);

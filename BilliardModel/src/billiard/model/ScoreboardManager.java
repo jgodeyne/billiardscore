@@ -23,7 +23,7 @@ public class ScoreboardManager {
     private static ScoreboardManager instance;
 
     private ScoreboardManager() {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             scoreboards = SyncManager.getHazelCastInstance().getList(SCOREBOARDS_LIST);
         } else {
             localScoreboards = new ArrayList();
@@ -46,7 +46,7 @@ public class ScoreboardManager {
     }
     
     public void removeScoreboard(String id) {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             scoreboards.remove(id);
         }else{
             localScoreboards.remove(id);
@@ -54,7 +54,7 @@ public class ScoreboardManager {
     }
     
     public ArrayList<String> listScoreboards() {
-        if(SyncManager.hazelcastEnabled) {
+        if(SyncManager.isHazelcastEnabled()) {
             return new ArrayList(scoreboards);
         } else {
             return new ArrayList(localScoreboards);

@@ -82,7 +82,7 @@ public class TeamCompetitionDetailController implements Initializable, Controlle
         cbPointSystem.getItems().addAll(PointSystemFactory.PointSystem.stringValues());
         cbPointSystem.getSelectionModel().selectFirst();
         try {
-            cbLeague.getItems().addAll(LeagueDataManager.getInstance(PermittedValues.APP_NAME).getLeagueNames());
+            cbLeague.getItems().addAll(LeagueDataManager.getInstance().getLeagueNames());
             cbLeague.getSelectionModel().clearSelection();
         } catch (Exception ex) {
             Logger.getLogger(TeamCompetitionDetailController.class.getName()).log(Level.SEVERE, null, ex);

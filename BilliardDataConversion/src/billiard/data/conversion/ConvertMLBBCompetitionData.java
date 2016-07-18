@@ -67,7 +67,7 @@ public class ConvertMLBBCompetitionData {
             LOGGER.log(Level.FINEST, "convertFile => competition: {0}", competition.getName());
             Paths.get("output/mlbb/").toFile().mkdirs();
             Path outputFilePath = Paths.get("output/mlbb/"+ competition.getName() + ".xml");
-            TeamCompetitionDataManager.writeData(competition, outputFilePath);
+            TeamCompetitionDataManager.writeFile(competition, outputFilePath);
         }
         createLeagueFile();
     }
@@ -223,7 +223,7 @@ public class ConvertMLBBCompetitionData {
             }
         }
         Path outputFilePath = Paths.get("output/mlbb/"+ league.getName()+ ".xml");
-        LeagueDataManager.writeData(league, outputFilePath);
+        LeagueDataManager.writeFile(league, outputFilePath);
     }
 
     private static TeamCompetitionItem createCompetition(String name) {

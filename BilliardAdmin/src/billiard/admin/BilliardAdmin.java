@@ -21,6 +21,8 @@ import billiard.common.AppProperties;
 import billiard.common.InitAppConfig;
 import billiard.common.PermittedValues;
 import billiard.common.SceneUtil;
+import billiard.common.hazelcast.SendDataMessage;
+import billiard.common.hazelcast.SyncManager;
 import billiard.data.ClubItem;
 import billiard.data.IndividualCompetitionDataManager;
 import billiard.data.IndividualCompetitionItem;
@@ -31,6 +33,7 @@ import billiard.data.TeamCompetitionDataManager;
 import billiard.data.TeamCompetitionItem;
 import billiard.data.PlayerItem;
 import billiard.data.TeamItem;
+import com.hazelcast.core.ITopic;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -70,20 +73,20 @@ public class BilliardAdmin extends Application {
     public void start(Stage stage) {
         try {
             mainStage = stage;
-            //logger.log(Level.FINEST, "Start => Start");
             InitAppConfig.initAppConfig(this);
             LogManager.getLogManager().readConfiguration(new FileInputStream(InitAppConfig.getLogPropFile()));
+            
+            SyncManager.start();
             
             String strLocale=AppProperties.getInstance().getLocale();
             Locale locale = new Locale(strLocale);
             bundle = ResourceBundle.getBundle("languages.lang", locale);
             
-            leagueManager = LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath());
+            leagueManager = LeagueDataManager.getInstance();
             
             int menuChoice;
             do {
                 menuChoice = choseAction();
-                //logger.log(Level.FINEST, "Start => menuChoice: {0}", menuChoice);
                 if (menuChoice==MenuController.MenuOptions.TC_ADMIN) {
                     startTeamCompetitionAdmin();
                 } else if (menuChoice==MenuController.MenuOptions.IC_ADMIN) {
@@ -102,6 +105,7 @@ public class BilliardAdmin extends Application {
 
             alert.showAndWait();
         } finally {
+            SyncManager.stop();
             Platform.exit();
         }
     }
@@ -136,7 +140,7 @@ public class BilliardAdmin extends Application {
     
     private void startTeamCompetitionAdmin() throws Exception {
         //logger.log(Level.FINEST, "startTeamCompetitionAdmin => Start");
-        teamCompetitionManager = TeamCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath());
+        teamCompetitionManager = TeamCompetitionDataManager.getInstance();
         PermittedValues.Action action;
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.TC_ADMIN),bundle);
         Parent root;
@@ -188,16 +192,22 @@ public class BilliardAdmin extends Application {
                 DirectoryChooser dirChooser = new DirectoryChooser();
                 dirChooser.setTitle(bundle.getString("titel.kies.locatie"));
                 File destDir = dirChooser.showDialog(mainStage);
-                teamCompetitionManager.export(competitionName, destDir);
+                if(null!=destDir) {
+                    teamCompetitionManager.export(competitionName, destDir);
+                }
             } else if (action.equals(PermittedValues.Action.IMPORT)) {
                 importData(PermittedValues.ActionObject.TEAM_COMP);
+            } else if (action.equals(PermittedValues.Action.SEND)) {
+                String name = controller.getSelectedCompetitionName();
+                TeamCompetitionItem item = teamCompetitionManager.getCompetition(name);
+                sendDataAsXML(PermittedValues.ActionObject.TEAM_COMP, item.toXML());
             }      
         } while (!action.equals(PermittedValues.Action.CLOSE));     
     }
     
     private void startIndividualCompetitionAdmin() throws Exception {
         //logger.log(Level.FINEST, "startIndividualCompetitionAdmin => Start");
-        individualCompetitionManager = IndividualCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath());
+        individualCompetitionManager = IndividualCompetitionDataManager.getInstance();
         PermittedValues.Action action;
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.IC_ADMIN),bundle);
         Parent root;
@@ -251,12 +261,15 @@ public class BilliardAdmin extends Application {
                 individualCompetitionManager.export(competitionName, destDir);
             } else if (action.equals(PermittedValues.Action.IMPORT)) {
                 importData(PermittedValues.ActionObject.IND_COMP);
+            } else if (action.equals(PermittedValues.Action.SEND)) {
+                String name = controller.getSelectedCompetitionName();
+                IndividualCompetitionItem item = individualCompetitionManager.getCompetition(name);
+                sendDataAsXML(PermittedValues.ActionObject.IND_COMP, item.toXML());
             }      
         } while (!action.equals(PermittedValues.Action.CLOSE));     
     }
     
     private void startLeagueAdmin() throws Exception {
-        //logger.log(Level.FINEST, "startLeagueAdmin => Start");
         PermittedValues.Action action;
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.LEAGUE_ADMIN),bundle);
         Parent root;
@@ -312,6 +325,10 @@ public class BilliardAdmin extends Application {
                 }
             } else if (action.equals(PermittedValues.Action.IMPORT)) {
                 importData(PermittedValues.ActionObject.LEAGUE);
+            } else if (action.equals(PermittedValues.Action.SEND)) {
+                String leagueName = controller.getSelectedLeagueName();
+                LeagueItem league = leagueManager.getLeague(leagueName);
+                sendDataAsXML(PermittedValues.ActionObject.LEAGUE, league.toXML());
             }      
         } while (!action.equals(PermittedValues.Action.CLOSE));     
     }
@@ -772,21 +789,27 @@ public class BilliardAdmin extends Application {
             fileChooser.setTitle(bundle.getString("titel.selecteer.ledenlijst.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                LeagueDataManager.getInstance(AppProperties.getInstance().getDataPath()).importLeague(inputFile);
+                LeagueDataManager.getInstance().importLeague(inputFile);
             }
         } else if(actionObject.equals(PermittedValues.ActionObject.IND_COMP)) {
             fileChooser.setTitle(bundle.getString("titel.selecteer.indcomp.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                IndividualCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath()).importCompetition(inputFile);
+                IndividualCompetitionDataManager.getInstance().importCompetition(inputFile);
             }
         } else if(actionObject.equals(PermittedValues.ActionObject.TEAM_COMP)) {
             fileChooser.setTitle(bundle.getString("titel.selecteer.teamcomp.bestand"));
             File inputFile = fileChooser.showOpenDialog(mainStage);
             if (null != inputFile) {
-                TeamCompetitionDataManager.getInstance(AppProperties.getInstance().getDataPath()).importCompetition(inputFile);
+                TeamCompetitionDataManager.getInstance().importCompetition(inputFile);
             }
         }
+    }
+    
+    private void sendDataAsXML(PermittedValues.ActionObject actionObject, Object dataObject) {
+        ITopic sendDataTopic = SyncManager.getHazelCastInstance().getTopic("send_data");
+        SendDataMessage msg = new SendDataMessage(actionObject, dataObject);
+        sendDataTopic.publish(msg);
     }
     
     public class FXML {

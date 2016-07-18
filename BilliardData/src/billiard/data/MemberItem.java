@@ -86,7 +86,7 @@ public class MemberItem {
         return tsps.get(discipline);
     }
 
-    public MemberItem copy() throws CloneNotSupportedException {
+    public MemberItem copy() {
         MemberItem memberClone = new MemberItem(this.getClubLic());
         memberClone.setLic(this.getLic());
         memberClone.setName(this.getName());

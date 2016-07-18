@@ -66,7 +66,7 @@ public class ClubItem {
         return contactEmail;
     }
 
-    public ClubItem copy() throws CloneNotSupportedException {
+    public ClubItem copy() {
         ClubItem clubClone = new ClubItem();
         clubClone.setContactEmail(this.getContactEmail());
         clubClone.setContactName(this.getContactName());

@@ -78,7 +78,7 @@ public class IndividualCompetitionDetailController implements Initializable, Con
         cbDiscipline.getItems().addAll(PermittedValues.DISCIPLINES);
         cbBilliardSize.getItems().addAll(PermittedValues.TABLE_FORMAT);
         try {
-            cbLeague.getItems().addAll(LeagueDataManager.getInstance(PermittedValues.APP_NAME).getLeagueNames());
+            cbLeague.getItems().addAll(LeagueDataManager.getInstance().getLeagueNames());
             cbLeague.getSelectionModel().clearSelection();
         } catch (Exception ex) {
             Logger.getLogger(TeamCompetitionDetailController.class.getName()).log(Level.SEVERE, null, ex);

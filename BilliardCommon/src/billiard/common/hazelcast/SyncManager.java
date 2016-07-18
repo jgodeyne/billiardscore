@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class SyncManager {
     private static final Logger LOGGER = Logger.getLogger(SyncManager.class.getName());
     private static HazelcastInstance hazelcastInstance;
-    public static boolean hazelcastEnabled = false;
+    private static boolean hazelcastEnabled = false;
 
     
     public static void start() {

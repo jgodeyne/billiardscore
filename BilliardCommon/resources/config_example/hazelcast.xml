@@ -112,6 +112,11 @@
         <statistics-enabled>true</statistics-enabled>
     </topic>
         
+    <topic name="send_data">
+        <global-ordering-enabled>true</global-ordering-enabled>
+        <statistics-enabled>true</statistics-enabled>
+    </topic>
+        
     <serialization>
         <portable-version>0</portable-version>
     </serialization>

@@ -60,6 +60,15 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Button fx:id="btnSendData" mnemonicParsing="false" onAction="#onActionBtnSendData">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Up.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                   <Separator orientation="VERTICAL" />
                   <Button fx:id="btnClose" cancelButton="true" mnemonicParsing="false" onAction="#onActionButtonClose">
                      <graphic>

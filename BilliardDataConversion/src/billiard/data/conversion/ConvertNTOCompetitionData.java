@@ -92,7 +92,7 @@ public class ConvertNTOCompetitionData {
             String outputPath = "output/nto/";
             Paths.get(outputPath).toFile().mkdirs();
             Path outputFilePath = Paths.get(outputPath+ competition.getName() + " - "+ competition.getGroup() + ".xml");
-            TeamCompetitionDataManager.writeData(competition, outputFilePath);
+            TeamCompetitionDataManager.writeFile(competition, outputFilePath);
         }
         createLeagueFile(competitions);
     }
@@ -222,7 +222,7 @@ public class ConvertNTOCompetitionData {
             }
         }
         Path outputFilePath = Paths.get("output/nto/"+ leagueItem.getName()+ ".xml");
-        LeagueDataManager.writeData(leagueItem, outputFilePath);
+        LeagueDataManager.writeFile(leagueItem, outputFilePath);
     }
 
     private static TeamCompetitionItem createCompetition(String name) {

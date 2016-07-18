@@ -43,6 +43,8 @@ public class LeagueAdminController implements Initializable, ControllerInterface
     private Button btnDelete;
     @FXML
     private Button btnExport;
+    @FXML
+    private Button btnSendData;
 
     /**
      * Initializes the controller class.
@@ -59,10 +61,12 @@ public class LeagueAdminController implements Initializable, ControllerInterface
                       btnUpdate.setDisable(true);
                       btnDelete.setDisable(true);
                       btnExport.setDisable(true);
+                      btnSendData.setDisable(true);
                   } else {
                       btnUpdate.setDisable(false);
                       btnDelete.setDisable(false);
                       btnExport.setDisable(false);
+                      btnSendData.setDisable(false);
                   }
               }
             });
@@ -129,4 +133,11 @@ public class LeagueAdminController implements Initializable, ControllerInterface
         action = PermittedValues.Action.IMPORT;
         primaryStage.hide();
     }
+
+    @FXML
+    private void onActionBtnSendData(ActionEvent event) {
+        leagueName = list.getSelectionModel().getSelectedItem();
+        action = PermittedValues.Action.SEND;
+        primaryStage.hide();
+   }
 }

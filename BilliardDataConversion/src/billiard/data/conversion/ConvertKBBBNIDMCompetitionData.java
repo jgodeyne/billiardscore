@@ -55,7 +55,7 @@ public class ConvertKBBBNIDMCompetitionData {
             LOGGER.log(Level.FINEST, "convertFile => competition: {0}", competition.getName());
             Paths.get("output/kbbb/nidm").toFile().mkdirs();
             Path outputFilePath = Paths.get("output/kbbb/nidm/"+ competition.getName() + " - "+ competition.getGroup() + ".xml");
-            TeamCompetitionDataManager.writeData(competition, outputFilePath);
+            TeamCompetitionDataManager.writeFile(competition, outputFilePath);
         }
         LOGGER.log(Level.INFO, "Nbr of competitions: {0}", nbrOfCompetitions);
         LOGGER.log(Level.INFO, "Nbr of clubs: {0}", nbrOfClubs);
@@ -211,6 +211,6 @@ public class ConvertKBBBNIDMCompetitionData {
         }
         */
         Path outputFilePath = Paths.get("output/kbbb/"+ leagueItem.getName()+ ".xml");
-        LeagueDataManager.writeData(leagueItem, outputFilePath);
+        LeagueDataManager.writeFile(leagueItem, outputFilePath);
     }
 }
