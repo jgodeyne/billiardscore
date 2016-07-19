@@ -49,6 +49,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -229,8 +230,8 @@ public class BilliardScore extends Application {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error Dialog");
             alert.setHeaderText("Please contact app provider and supply message below");
-            alert.setContentText(ex.toString());
-            LOGGER.severe(ex.toString());
+            alert.setContentText(Arrays.toString(ex.getStackTrace()));
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             ex.printStackTrace();
 
             alert.showAndWait();

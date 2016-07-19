@@ -99,7 +99,7 @@ public class BilliardAdmin extends Application {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Application Error");
             alert.setHeaderText("Please contact app provider and supply message below");
-            alert.setContentText(ex.toString());
+            alert.setContentText(Arrays.toString(ex.getStackTrace()));
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             ex.printStackTrace();
 

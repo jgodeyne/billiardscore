@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" styleClass="entryform-pane" stylesheets="@../../../../resources/config_example/default.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billiard.score.controller.OKCancelDialogController">
+<AnchorPane id="AnchorPane" styleClass="entryform-pane" stylesheets="@../../../../../BilliardCommon/resources/config_example/default.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billiard.score.controller.OKCancelDialogController">
    <children>
       <VBox alignment="CENTER" styleClass="vbox" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
          <children>
