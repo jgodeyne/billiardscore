@@ -454,17 +454,19 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                     if(null != player) {
                         TextField tfLic = getTextFieldPlayerLic(intTeam, intPlayer);
                         tfLic.setText(player.getLic());
-                        TextField tfTSP = getTextFieldPlayerTsp(intTeam, intPlayer);
-                        if(!player.getTsp().isEmpty()) {
-                            tfTSP.setText(player.getTsp());
-                        } else {
-                            tfTSP.setText("");
-                        }
-                        ChoiceBox<String> cbDiscipline = getChoiceBoxPlayerDiscipline(intTeam, intPlayer);
-                        if(!player.getDiscipline().isEmpty()) {
-                            cbDiscipline.getSelectionModel().select(player.getDiscipline());
-                        } else {
-                            cbDiscipline.getSelectionModel().clearSelection();
+                        if(null!=compItem && compItem.getTspPlayers().isEmpty()) {
+                            TextField tfTSP = getTextFieldPlayerTsp(intTeam, intPlayer);
+                            if(!player.getTsp().isEmpty()) {
+                                tfTSP.setText(player.getTsp());
+                            } else {
+                                tfTSP.setText("");
+                            }
+                            ChoiceBox<String> cbDiscipline = getChoiceBoxPlayerDiscipline(intTeam, intPlayer);
+                            if(!player.getDiscipline().isEmpty()) {
+                                cbDiscipline.getSelectionModel().select(player.getDiscipline());
+                            } else {
+                                cbDiscipline.getSelectionModel().clearSelection();
+                            }
                         }
                     }
                 } else {
@@ -640,17 +642,19 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                     LOGGER.log(Level.FINEST, "lookupPlayer - (!member.getTsps().isEmpty()): {0}", member.getTsps().size());
                     ChoiceBox<String> cbDiscipline = getChoiceBoxPlayerDiscipline(intTeam, intPlayer);
                     TSPItem tspItem = null;
-                    if(null!=compItem && !compItem.getDiscipline().isEmpty()) {
-                        tspItem = member.getTsp(compItem.getDiscipline());
-                        LOGGER.log(Level.FINEST, "lookupPlayer - (!compItem.getDiscipline().isEmpty(): {0}", tspItem.getTsp());
-                    } else if(null!=cbDiscipline.getValue()) {
-                        tspItem = member.getTsp(cbDiscipline.getSelectionModel().getSelectedItem());                        
-                    }
+                    if(compItem.getTspPlayers().isEmpty()) {
+                        if(null!=compItem && !compItem.getDiscipline().isEmpty()) {
+                            tspItem = member.getTsp(compItem.getDiscipline());
+                            LOGGER.log(Level.FINEST, "lookupPlayer - (!compItem.getDiscipline().isEmpty(): {0}", tspItem.getTsp());
+                        } else if(null!=cbDiscipline.getValue()) {
+                            tspItem = member.getTsp(cbDiscipline.getSelectionModel().getSelectedItem());                        
+                        }
 
-                    if(tspItem!=null) {
-                        TextField tfTSP = getTextFieldPlayerTsp(intTeam, intPlayer);
-                        tfTSP.setText(tspItem.getTsp());
-                        cbDiscipline.getSelectionModel().select(tspItem.getDiscipline());
+                        if(tspItem!=null) {
+                            TextField tfTSP = getTextFieldPlayerTsp(intTeam, intPlayer);
+                            tfTSP.setText(tspItem.getTsp());
+                            cbDiscipline.getSelectionModel().select(tspItem.getDiscipline());
+                        }
                     }
                 }
             }

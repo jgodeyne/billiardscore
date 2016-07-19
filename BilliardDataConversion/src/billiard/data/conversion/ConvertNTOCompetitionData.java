@@ -5,7 +5,6 @@
  */
 package billiard.data.conversion;
 
-import billiard.common.PermittedValues;
 import billiard.data.ClubItem;
 import billiard.data.TeamCompetitionItem;
 import billiard.data.LeagueDataManager;
@@ -193,7 +192,7 @@ public class ConvertNTOCompetitionData {
     private static void createLeagueFile(Collection<TeamCompetitionItem> competitions) throws Exception {
         LeagueItem leagueItem = new LeagueItem();
         leagueItem.setName(LEAGUE_NAME);
-        leagueItem.setTurnIndicatorsColor(PermittedValues.TurnIndicatorsColor.YELLOW_WHITE.toString());
+        leagueItem.setTurnIndicatorsColor("YELLOW");
         leagueItem.setWarmingUpTime("3");
         LOGGER.log(Level.FINEST, "createLeagueFile => league: {0}", "NTO");
         for(Club club: clubs.values()) {

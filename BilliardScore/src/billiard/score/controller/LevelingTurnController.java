@@ -41,22 +41,6 @@ public class LevelingTurnController implements Initializable, ControllerInterfac
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        timer = new Timer();
-        task = new TimerTask() {
-            @Override
-            public void run() {
-                if(null!=primaryStage) {
-                    primaryStage.hide();
-                }
-                timer.cancel();
-            }
-        };
-        Date date = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-        cal.add(Calendar.SECOND, 10); // add 10 days
-        
-        timer.schedule(task, date);
     }    
 
     public void setData(Player player, int points) {
@@ -75,5 +59,4 @@ public class LevelingTurnController implements Initializable, ControllerInterfac
     public void initController(Stage stage) {
         this.primaryStage = stage;
     }
-    
 }

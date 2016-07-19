@@ -6,15 +6,21 @@
 package billiard.admin.controller;
 
 import billiard.common.ControllerInterface;
+import billiard.common.hazelcast.SyncManager;
+import billiard.model.ScoreboardManager;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 /**
  * FXML Controller class
@@ -33,13 +39,21 @@ public class MenuController implements Initializable,  ControllerInterface {
     private HBox hbMenu3;
     @FXML
     private HBox hbMenu4;
+    @FXML
+    private Tooltip ttConnected;
+    @FXML
+    private Circle ledConnected;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        if(SyncManager.isHazelcastEnabled()) {
+            ledConnected.setFill(Paint.valueOf("green"));
+        } else {
+            ledConnected.setFill(Paint.valueOf("red"));
+        }
     }    
 
     @Override
@@ -89,6 +103,17 @@ public class MenuController implements Initializable,  ControllerInterface {
         scene.setCursor(Cursor.DEFAULT);
         HBox box = (HBox) event.getSource();
         box.setStyle("-fx-background-color: #666666;");
+    }
+
+    @FXML
+    private void onShowningttConnected(WindowEvent event) {
+        int nbrOfScoreboards = ScoreboardManager.getInstance().listScoreboards().size();
+        String tooltip = "Nbr of Scoreboards: " + nbrOfScoreboards;
+        int idx = 0;
+        for (String name : ScoreboardManager.getInstance().listScoreboards()) {
+            tooltip += System.lineSeparator() + ++idx +": " + name;
+        }
+        ttConnected.setText(tooltip);
     }
 
     public static class MenuOptions {

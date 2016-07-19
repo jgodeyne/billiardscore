@@ -184,7 +184,7 @@ public class ConvertKBBBNIDMCompetitionData {
     private static void createLeagueFile(Collection<TeamCompetitionItem> competitions) throws Exception {
         LeagueItem leagueItem = new LeagueItem();
         leagueItem.setName(LEAGUE_NAME);
-        leagueItem.setTurnIndicatorsColor(PermittedValues.TurnIndicatorsColor.WHITE_YELLOW.toString());
+        leagueItem.setTurnIndicatorsColor("WHITE");
         leagueItem.setWarmingUpTime("5");
         LOGGER.log(Level.FINEST, "createLeagueFile => league: {0}", "KBBB");
         /*

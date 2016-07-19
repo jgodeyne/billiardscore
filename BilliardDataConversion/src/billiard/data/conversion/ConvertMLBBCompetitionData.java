@@ -5,7 +5,6 @@
  */
 package billiard.data.conversion;
 
-import billiard.common.PermittedValues;
 import billiard.data.ClubItem;
 import billiard.data.TeamCompetitionItem;
 import billiard.data.LeagueDataManager;
@@ -198,7 +197,7 @@ public class ConvertMLBBCompetitionData {
     private static void createLeagueFile() throws Exception {
         LeagueItem league = new LeagueItem();
         league.setName("MLBB");
-        league.setTurnIndicatorsColor(PermittedValues.TurnIndicatorsColor.YELLOW_WHITE.toString());
+        league.setTurnIndicatorsColor("YELLOW");
         league.setWarmingUpTime("3");
         for(Club club: clubs.values()) {
             ClubItem clubItem = new ClubItem();

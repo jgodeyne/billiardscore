@@ -475,8 +475,8 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         displayPlayers();
     }
 
-    public void setTurnIdnicatorsColor(PermittedValues.TurnIndicatorsColor color) {
-        if (color != null && color.equals(PermittedValues.TurnIndicatorsColor.YELLOW_WHITE)) {
+    public void setTurnIdnicatorsColor(String color) {
+        if (color != null && color.equals("WHITE")) {
             // Flip Turnindicator Color
             RadialGradient rgFillp1 = (RadialGradient) player_1_turn_indicator.getFill();
             RadialGradient rgFillp2 = (RadialGradient) player_2_turn_indicator.getFill();

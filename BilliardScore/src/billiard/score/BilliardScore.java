@@ -407,7 +407,7 @@ public class BilliardScore extends Application {
         //logger.log(Level.FINEST, "startTournamentMatch => End");
     }
     
-    private void openScoreboard(Match match, PermittedValues.TurnIndicatorsColor color, int warmingUpTime) throws Exception {
+    private void openScoreboard(Match match, String color, int warmingUpTime) throws Exception {
         //logger.log(Level.FINEST, "openScoreboard => Start");
         //logger.log(Level.FINEST, "openScoreboard => match: {0}", match);
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.SCOREBOARD),bundle);
@@ -457,10 +457,10 @@ public class BilliardScore extends Application {
             selectedMatch.reserve();
             matchManager.updateMatch(selectedMatch);
             LeagueItem league = LeagueDataManager.getInstance().getLeague(competition.getLeague());
-            PermittedValues.TurnIndicatorsColor turnindicatorsColor = null;
+            String turnindicatorsColor = null;
             int warmingupTime = 5;
             if(league!=null) {
-                turnindicatorsColor = PermittedValues.TurnIndicatorsColor.valueOf(league.getTurnIndicatorsColor());
+                turnindicatorsColor = league.getTurnIndicatorsColor();
                 warmingupTime = Integer.parseInt(league.getWarmingUpTime());
             }
             openScoreboard(selectedMatch, turnindicatorsColor, warmingupTime);
