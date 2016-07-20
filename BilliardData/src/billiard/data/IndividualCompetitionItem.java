@@ -34,6 +34,7 @@ public class IndividualCompetitionItem {
     private final StringProperty discipline = new SimpleStringProperty("");
     private final StringProperty tableFormat = new SimpleStringProperty("");
     private final StringProperty league = new SimpleStringProperty("");
+    private final StringProperty pointSystem = new SimpleStringProperty("");
     HashMap<String, PlayerItem> players = new HashMap<>();
 
     public String getName() {
@@ -95,6 +96,18 @@ public class IndividualCompetitionItem {
         this.tableFormat.setValue(tableFormat);
     }
 
+    public String getPointSystem() {
+        return pointSystem.getValue();
+    }
+    
+    public void setPointSystem(String pointSystem) {
+        this.pointSystem.setValue(pointSystem);
+    }
+    
+    public StringProperty getPointSystemProp() {
+        return pointSystem;
+    }
+
     public String getLeague() {
         return league.getValue();
     }
@@ -133,6 +146,8 @@ public class IndividualCompetitionItem {
         competitionClone.setContactName(this.getContactName());
         competitionClone.setLeague(this.getLeague());
         competitionClone.setName(this.getName());
+        competitionClone.setDiscipline(this.getDiscipline());
+        competitionClone.setTableFormat(this.getTableFormat());
         
         HashMap<String, PlayerItem> playerCloneList = new HashMap<>();
         for (Map.Entry<String, PlayerItem> entry : players.entrySet()) {
@@ -164,6 +179,12 @@ public class IndividualCompetitionItem {
         eventWriter.add(eventFactory.createStartElement("", null, XMLTags.DISCIPLINE));
         eventWriter.add(eventFactory.createCharacters(this.getDiscipline()));
         eventWriter.add(eventFactory.createEndElement("", null, XMLTags.DISCIPLINE));
+        eventWriter.add(eventFactory.createStartElement("", null, XMLTags.TABLEFORMAT));
+        eventWriter.add(eventFactory.createCharacters(this.getTableFormat()));
+        eventWriter.add(eventFactory.createEndElement("", null, XMLTags.TABLEFORMAT));
+        eventWriter.add(eventFactory.createStartElement("", null, XMLTags.POINTSYSTEM));
+        eventWriter.add(eventFactory.createCharacters(this.getPointSystem()));
+        eventWriter.add(eventFactory.createEndElement("", null, XMLTags.POINTSYSTEM));
         eventWriter.add(eventFactory.createStartElement("", null, XMLTags.LEAGUE));
         eventWriter.add(eventFactory.createCharacters(this.getLeague()));
         eventWriter.add(eventFactory.createEndElement("", null, XMLTags.LEAGUE));
@@ -253,6 +274,24 @@ public class IndividualCompetitionItem {
                     if (event.isCharacters()) {
                         LOGGER.log(Level.FINEST, "readCompetition => discipline event: {0}", event.toString());
                         competition.setDiscipline(event.asCharacters().getData());
+                    }
+                    continue;
+                }
+                if (event.asStartElement().getName().getLocalPart()
+                        .equals(XMLTags.TABLEFORMAT)) {
+                    event = eventReader.nextEvent();
+                    if (event.isCharacters()) {
+                        LOGGER.log(Level.FINEST, "readCompetition => discipline event: {0}", event.toString());
+                        competition.setTableFormat(event.asCharacters().getData());
+                    }
+                    continue;
+                }
+                if (event.asStartElement().getName().getLocalPart()
+                        .equals(XMLTags.POINTSYSTEM)) {
+                    event = eventReader.nextEvent();
+                    if (event.isCharacters()) {
+                        LOGGER.log(Level.FINEST, "readCompetition => discipline event: {0}", event.toString());
+                        competition.setPointSystem(event.asCharacters().getData());
                     }
                     continue;
                 }
