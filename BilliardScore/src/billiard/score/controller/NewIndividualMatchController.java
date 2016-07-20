@@ -104,6 +104,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
             cbCompetition.getSelectionModel().clearSelection();
         } catch (Exception ex) {
             Logger.getLogger(NewIndividualMatchController.class.getName()).log(Level.SEVERE, null, ex);
+            throw new RuntimeException(ex);
         }
         this.discipline.getItems().addAll(new ArrayList( Arrays.asList(PermittedValues.DISCIPLINES)));
         this.discipline.getSelectionModel().selectFirst();
@@ -118,6 +119,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
             defaultLeague = league;
         } catch (Exception ex) {
             Logger.getLogger(NewIndividualMatchController.class.getName()).log(Level.SEVERE, null, ex);
+            throw new RuntimeException(ex);
         }
         if(null==league) {
             btnSearchMember1.setDisable(true);
