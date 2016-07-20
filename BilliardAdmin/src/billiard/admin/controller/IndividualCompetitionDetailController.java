@@ -11,6 +11,7 @@ import billiard.common.PermittedValues;
 import billiard.data.IndividualCompetitionItem;
 import billiard.data.LeagueDataManager;
 import billiard.data.PlayerItem;
+import billiard.model.pointssystem.PointSystemFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -69,6 +70,8 @@ public class IndividualCompetitionDetailController implements Initializable, Con
     private ChoiceBox<String> cbLeague;
     @FXML
     private ChoiceBox<String> cbBilliardSize;
+    @FXML
+    private ChoiceBox<String> cbPointSystem;
     
     /**
      * Initializes the controller class.
@@ -77,6 +80,7 @@ public class IndividualCompetitionDetailController implements Initializable, Con
     public void initialize(URL url, ResourceBundle rb) {
         cbDiscipline.getItems().addAll(PermittedValues.DISCIPLINES);
         cbBilliardSize.getItems().addAll(PermittedValues.TABLE_FORMAT);
+        cbPointSystem.getItems().addAll(PointSystemFactory.PointSystem.stringValues());
         try {
             cbLeague.getItems().addAll(LeagueDataManager.getInstance().getLeagueNames());
             cbLeague.getSelectionModel().clearSelection();
@@ -146,6 +150,7 @@ public class IndividualCompetitionDetailController implements Initializable, Con
         tfContactEmail.textProperty().bindBidirectional(this.competition.getContactEmailProp());
         cbDiscipline.valueProperty().bindBidirectional(this.competition.getDisciplineProp());
         cbBilliardSize.valueProperty().bindBidirectional(this.competition.getTableFormatProp());
+        cbPointSystem.valueProperty().bindBidirectional(this.competition.getPointSystemProp());
         tcolName.setCellValueFactory(cellData -> cellData.getValue().getNameProp());
         tcolLic.setCellValueFactory(cellData -> cellData.getValue().getLicProp());
         tcolDiscipline.setCellValueFactory(cellData -> cellData.getValue().getDisciplineProp());

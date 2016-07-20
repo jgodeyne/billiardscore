@@ -32,6 +32,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -41,13 +42,15 @@
                   <Label text="%label.contact.email" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                   <Label text="%label.discipline" GridPane.rowIndex="3" />
                   <Label text="%label.biljart.formaat" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                  <Label text="%label.spelers" GridPane.rowIndex="4" />
+                  <Label text="%label.spelers" GridPane.rowIndex="5" />
                   <ChoiceBox fx:id="cbLeague" prefWidth="250.0" GridPane.columnIndex="1" />
                   <TextField fx:id="tfName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <TextField fx:id="tfContactName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <TextField fx:id="tfContactEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                   <ChoiceBox fx:id="cbDiscipline" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <ChoiceBox fx:id="cbBilliardSize" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label text="%label.puntensysteem" GridPane.rowIndex="4" />
+                  <ChoiceBox fx:id="cbPointSystem" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
             <ToolBar>
