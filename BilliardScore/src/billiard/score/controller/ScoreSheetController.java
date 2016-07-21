@@ -156,7 +156,7 @@ public class ScoreSheetController {
         String logoLocation = AppProperties.getInstance().getLogoLocation();
  
         String dfFormat = "#0.00";
-        if(competition.getDiscipline().equalsIgnoreCase("Drieband")) {
+        if(competition.getDiscipline().contains("Drieband")) {
             dfFormat = "#0.000";
         }
         DecimalFormat df = new DecimalFormat(dfFormat);

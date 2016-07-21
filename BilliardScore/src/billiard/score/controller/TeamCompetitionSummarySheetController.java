@@ -200,8 +200,8 @@ public class TeamCompetitionSummarySheetController {
         String logoLocation = AppProperties.getInstance().getLogoLocation();
 
         String dfFormat = "#0.00";
-        if(competition.getDiscipline().equalsIgnoreCase("Drieband")) {
-            dfFormat = "#0.00";
+        if(competition.getDiscipline().contains("Drieband")) {
+            dfFormat = "#0.000";
         }
         DecimalFormat df = new DecimalFormat(dfFormat);
         df.setRoundingMode(RoundingMode.DOWN);
@@ -426,7 +426,7 @@ public class TeamCompetitionSummarySheetController {
         dialog.initModality(Modality.APPLICATION_MODAL);
         dialog.initOwner(stage);
         dialog.initStyle(StageStyle.UTILITY);
-        dialog.setTitle(bundle.getString("title.verzenden.uitslag"));
+        dialog.setTitle(bundle.getString("titel.verzenden.uitslag"));
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource(BilliardScore.FXML.SEND_MAIL),bundle);
         Parent root;

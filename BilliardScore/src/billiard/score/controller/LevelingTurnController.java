@@ -8,11 +8,7 @@ package billiard.score.controller;
 import billiard.model.Player;
 import billiard.common.ControllerInterface;
 import java.net.URL;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -26,8 +22,6 @@ import javafx.stage.Stage;
  */
 public class LevelingTurnController implements Initializable, ControllerInterface {
     private Stage primaryStage;
-    private Timer timer;
-    private TimerTask task;
     
     @FXML
     private Text text_player;
@@ -51,8 +45,6 @@ public class LevelingTurnController implements Initializable, ControllerInterfac
     @FXML
     private void btnOkOnAction(ActionEvent event) {
         primaryStage.hide();
-        task.cancel();
-        timer.cancel();
     }
 
     @Override
