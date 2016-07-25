@@ -13,24 +13,31 @@ import billiard.model.IndividualCompetition;
 import billiard.model.Match;
 import billiard.model.PlayerMatchResult;
 import billiard.common.AppProperties;
+import billiard.common.SceneUtil;
 import billiard.model.CompetitionManager;
 import billiard.model.MatchManager;
+import billiard.score.BilliardScore;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.print.PageLayout;
 import javafx.print.PageOrientation;
 import javafx.print.Paper;
 import javafx.print.Printer;
 import javafx.print.PrinterJob;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
@@ -38,7 +45,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -91,14 +100,22 @@ public class ScoreSheetController {
         });
         toolbar.getChildren().add(buttonPrint);
 
-//        Button buttonSend = new Button(bundle.getString("btn.verzenden"));
-//        buttonSend.setPrefSize(100, 20);
-//        buttonSend
-//                .setOnAction((ActionEvent e) -> {
-//            send();
-//        });
-//        toolbar.getChildren().add(buttonSend);
-//
+        if (AppProperties.getInstance().isEmailConfigured()) {
+            if(competition instanceof IndividualCompetition) {
+                Button buttonSend = new Button(bundle.getString("btn.verzenden"));
+                buttonSend.setPrefSize(100, 20);
+                buttonSend
+                        .setOnAction((ActionEvent e) -> {
+                            try {
+                                send();
+                            } catch (Exception ex) {
+                                Logger.getLogger(ScoreSheetController.class.getName()).log(Level.SEVERE, null, ex);
+                                throw new RuntimeException(ex);
+                            }
+                        });
+                toolbar.getChildren().add(buttonSend);
+            }
+        }
         
         Button buttonCancel = new Button(bundle.getString("btn.sluiten"));
         buttonCancel.setPrefSize(100, 20);
@@ -441,17 +458,84 @@ public class ScoreSheetController {
         stage.close();
     }
     
-    private void send() {
-        String to = "";
-        String from = "";
-        String host = "";
+    private void send() throws Exception {
+        String to = (null!=competition.getContactDetails()?competition.getContactDetails().getEmail():"");
+        String from = AppProperties.getInstance().getEmailSender();
+        String host = AppProperties.getInstance().getEmailServer();
         String subject = "Wedstrijdblad: " + competition.getName();
-        String msg = "";
-        String cc = "";
-        String[] attachements = {};
-        MailSender.sendMailWithAttachement(from, to, cc, host, subject, msg, attachements);
+    
+        Stage dialog = new Stage();
+        dialog.initModality(Modality.WINDOW_MODAL);
+        dialog.initOwner(stage);
+        dialog.initStyle(StageStyle.UTILITY);
+        dialog.setTitle(bundle.getString("titel.verzenden.uitslag"));
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(BilliardScore.FXML.SEND_MAIL),bundle);
+        Parent root;
+        root = loader.load();
+    
+        SendMailController controller = loader.<SendMailController>getController();
+        controller.initController(dialog);
+        controller.setData(to);
+        
+        Scene scene = new Scene(root);
+        SceneUtil.setStylesheet(scene);
+        dialog.setScene(scene);
+        dialog.centerOnScreen();
+        dialog.showAndWait();
+
+        if(controller.getAction().equals(PermittedValues.Action.OK)) {
+            String msg = controller.getMessage();
+            String cc = controller.getCC();
+            to = controller.getTo();
+
+            ArrayList<String> attachements = new ArrayList();
+            attachements.add(getFile());
+
+            boolean mailsent = MailSender.sendMailWithAttachement(from, to ,cc , host, subject, msg, attachements.toArray(new String[0]));
+
+            Stage dialog2 = new Stage();
+            dialog2.initModality(Modality.APPLICATION_MODAL);
+            dialog2.initOwner(stage);
+            dialog2.initStyle(StageStyle.UTILITY);
+            dialog2.setTitle(bundle.getString("titel.verzenden.uitslag"));
+
+            FXMLLoader loader2 = new FXMLLoader(getClass().getResource(BilliardScore.FXML.OK_CANCEL),bundle);
+            Parent root2;
+            root2 = loader2.load();
+
+            OKCancelDialogController controller2 = loader2.<OKCancelDialogController>getController();
+            if(mailsent){
+                controller2.setMessage(bundle.getString("msg.mail.verzonden"));
+            } else {
+                controller2.setMessage(bundle.getString("msg.mail.niet.verzonden"));            
+            }
+            controller2.initController(dialog2);
+            controller2.setMode(OKCancelDialogController.Mode.OK);
+
+            Scene scene2 = new Scene(root2);
+            SceneUtil.setStylesheet(scene2);
+            dialog2.setScene(scene2);
+            dialog2.centerOnScreen();
+            dialog2.showAndWait();
+        }
     }
     
+    private String getFile() throws Exception {
+        Date dNow = new Date();
+        SimpleDateFormat ft2 = new SimpleDateFormat("yyyyMMdd");
+        String archiveDate = ft2.format(dNow);
+
+        String filename = competition.getName() + " - (" + match.getNumber() + ") "
+                + match.getPlayer1().getName() + "-" + match.getPlayer2().getName() + ".pdf";
+        String location = AppProperties.getInstance().getArchiveLocation() + "/" + archiveDate + "/";
+        String filePath = location + filename;
+        File file = new File(filePath);
+        if (!file.exists()) {
+            PDFCreator.createPDF(match.getScoreSheetHTML(), filePath);
+        }
+        return filePath;
+    }
     private String getStyles() throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(SCORESHEET_CSS)));
 

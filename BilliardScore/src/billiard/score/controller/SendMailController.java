@@ -63,6 +63,9 @@ public class SendMailController implements Initializable, ControllerInterface {
         return action;
     }
     
+    public String getTo() {
+        return  tfTo.getText();
+    }
     public String getCC() {
         return tfCC.getText();
     }

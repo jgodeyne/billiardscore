@@ -30,7 +30,7 @@
               </rowConstraints>
                <children>
                   <Label text="%label.to" />
-                  <TextField fx:id="tfTo" disable="true" editable="false" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" styleClass="text-field" GridPane.columnIndex="1" />
+                  <TextField fx:id="tfTo" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" styleClass="text-field" GridPane.columnIndex="1" />
                   <Label text="%label.cc" GridPane.rowIndex="1" />
                   <TextField fx:id="tfCC" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="325.0" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="%label.message" GridPane.rowIndex="2" />

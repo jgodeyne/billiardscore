@@ -457,7 +457,7 @@ public class BilliardScore extends Application {
             selectedMatch = controller.getSelectedMatch();
             selectedMatch.reserve();
             matchManager.updateMatch(selectedMatch);
-            LeagueItem league = LeagueDataManager.getInstance().getLeague(competition.getLeague());
+            LeagueItem league = LeagueDataManager.getInstance().getLeague(competition.getLeagueName());
             String turnindicatorsColor = null;
             int warmingupTime = 5;
             if(league!=null) {

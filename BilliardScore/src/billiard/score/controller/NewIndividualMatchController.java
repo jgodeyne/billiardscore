@@ -207,8 +207,6 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
         boolean valid = false;
         
         if (validForm()) {
-
-
             Player player1 = new Player(this.player_1_name.getText()
                     ,this.player_1_club.getText()
                     ,new Integer(this.player_1_tsp.getText())
@@ -225,7 +223,9 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
                     ,player1,player2);
             individualCompetition.setGroup(group.getText());
             individualCompetition.setTableNumber(tableNumber.getText());
-
+            individualCompetition.setLeagueName(league.getName());
+            individualCompetition.setCompetitionItemName(cbCompetition.getValue());
+            
             primaryStage.hide();
         }
     }

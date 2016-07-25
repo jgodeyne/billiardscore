@@ -18,8 +18,6 @@ import billiard.model.TeamResult;
 import billiard.score.BilliardScore;
 import billiard.common.AppProperties;
 import billiard.common.SceneUtil;
-import billiard.data.LeagueDataManager;
-import billiard.data.LeagueItem;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -75,7 +73,6 @@ public class TeamCompetitionSummarySheetController {
     private final String datum;
     private final ResourceBundle bundle;
     private String summarySheetFilePath = "";
-    private LeagueItem league;
 
     public static void showSummarySheet(TeamCompetition competition) throws Exception {
         TeamCompetitionSummarySheetController teamCompetitionSummarySheetController = new TeamCompetitionSummarySheetController(competition);
@@ -110,23 +107,19 @@ public class TeamCompetitionSummarySheetController {
                 });
         toolbar.getChildren().add(buttonPrint);
 
-        if (AppProperties.getInstance().isEmailConfigured() && !competition.getLeague().isEmpty()) {
-            league = LeagueDataManager.getInstance()
-                .getLeague(competition.getLeague());
-            if(league!=null) {
-                Button buttonSend = new Button(bundle.getString("btn.verzenden"));
-                buttonSend.setPrefSize(100, 20);
-                buttonSend
-                        .setOnAction((ActionEvent e) -> {
-                            try {
-                                send();
-                            } catch (Exception ex) {
-                                Logger.getLogger(TeamCompetitionSummarySheetController.class.getName()).log(Level.SEVERE, null, ex);
-                                throw new RuntimeException(ex);
-                            }
-                        });
-                toolbar.getChildren().add(buttonSend);
-            }
+        if (AppProperties.getInstance().isEmailConfigured()) {
+            Button buttonSend = new Button(bundle.getString("btn.verzenden"));
+            buttonSend.setPrefSize(100, 20);
+            buttonSend
+                    .setOnAction((ActionEvent e) -> {
+                        try {
+                            send();
+                        } catch (Exception ex) {
+                            Logger.getLogger(TeamCompetitionSummarySheetController.class.getName()).log(Level.SEVERE, null, ex);
+                            throw new RuntimeException(ex);
+                        }
+                    });
+            toolbar.getChildren().add(buttonSend);
         }
 
         Button buttonSave = new Button(bundle.getString("btn.bewaren"));
@@ -415,7 +408,7 @@ public class TeamCompetitionSummarySheetController {
     }
 
     private void send() throws Exception {
-        String to = league.getContactEmail();
+        String to = (null!=competition.getContactDetails()?competition.getContactDetails().getEmail():"");
         String from = AppProperties.getInstance().getEmailSender();
         String host = AppProperties.getInstance().getEmailServer();
         String subject = bundle.getString("label.verzamelstaat")
@@ -423,7 +416,7 @@ public class TeamCompetitionSummarySheetController {
                 + team1.getName() + " - " + team2.getName();
     
         Stage dialog = new Stage();
-        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initModality(Modality.WINDOW_MODAL);
         dialog.initOwner(stage);
         dialog.initStyle(StageStyle.UTILITY);
         dialog.setTitle(bundle.getString("titel.verzenden.uitslag"));
@@ -445,6 +438,7 @@ public class TeamCompetitionSummarySheetController {
         if(controller.getAction().equals(PermittedValues.Action.OK)) {
             String msg = controller.getMessage();
             String cc = controller.getCC();
+            to = controller.getTo();
 
             ArrayList<String> attachements = new ArrayList();
             attachements.addAll(getFiles());
@@ -462,7 +456,7 @@ public class TeamCompetitionSummarySheetController {
             dialog2.initModality(Modality.APPLICATION_MODAL);
             dialog2.initOwner(stage);
             dialog2.initStyle(StageStyle.UTILITY);
-            dialog2.setTitle(bundle.getString("title.verzenden.uitslag"));
+            dialog2.setTitle(bundle.getString("titel.verzenden.uitslag"));
 
             FXMLLoader loader2 = new FXMLLoader(getClass().getResource(BilliardScore.FXML.OK_CANCEL),bundle);
             Parent root2;

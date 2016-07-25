@@ -321,7 +321,8 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             teamCompetition.setGroup(group.getText());
             teamCompetition.setNumber(matchNumber.getText());
             if (compItem!=null) {
-                teamCompetition.setLeague(compItem.getLeague());
+                teamCompetition.setLeagueName(compItem.getLeague());
+                teamCompetition.setCompetitionItemName(compItem.getName());
             }
             
             primaryStage.hide();
