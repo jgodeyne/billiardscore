@@ -208,7 +208,6 @@ public class BilliardAdmin extends Application {
     private void startIndividualCompetitionAdmin() throws Exception {
         //logger.log(Level.FINEST, "startIndividualCompetitionAdmin => Start");
         individualCompetitionManager = IndividualCompetitionDataManager.getInstance();
-        PermittedValues.Action action;
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.IC_ADMIN),bundle);
         Parent root;
         root = loader.load();
@@ -222,11 +221,11 @@ public class BilliardAdmin extends Application {
         SceneUtil.setStylesheet(scene);
         primaryStage.setScene(scene);
         primaryStage.centerOnScreen();
+        PermittedValues.Action action;
         do {
             ArrayList<String> competitionList =  individualCompetitionManager.getCompetitionNames();
             controller.setCompetitions(competitionList);
             primaryStage.showAndWait();
-            primaryStage.requestFocus();
             
             action = controller.getAction();
             if(action.equals(PermittedValues.Action.NEW)) {
