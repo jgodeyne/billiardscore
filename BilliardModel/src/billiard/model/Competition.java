@@ -5,6 +5,13 @@
  */
 package billiard.model;
 
+import billiard.common.AppProperties;
+import billiard.data.IndividualCompetitionDataManager;
+import billiard.data.IndividualCompetitionItem;
+import billiard.data.LeagueDataManager;
+import billiard.data.LeagueItem;
+import billiard.data.TeamCompetitionDataManager;
+import billiard.data.TeamCompetitionItem;
 import java.io.Serializable;
 
 /**
@@ -18,7 +25,8 @@ public abstract class Competition implements Serializable {
     private String group = "";
     private String tableFormat = "";
     private String discipline = "";
-    private String league = "";
+    private String leagueName = "";
+    private String competitionItemName = "";
 
     public Competition(String name, String discipline, String tableFormat) {
         this.id = CompetitionManager.generateCompetitionId();
@@ -64,11 +72,54 @@ public abstract class Competition implements Serializable {
         this.tableFormat = tableFormat;
     }
 
-    public String getLeague() {
-        return league;
+    public String getLeagueName() {
+        return leagueName;
     }
 
-    public void setLeague(String league) {
-        this.league = league;
+    public void setLeagueName(String leagueName) {
+        this.leagueName = leagueName;
+    }
+
+    public String getCompetitionItemName() {
+        return competitionItemName;
+    }
+
+    public void setCompetitionItemName(String competitionItemName) {
+        this.competitionItemName = competitionItemName;
+    }
+    
+    public ContactDetails getContactDetails() throws Exception {
+        ContactDetails contactDetails = null;
+        if(!competitionItemName.isEmpty()) {
+            if(this instanceof IndividualCompetition) {
+                IndividualCompetitionItem icItem = IndividualCompetitionDataManager.getInstance().getCompetition(competitionItemName);
+                if(null!= icItem && !icItem.getContactEmail().isEmpty()) {
+                    contactDetails = new ContactDetails(icItem.getContactName(), icItem.getContactEmail());
+                    return contactDetails;
+                }
+            }
+            if(this instanceof TeamCompetition) {
+                TeamCompetitionItem tcItem = TeamCompetitionDataManager.getInstance().getCompetition(competitionItemName);
+                if(null!= tcItem && !tcItem.getContactEmail().isEmpty()) {
+                    contactDetails = new ContactDetails(tcItem.getContactName(), tcItem.getContactEmail());
+                    return contactDetails;
+                }
+            }
+        }
+        if(!leagueName.isEmpty()) {
+            LeagueItem leagueItem = LeagueDataManager.getInstance().getLeague(leagueName);
+            if(null!=leagueItem && !leagueItem.getContactEmail().isEmpty()) {
+                contactDetails = new ContactDetails(leagueItem.getContactName(), leagueItem.getContactEmail());
+                return contactDetails;
+            }
+        }
+        if(!AppProperties.getInstance().getDefaultLeague().isEmpty()) {
+            LeagueItem leagueItem = LeagueDataManager.getInstance().getLeague(leagueName);
+            if(null!=leagueItem && !leagueItem.getContactEmail().isEmpty()) {
+                contactDetails = new ContactDetails(leagueItem.getContactName(), leagueItem.getContactEmail());
+                return contactDetails;
+            }
+        }
+        return null;
     }
 }

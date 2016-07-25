@@ -14,18 +14,22 @@ import java.util.ArrayList;
  */
 public class IndividualTournament extends Competition implements Serializable {
     private static final long serialVersionUID = 1L;
-    private ArrayList<Player> participants;
-    private ArrayList<PlayerTournamentResult> participantsResult;
-    private ArrayList<Match> matches;
-    private final ArrayList<Match> matchesClosed;
+    private String pointsSystem = "";
+    private ArrayList<Player> participants = new ArrayList<>();
+    private ArrayList<PlayerTournamentResult> participantsResult = new ArrayList<>();
+    private ArrayList<Match> matches = new ArrayList<>();
 
     public IndividualTournament(String name, String discipline, String tableFormat) {
         super(name, discipline, tableFormat);
-        participants=new ArrayList<>();
-        participantsResult=new ArrayList<>();
-        matches=new ArrayList<>();
-        matchesClosed=new ArrayList<>();
-    }  
+    }
+
+    public String getPointsSystem() {
+        return pointsSystem;
+    }
+
+    public void setPointsSystem(String pointsSystem) {
+        this.pointsSystem = pointsSystem;
+    }
 
     public ArrayList<Player> getParticipants() {
         return participants;
@@ -52,11 +56,6 @@ public class IndividualTournament extends Competition implements Serializable {
     }
     
     public void matchEnded(Match match) {
-        if(matchesClosed.contains(match)) {
-            return;
-        }
-        matches.set(matches.indexOf(match), match);
-        matchesClosed.add(match);
         boolean found=false;
         for(PlayerTournamentResult result:participantsResult){
             if(result.getPlayerLic().equals(match.getPlayer1().getLicentie())) {
@@ -77,7 +76,7 @@ public class IndividualTournament extends Competition implements Serializable {
                 result.addResult(match.getPlayer2Result());
                 found=true;
                 break;
-            }
+        }
         }
         if(!found) {
             PlayerTournamentResult result = new PlayerTournamentResult(this.getId()
@@ -86,6 +85,7 @@ public class IndividualTournament extends Competition implements Serializable {
             participantsResult.add(result);
         }
         match.close();
+        matches.set(matches.indexOf(match), match);
     }
     
     public String getParticipantName(String lic) {

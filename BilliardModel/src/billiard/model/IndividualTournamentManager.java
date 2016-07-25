@@ -5,9 +5,9 @@
  */
 package billiard.model;
 
+import billiard.common.AppProperties;
 import billiard.common.hazelcast.SyncManager;
 import billiard.common.serialization.SerializationUtil;
-import com.hazelcast.core.IMap;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
@@ -18,23 +18,14 @@ import java.util.HashMap;
  * @author jean
  */
 public class IndividualTournamentManager extends CompetitionManager{
-    private static final String INDIVIDUAL_TOURNAMENTS_MAP = "individual_tournaments";
-    private static final String DATA_LOCATION = "data/individual_tournaments";
-    private static final String EXT = ".ser";
-
     private static IndividualTournamentManager instance;
-    private static IMap<Long, IndividualTournament> individualTournaments;
-    private static HashMap<Long, IndividualTournament> localTournaments;
+    private static HashMap<String, IndividualTournament> tournaments = new HashMap<>();
 
-    private IndividualTournamentManager() {
-        if(SyncManager.isHazelcastEnabled()) {
-            individualTournaments =  SyncManager.getHazelCastInstance().getMap(INDIVIDUAL_TOURNAMENTS_MAP);
-        }else{
-            localTournaments = new HashMap<>();
-        }
+    private IndividualTournamentManager() throws Exception {
+        loadIndividualTournaments();
     }
     
-    public static IndividualTournamentManager getInstance() {
+    public static IndividualTournamentManager getInstance() throws Exception {
         if(instance==null) {
             instance = new IndividualTournamentManager();
         }
@@ -42,64 +33,33 @@ public class IndividualTournamentManager extends CompetitionManager{
     }
     
     public void putIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.isHazelcastEnabled()) {
-            individualTournaments.put(competition.getId(), competition);
-        }else{
-            localTournaments.put(competition.getId(), competition);
-        }
+        tournaments.put(competition.getName(), competition);
     }
     
     public void updateIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.isHazelcastEnabled()) {
-            individualTournaments.replace(competition.getId(), competition);
-        }else{
-            localTournaments.replace(competition.getId(), competition);
-        }
+        tournaments.replace(competition.getName(), competition);
     }
 
     public void removeIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.isHazelcastEnabled()) {
-            individualTournaments.remove(competition.getId());
-        }else{
-            localTournaments.remove(competition.getId());
-        }
+        tournaments.remove(competition.getName());
     }
     
-    public IndividualTournament getIndividualTournament(IndividualTournament competition) {
-        if(SyncManager.isHazelcastEnabled()) {
-            return individualTournaments.get(competition.getId());
-        }else{
-            return localTournaments.get(competition.getId());
-        }
+    public IndividualTournament getIndividualTournament(String name) {
+        return tournaments.get(name);
     }
 
-    public IndividualTournament getIndividualTournament(long competitionId) {
-        if(SyncManager.isHazelcastEnabled()) {
-            return individualTournaments.get(competitionId);
-        }else{
-            return localTournaments.get(competitionId);
+    public ArrayList<String> getIndividualTournamentNames() {
+        ArrayList<String> names = new ArrayList<>();
+        for (IndividualTournament tournament : tournaments.values()) {
+            names.add(tournament.getName());
         }
-    }
-
-    public ArrayList listIndividualTournament() {
-        ArrayList competitionList = new ArrayList();
-        if(SyncManager.isHazelcastEnabled()) {
-            individualTournaments = SyncManager.getHazelCastInstance().getMap(INDIVIDUAL_TOURNAMENTS_MAP);
-            if (null!=individualTournaments) {
-                competitionList.addAll(individualTournaments.values());
-            }
-        } else {
-            competitionList.addAll(localTournaments.values());
-        }
-        return competitionList;
+        return names;
     }
 
     public static void writeIndividualTournament(IndividualTournament tournament) throws Exception {
-        File fileLocation = new File(DATA_LOCATION);
-        if(!fileLocation.exists()) {
-            fileLocation.mkdirs();
-        }
-        String filename = DATA_LOCATION + "/" + tournament.getName()+ EXT;
+        File fileLocation = new File(AppProperties.getInstance().getDataPath());
+        fileLocation.mkdirs();
+        String filename = AppProperties.getInstance().getDataPath() + "/it/" + tournament.getName()+ ".ser";
         File file = new File(filename);
         if (file.exists()) {
             file.delete();
@@ -108,9 +68,9 @@ public class IndividualTournamentManager extends CompetitionManager{
         SerializationUtil.serialize(tournament, filename);
     }
     
-    public static ArrayList<IndividualTournament> loadIndividualTournaments() throws Exception {
-        ArrayList<IndividualTournament> list = new ArrayList();
-        File fileLocation = new File(DATA_LOCATION);
+    public void loadIndividualTournaments() throws Exception {
+        File fileLocation = new File(AppProperties.getInstance().getDataPath() + "/it");
+        fileLocation.mkdirs();
         if(fileLocation.exists()) {
             FileFilter filter = new FileFilter() {
                 @Override
@@ -120,11 +80,15 @@ public class IndividualTournamentManager extends CompetitionManager{
              };
 
             for(File file:fileLocation.listFiles(filter)) {
-                System.out.println(file.getCanonicalPath());
                 IndividualTournament tournament = (IndividualTournament) SerializationUtil.deserialize(file.getAbsolutePath());
-                list.add(tournament);
+                tournaments.put(tournament.getName(), tournament);
             }
         }
+    }
+
+    public ArrayList listIndividualTournaments() {
+        ArrayList list = new ArrayList();
+        list.addAll(tournaments.values());
         return list;
     }
 }

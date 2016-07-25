@@ -29,12 +29,12 @@ public abstract class CompetitionManager {
         return competitionId.incrementAndGet();
     }
     
-    public static Competition getCompetition(long competitionId) {
+    public static Competition getCompetition(long competitionId) throws Exception {
         ArrayList<Competition> competitions = new ArrayList<>();
         Competition selectedCompetition = null;
         competitions.addAll(IndividualCompetitionManager.getInstance().listIndividualCompetitions());
         competitions.addAll(TeamCompetitionManager.getInstance().listTeamCompetitions());
-        competitions.addAll(IndividualTournamentManager.getInstance().listIndividualTournament());
+        competitions.addAll(IndividualTournamentManager.getInstance().listIndividualTournaments());
         for (Competition competition : competitions) {
             if(competition.getId()==competitionId) {
                 selectedCompetition = competition;
