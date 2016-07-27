@@ -350,75 +350,77 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             discipline.getSelectionModel().clearSelection();
             cbPointSystem.getSelectionModel().clearSelection();
             compItem = mgr.getCompetition(competitionName);
-            if(!compItem.getDiscipline().isEmpty()) {
-                LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getDiscipline().isEmpty())");
-                discipline.getSelectionModel().select(compItem.getDiscipline());
-            } else {
-                discipline.setValue("");
-            }
-            if(!compItem.getTableFormat().isEmpty()) {
-                LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getTableFormat().isEmpty())");
-                tableFormat.getSelectionModel().select(compItem.getTableFormat());
-            } else {
-                tableFormat.getSelectionModel().selectFirst();
-            }
-            if(!compItem.getPointsSystem().isEmpty()) {
-                LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getPointsSystem().isEmpty())");
-                cbPointSystem.getSelectionModel().select(compItem.getPointsSystem());
-            } else {
-                cbPointSystem.getSelectionModel().selectFirst();
-            }
-            if(!compItem.getGroup().isEmpty()) {
-                LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getGroup().isEmpty())");
-                group.setText(compItem.getGroup());
-            } else {
-                group.setText("");
-            }
-            if(compItem.getDiscipline().isEmpty()) {
-                for (int i = 1; i < 5; i++) {
-                    int intPlayer = i;
-                    ChoiceBox<String> cbDiscipline1 = getChoiceBoxPlayerDiscipline(1, intPlayer);
-                    cbDiscipline1.getSelectionModel().clearSelection();
-                    cbDiscipline1.setValue("");
-                    ChoiceBox<String> cbDiscipline2 = getChoiceBoxPlayerDiscipline(2, intPlayer);
-                    cbDiscipline2.getSelectionModel().clearSelection();
-                    cbDiscipline2.setValue("");
+            if(null!=compItem) {
+                if(!compItem.getDiscipline().isEmpty()) {
+                    LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getDiscipline().isEmpty())");
+                    discipline.getSelectionModel().select(compItem.getDiscipline());
+                } else {
+                    discipline.setValue("");
                 }
-                String[] discs = compItem.getDisciplinePlayers().split("[:]");
-                if(discs.length>0) {
-                    LOGGER.log(Level.FINEST, "competitionValueChanged => (compItem.getDisciplinePlayers().length>0)");
-                    for (int i = 0; i < discs.length; i++) {
-                        String disc = discs[i];
-                        int intPlayer = i+1;
+                if(!compItem.getTableFormat().isEmpty()) {
+                    LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getTableFormat().isEmpty())");
+                    tableFormat.getSelectionModel().select(compItem.getTableFormat());
+                } else {
+                    tableFormat.getSelectionModel().selectFirst();
+                }
+                if(!compItem.getPointsSystem().isEmpty()) {
+                    LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getPointsSystem().isEmpty())");
+                    cbPointSystem.getSelectionModel().select(compItem.getPointsSystem());
+                } else {
+                    cbPointSystem.getSelectionModel().selectFirst();
+                }
+                if(!compItem.getGroup().isEmpty()) {
+                    LOGGER.log(Level.FINEST, "competitionValueChanged => (!compItem.getGroup().isEmpty())");
+                    group.setText(compItem.getGroup());
+                } else {
+                    group.setText("");
+                }
+                if(compItem.getDiscipline().isEmpty()) {
+                    for (int i = 1; i < 5; i++) {
+                        int intPlayer = i;
                         ChoiceBox<String> cbDiscipline1 = getChoiceBoxPlayerDiscipline(1, intPlayer);
-                        cbDiscipline1.getSelectionModel().select(disc);
+                        cbDiscipline1.getSelectionModel().clearSelection();
+                        cbDiscipline1.setValue("");
                         ChoiceBox<String> cbDiscipline2 = getChoiceBoxPlayerDiscipline(2, intPlayer);
-                        cbDiscipline2.getSelectionModel().select(disc);
+                        cbDiscipline2.getSelectionModel().clearSelection();
+                        cbDiscipline2.setValue("");
+                    }
+                    String[] discs = compItem.getDisciplinePlayers().split("[:]");
+                    if(discs.length>0) {
+                        LOGGER.log(Level.FINEST, "competitionValueChanged => (compItem.getDisciplinePlayers().length>0)");
+                        for (int i = 0; i < discs.length; i++) {
+                            String disc = discs[i];
+                            int intPlayer = i+1;
+                            ChoiceBox<String> cbDiscipline1 = getChoiceBoxPlayerDiscipline(1, intPlayer);
+                            cbDiscipline1.getSelectionModel().select(disc);
+                            ChoiceBox<String> cbDiscipline2 = getChoiceBoxPlayerDiscipline(2, intPlayer);
+                            cbDiscipline2.getSelectionModel().select(disc);
+                        }
                     }
                 }
-            }
-            for (int i = 1; i < 5; i++) {
-                int intPlayer = i;
-                TextField tfTsp1 = getTextFieldPlayerTsp(1, intPlayer);
-                tfTsp1.setText("");
-                TextField tfTsp2 = getTextFieldPlayerTsp(2, intPlayer);
-                tfTsp2.setText("");
-            }
-            String[] tsps = compItem.getTspPlayers().split("[:]");
-            if(tsps.length>0) {
-                LOGGER.log(Level.FINEST, "competitionValueChanged => (compItem.getTspPlayers().length>0)");
-                for (int i = 0; i < tsps.length; i++) {
-                    String tsp = tsps[i];
-                    int intPlayer = i+1;
+                for (int i = 1; i < 5; i++) {
+                    int intPlayer = i;
                     TextField tfTsp1 = getTextFieldPlayerTsp(1, intPlayer);
-                    tfTsp1.setText(tsp);
+                    tfTsp1.setText("");
                     TextField tfTsp2 = getTextFieldPlayerTsp(2, intPlayer);
-                    tfTsp2.setText(tsp);
+                    tfTsp2.setText("");
                 }
+                String[] tsps = compItem.getTspPlayers().split("[:]");
+                if(tsps.length>0) {
+                    LOGGER.log(Level.FINEST, "competitionValueChanged => (compItem.getTspPlayers().length>0)");
+                    for (int i = 0; i < tsps.length; i++) {
+                        String tsp = tsps[i];
+                        int intPlayer = i+1;
+                        TextField tfTsp1 = getTextFieldPlayerTsp(1, intPlayer);
+                        tfTsp1.setText(tsp);
+                        TextField tfTsp2 = getTextFieldPlayerTsp(2, intPlayer);
+                        tfTsp2.setText(tsp);
+                    }
+                }
+                league = compItem.getLeague();
+                LOGGER.log(Level.FINEST, "competitionValueChanged => league: {0}", league);
+                setEditModeTeams(PermittedValues.Mode.SELECT);
             }
-            league = compItem.getLeague();
-            LOGGER.log(Level.FINEST, "competitionValueChanged => league: {0}", league);
-            setEditModeTeams(PermittedValues.Mode.SELECT);
         } else {
             setEditModeTeams(PermittedValues.Mode.EDIT);
         }
@@ -513,23 +515,25 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             String teamName = getComboBoxTeam(intTeam).getValue();
             if(null!=compItem) {
                 TeamItem team = compItem.getTeam(teamName);
-                for (int intPlayer = 1; intPlayer < 5; intPlayer++) {
-                    TextField tfLic = getTextFieldPlayerLic(intTeam, intPlayer);
-                    tfLic.setText("");
-                    ComboBox<String> cbName = getComboboxPlayerName(intTeam, intPlayer);
-                    cbName.getItems().clear();
-                    cbName.getItems().addAll(team.getPlayerNames());
-                    String[] fixedPlayers = team.getFixedPlayers().split("[:]");
-                    if(fixedPlayers.length >= intPlayer) {
-                        String playerOrder = fixedPlayers[intPlayer-1];
-                        PlayerItem player = team.getPlayerByOrder(playerOrder);
-                        if(null!=player) {
-                            cbName.getSelectionModel().select(player.getName());
+                if(null!=team) {
+                    for (int intPlayer = 1; intPlayer < 5; intPlayer++) {
+                        TextField tfLic = getTextFieldPlayerLic(intTeam, intPlayer);
+                        tfLic.setText("");
+                        ComboBox<String> cbName = getComboboxPlayerName(intTeam, intPlayer);
+                        cbName.getItems().clear();
+                        cbName.getItems().addAll(team.getPlayerNames());
+                        String[] fixedPlayers = team.getFixedPlayers().split("[:]");
+                        if(fixedPlayers.length >= intPlayer) {
+                            String playerOrder = fixedPlayers[intPlayer-1];
+                            PlayerItem player = team.getPlayerByOrder(playerOrder);
+                            if(null!=player) {
+                                cbName.getSelectionModel().select(player.getName());
+                            } else {
+                                cbName.setValue("");
+                            }
                         } else {
                             cbName.setValue("");
                         }
-                    } else {
-                        cbName.setValue("");
                     }
                 }
             }
