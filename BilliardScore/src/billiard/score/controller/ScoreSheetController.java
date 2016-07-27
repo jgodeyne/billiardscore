@@ -24,10 +24,10 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -54,6 +54,7 @@ import javafx.stage.StageStyle;
  * @author jean
  */
 public class ScoreSheetController {
+    private static final Logger LOGGER = Logger.getLogger(ScoreSheetController.class.getName());
     private static final String SCORESHEET_CSS = "/scoresheet.css";
 
     Stage stage;
@@ -109,7 +110,7 @@ public class ScoreSheetController {
                             try {
                                 send();
                             } catch (Exception ex) {
-                                Logger.getLogger(ScoreSheetController.class.getName()).log(Level.SEVERE, null, ex);
+                                LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                                 throw new RuntimeException(ex);
                             }
                         });

@@ -25,19 +25,15 @@ public class SyncManager {
     private static boolean hazelcastEnabled = false;
 
     
-    public static void start() {
+    public static void start() throws UnknownHostException {
         LOGGER.log(Level.FINEST, "start => Start");
         if (isNetworkAvailable()) {
             LOGGER.log(Level.FINEST, "start => NetworkAvailable");
             if (hazelcastInstance==null) {
                 Config config = new Config();
                 config.setConfigurationFile(InitAppConfig.getHazelcastConfigFile());
-                try {
-                    hazelcastInstance = Hazelcast.newHazelcastInstance(config);
-                    hazelcastEnabled = true;
-                } catch (Exception e) {
-                    Logger.getLogger(SyncManager.class.getName()).log(Level.WARNING, null, e);
-                }
+                hazelcastInstance = Hazelcast.newHazelcastInstance(config);
+                hazelcastEnabled = true;
             }
         }        
         LOGGER.log(Level.FINEST, "start => End");
@@ -56,12 +52,9 @@ public class SyncManager {
         return hazelcastInstance;
     }
 
-    private static boolean isNetworkAvailable() {
-        try {
-            if(InetAddress.getLocalHost() instanceof Inet4Address) {
-                return true;
-            }
-        } catch (UnknownHostException ex) {
+    private static boolean isNetworkAvailable() throws UnknownHostException {
+        if(InetAddress.getLocalHost() instanceof Inet4Address) {
+            return true;
         }
         LOGGER.log(Level.WARNING, "isNetworkAvailable => No Network");
         return false;

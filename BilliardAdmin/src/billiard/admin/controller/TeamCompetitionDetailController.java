@@ -5,6 +5,7 @@
  */
 package billiard.admin.controller;
 
+import billiard.common.CommonDialogs;
 import billiard.common.ControllerInterface;
 import billiard.common.FormValidation;
 import billiard.common.PermittedValues;
@@ -34,6 +35,7 @@ import javafx.stage.Stage;
  * @author jean
  */
 public class TeamCompetitionDetailController implements Initializable, ControllerInterface {
+    private static final Logger LOGGER = Logger.getLogger(TeamCompetitionDetailController.class.getName());
     private Stage primaryStage;
     private TeamCompetitionItem competition;
     private PermittedValues.Action action;
@@ -75,34 +77,35 @@ public class TeamCompetitionDetailController implements Initializable, Controlle
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        cbDiscipline.getItems().addAll(Arrays.asList(PermittedValues.DISCIPLINES));
-        cbDiscipline.getSelectionModel().clearSelection();
-        cbTableFormat.getItems().addAll(Arrays.asList(PermittedValues.TABLE_FORMAT));
-        cbTableFormat.getSelectionModel().clearSelection();
-        cbPointSystem.getItems().addAll(PointSystemFactory.PointSystem.stringValues());
-        cbPointSystem.getSelectionModel().selectFirst();
         try {
+            cbDiscipline.getItems().addAll(Arrays.asList(PermittedValues.DISCIPLINES));
+            cbDiscipline.getSelectionModel().clearSelection();
+            cbTableFormat.getItems().addAll(Arrays.asList(PermittedValues.TABLE_FORMAT));
+            cbTableFormat.getSelectionModel().clearSelection();
+            cbPointSystem.getItems().addAll(PointSystemFactory.PointSystem.stringValues());
+            cbPointSystem.getSelectionModel().selectFirst();
             cbLeague.getItems().addAll(LeagueDataManager.getInstance().getLeagueNames());
             cbLeague.getSelectionModel().clearSelection();
-        } catch (Exception ex) {
-            Logger.getLogger(TeamCompetitionDetailController.class.getName()).log(Level.SEVERE, null, ex);
-        }        
 
-        lvTeams.getSelectionModel().selectedItemProperty()
-            .addListener(new ChangeListener<String>() {
-              @Override
-              public void changed(ObservableValue<? extends String> observable,
-                  String oldValue, String newValue) {
-                  selectedTeamName = newValue;
-                  if(null==newValue) {
-                      btnUpdate.setDisable(true);
-                      btnDelete.setDisable(true);
-                  } else {
-                      btnUpdate.setDisable(false);
-                      btnDelete.setDisable(false);
-                  }
-              }
-            });
+            lvTeams.getSelectionModel().selectedItemProperty()
+                .addListener(new ChangeListener<String>() {
+                    @Override
+                    public void changed(ObservableValue<? extends String> observable,
+                        String oldValue, String newValue) {
+                        selectedTeamName = newValue;
+                        if(null==newValue) {
+                            btnUpdate.setDisable(true);
+                            btnDelete.setDisable(true);
+                        } else {
+                            btnUpdate.setDisable(false);
+                            btnDelete.setDisable(false);
+                        }
+                    }
+                });
+        } catch (Exception ex) {
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
+        }        
     }    
 
     @FXML

@@ -11,6 +11,7 @@ import billiard.model.PlayerMatchResult;
 import billiard.model.Player;
 import billiard.model.ScoreChange;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import billiard.common.ControllerInterface;
 import billiard.common.PermittedValues;
 import billiard.common.SceneUtil;
@@ -21,6 +22,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -58,10 +60,8 @@ import javafx.stage.StageStyle;
  * @author jean
  */
 public class ScoreBoardController implements Initializable, ControllerInterface {
-
     private static final Logger LOGGER = Logger.getLogger(ScoreBoardController.class.getName());
     private Stage primaryStage;
-    //private Application app;
 
     private final ArrayList<String> bannerURLs = new ArrayList<>();
     private int bannerIdx;
@@ -207,8 +207,8 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             run.requestFocus();
             run.selectAll();
         } catch (Exception ex) {
-            Logger.getLogger(ScoreBoardController.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
         }
     }
 

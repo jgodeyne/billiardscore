@@ -9,8 +9,10 @@ import billiard.model.Match;
 import billiard.common.ControllerInterface;
 import billiard.common.PermittedValues;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -29,6 +31,7 @@ import javafx.stage.Stage;
  * @author jean
  */
 public class SelectTeamMatchController implements Initializable, ControllerInterface {
+    private static final Logger LOGGER = Logger.getLogger(SelectTeamMatchController.class.getName());
     private Stage primaryStage;
     private ArrayList<Match> matches;
     private Match selectedMatch;
@@ -53,8 +56,8 @@ public class SelectTeamMatchController implements Initializable, ControllerInter
             selectedMatch = null;
             listMatches.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         } catch (Exception ex) {
-            Logger.getLogger(SelectTeamMatchController.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
         }
     }
 

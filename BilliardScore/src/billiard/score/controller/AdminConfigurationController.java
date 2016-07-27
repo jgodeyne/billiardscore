@@ -8,7 +8,10 @@ package billiard.score.controller;
 import billiard.common.ControllerInterface;
 import billiard.data.LeagueDataManager;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
+import billiard.score.BilliardScore;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,6 +28,7 @@ import javafx.stage.Stage;
  * @author jean
  */
 public class AdminConfigurationController implements Initializable , ControllerInterface{
+    private static final Logger LOGGER = Logger.getLogger(AdminConfigurationController.class.getName());
     private Stage stage;
     private AppProperties appProp;
 
@@ -71,8 +75,8 @@ public class AdminConfigurationController implements Initializable , ControllerI
             cbLeague.getSelectionModel().select(leagueName);
             
         } catch (Exception ex) {
-            Logger.getLogger(AdminConfigurationController.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
         }
     }
 
@@ -101,7 +105,7 @@ public class AdminConfigurationController implements Initializable , ControllerI
             appProp.setDefaultLeague(cbLeague.getValue());
             appProp.save();
         } catch (Exception ex) {
-            Logger.getLogger(AdminConfigurationController.class.getName()).log(Level.SEVERE, null, ex);
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             throw new RuntimeException(ex);
         }
         this.stage.hide();

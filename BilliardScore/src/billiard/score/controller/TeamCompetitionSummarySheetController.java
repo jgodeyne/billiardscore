@@ -17,6 +17,7 @@ import billiard.model.TeamCompetitionManager;
 import billiard.model.TeamResult;
 import billiard.score.BilliardScore;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import billiard.common.SceneUtil;
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,6 +30,7 @@ import java.nio.file.StandardCopyOption;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -115,7 +117,7 @@ public class TeamCompetitionSummarySheetController {
                         try {
                             send();
                         } catch (Exception ex) {
-                            Logger.getLogger(TeamCompetitionSummarySheetController.class.getName()).log(Level.SEVERE, null, ex);
+                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                             throw new RuntimeException(ex);
                         }
                     });
@@ -129,7 +131,7 @@ public class TeamCompetitionSummarySheetController {
                     try {
                         save();
                     } catch (Exception ex) {
-                        Logger.getLogger(TeamCompetitionSummarySheetController.class.getName()).log(Level.SEVERE, null, ex);
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                         throw new RuntimeException(ex);
                     }
                 });

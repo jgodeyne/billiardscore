@@ -17,6 +17,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -33,6 +34,7 @@ import javafx.stage.Stage;
  * @author jean
  */
 public class IndividualPlayerDetailController implements Initializable, ControllerInterface {
+    private static final Logger LOGGER = Logger.getLogger(IndividualPlayerDetailController.class.getName());
     private Stage primaryStage;
     private PermittedValues.Action action;
     private PlayerItem player;
@@ -57,35 +59,42 @@ public class IndividualPlayerDetailController implements Initializable, Controll
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        btnSearchMember.setDisable(true);
-        cbDiscipline.getItems().addAll(new ArrayList( Arrays.asList(PermittedValues.DISCIPLINES)));
-        cbDiscipline.getSelectionModel().clearSelection();
+        try {
+            btnSearchMember.setDisable(true);
+            cbDiscipline.getItems().addAll(new ArrayList( Arrays.asList(PermittedValues.DISCIPLINES)));
+            cbDiscipline.getSelectionModel().clearSelection();
 
-        tfLicence.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                String lic = tfLicence.getText();
-                if(!lic.isEmpty()) {
-                    try {
-                        lookupPlayer(lic);
-                    } catch (Exception ex) {
-                        throw new RuntimeException(ex);
+            tfLicence.focusedProperty().addListener(new ChangeListener<Boolean>() {
+                @Override
+                public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                    String lic = tfLicence.getText();
+                    if(!lic.isEmpty()) {
+                        try {
+                            lookupPlayer(lic);
+                        } catch (Exception ex) {
+                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                            throw new RuntimeException(ex);
+                        }
+                    } else {
+                        selectedMember = null;
                     }
-                } else {
-                    selectedMember = null;
                 }
-            }
-        });
+            });
 
-        this.cbDiscipline.valueProperty().addListener(new ChangeListener<String>() {
-             @Override public void changed(ObservableValue ov, String t, String t1) {
-                 try {
-                     disciplineChanged();
-                 } catch (Exception ex) {
-                     throw new RuntimeException(ex);
-                 }
-             }    
-         });
+            this.cbDiscipline.valueProperty().addListener(new ChangeListener<String>() {
+                 @Override public void changed(ObservableValue ov, String t, String t1) {
+                     try {
+                         disciplineChanged();
+                     } catch (Exception ex) {
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                        throw new RuntimeException(ex);
+                     }
+                 }    
+             });
+        } catch (Exception ex) {
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
+        }
     }    
 
     @Override

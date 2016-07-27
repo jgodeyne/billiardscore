@@ -18,6 +18,7 @@ import billiard.admin.controller.TeamCompetitionAdminController;
 import billiard.admin.controller.TeamPlayerDetailController;
 import billiard.admin.controller.TeamDetailController;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import billiard.common.InitAppConfig;
 import billiard.common.PermittedValues;
 import billiard.common.SceneUtil;
@@ -96,14 +97,8 @@ public class BilliardAdmin extends Application {
                 }
             } while(menuChoice!=MenuController.MenuOptions.EXIT);
         } catch (Exception ex) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Application Error");
-            alert.setHeaderText("Please contact app provider and supply message below");
-            alert.setContentText(Arrays.toString(ex.getStackTrace()));
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));
-            ex.printStackTrace();
-
-            alert.showAndWait();
+            CommonDialogs.showException(ex);
         } finally {
             SyncManager.stop();
             Platform.exit();

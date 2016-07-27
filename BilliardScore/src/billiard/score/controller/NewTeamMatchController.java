@@ -6,6 +6,7 @@
 package billiard.score.controller;
 
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import billiard.data.TeamCompetitionDataManager;
 import billiard.data.PlayerItem;
 import billiard.model.Player;
@@ -173,8 +174,8 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                      try {
                          competitionValueChanged();
                      } catch (Exception ex) {
-                         LOGGER.log(Level.SEVERE, "CompetitionValueChanges => Exception: {0}", ex);
-                         throw new RuntimeException(ex);
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                        throw new RuntimeException(ex);
                      }
                  }    
              });
@@ -184,8 +185,8 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                      try {
                          disciplineChanged();
                      } catch (Exception ex) {
-                         LOGGER.log(Level.SEVERE, "DisciplineValueChanged => Exception: {0}", ex);
-                         throw new RuntimeException(ex);
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                        throw new RuntimeException(ex);
                      }
                  }    
              });
@@ -198,7 +199,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                         try {
                             teamValueChanged(intTeam);
                         } catch (Exception ex) {
-                            LOGGER.log(Level.SEVERE, "TeamValueChanged => Team: {0} - Exception: {1}", new Object[] {intTeam, ex});
+                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                             throw new RuntimeException(ex);
                         }
                     }
@@ -211,7 +212,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                             try {
                                 playerValueChanged(intTeam, intPlayer);
                             } catch (Exception ex) {
-                                LOGGER.log(Level.SEVERE, "PlayerValueChanged => Team: {0} - Player: {1} - Exception: {2}", new Object[] {intTeam, intPlayer, ex});
+                                LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                                 throw new RuntimeException(ex);
                             }
                         }
@@ -224,7 +225,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                                 try {
                                     lookupPlayer(intTeam, intPlayer);
                                 } catch (Exception ex) {
-                                    LOGGER.log(Level.SEVERE, "PlayerLicLooseFocus => Team: {0} - Player: {1} - Exception: {2}", new Object[] {intTeam, intPlayer, ex});
+                                    LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                                     throw new RuntimeException(ex);
                                 }
                             }
@@ -233,8 +234,8 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 }
             }
         } catch (Exception ex) {
-            LOGGER.log(Level.SEVERE, "initialize => Exception: {0}", ex);
-            throw new RuntimeException(ex);
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
         }
     }    
 

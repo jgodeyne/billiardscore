@@ -45,6 +45,7 @@ import javafx.stage.Stage;
  */
 public class NewIndividualMatchController implements Initializable, ControllerInterface {
     private static final Logger LOGGER = Logger.getLogger(NewIndividualMatchController.class.getName());
+    
     private IndividualCompetition individualCompetition;
     private Stage primaryStage;
     private MemberItem selectedMember1;
@@ -102,103 +103,98 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
             competitionManager = IndividualCompetitionDataManager.getInstance();
             cbCompetition.getItems().addAll(competitionManager.getCompetitionNames());
             cbCompetition.getSelectionModel().clearSelection();
-        } catch (Exception ex) {
-            Logger.getLogger(NewIndividualMatchController.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
-        }
-        this.discipline.getItems().addAll(new ArrayList( Arrays.asList(PermittedValues.DISCIPLINES)));
-        this.discipline.getSelectionModel().selectFirst();
-        this.tableFormat.getItems().addAll(new ArrayList(Arrays.asList(PermittedValues.TABLE_FORMAT)));
-        this.tableFormat.getSelectionModel().select(1);
+            this.discipline.getItems().addAll(new ArrayList( Arrays.asList(PermittedValues.DISCIPLINES)));
+            this.discipline.getSelectionModel().selectFirst();
+            this.tableFormat.getItems().addAll(new ArrayList(Arrays.asList(PermittedValues.TABLE_FORMAT)));
+            this.tableFormat.getSelectionModel().select(1);
 
-        try {
             String leagueName = AppProperties.getInstance().getDefaultLeague();
             LeagueDataManager ldmgr;
             ldmgr = LeagueDataManager.getInstance();
             league = ldmgr.getLeague(leagueName);
             defaultLeague = league;
-        } catch (Exception ex) {
-            Logger.getLogger(NewIndividualMatchController.class.getName()).log(Level.SEVERE, null, ex);
-            throw new RuntimeException(ex);
-        }
-        if(null==league) {
-            btnSearchMember1.setDisable(true);
-            btnSearchMember2.setDisable(true);
-        }
+            if(null==league) {
+                btnSearchMember1.setDisable(true);
+                btnSearchMember2.setDisable(true);
+            }
 
-        player_1_licentie.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(!newValue && !player_1_licentie.getText().isEmpty()) {
-                    try {
-                        lookupPlayer1();
-                    } catch (Exception ex) {
-                        LOGGER.log(Level.SEVERE, "Player1LicLooseFocus => Exception: {0}", new Object[] {ex});
-                        throw new RuntimeException(ex);
+            player_1_licentie.focusedProperty().addListener(new ChangeListener<Boolean>() {
+                @Override
+                public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                    if(!newValue && !player_1_licentie.getText().isEmpty()) {
+                        try {
+                            lookupPlayer1();
+                        } catch (Exception ex) {
+                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
-        });
+            });
 
-        player_2_licentie.focusedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if(!newValue && !player_2_licentie.getText().isEmpty()) {
-                    try {
-                        lookupPlayer2();
-                    } catch (Exception ex) {
-                        LOGGER.log(Level.SEVERE, "Player2LicLooseFocus => Exception: {0}", new Object[] {ex});
-                        throw new RuntimeException(ex);
+            player_2_licentie.focusedProperty().addListener(new ChangeListener<Boolean>() {
+                @Override
+                public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                    if(!newValue && !player_2_licentie.getText().isEmpty()) {
+                        try {
+                            lookupPlayer2();
+                        } catch (Exception ex) {
+                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
-        });
+            });
 
-        this.discipline.valueProperty().addListener(new ChangeListener<String>() {
-             @Override public void changed(ObservableValue ov, String t, String t1) {
-                 try {
-                     if(null!=selectedMember1) {
-                         disciplinePlayer1Changed();
+            this.discipline.valueProperty().addListener(new ChangeListener<String>() {
+                 @Override public void changed(ObservableValue ov, String t, String t1) {
+                     try {
+                         if(null!=selectedMember1) {
+                             disciplinePlayer1Changed();
+                         }
+                         if(null!=selectedMember2) {
+                             disciplinePlayer2Changed();
+                         }
+                     } catch (Exception ex) {
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                        throw new RuntimeException(ex);
                      }
-                     if(null!=selectedMember2) {
-                         disciplinePlayer2Changed();
-                     }
-                 } catch (Exception ex) {
-                     LOGGER.log(Level.SEVERE, "DisciplineValueChanged => Exception: {0}", ex);
-                     throw new RuntimeException(ex);
-                 }
-             }    
-         });
+                }    
+            });
 
-        this.cbCompetition.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            @Override public void changed(ObservableValue ov, String t, String t1) {
-                try {
-                    if(!t1.isEmpty()) {
-                        String competitionName = t1;
-                        selectedCompetition = competitionManager.getCompetition(competitionName);
-                        if(null!=selectedCompetition) {
-                            discipline.getSelectionModel().select(selectedCompetition.getDiscipline());
-                            tableFormat.getSelectionModel().select(selectedCompetition.getTableFormat());
-                            //
-                            String leagueName;
-                            leagueName = selectedCompetition.getLeague();
-                            if(!leagueName.isEmpty()) {
-                                LeagueDataManager ldmgr = LeagueDataManager.getInstance();
-                                league = ldmgr.getLeague(leagueName);
-                                if(null==league) {
-                                    league = defaultLeague;
+            this.cbCompetition.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                @Override public void changed(ObservableValue ov, String t, String t1) {
+                    try {
+                        if(!t1.isEmpty()) {
+                            String competitionName = t1;
+                            selectedCompetition = competitionManager.getCompetition(competitionName);
+                            if(null!=selectedCompetition) {
+                                discipline.getSelectionModel().select(selectedCompetition.getDiscipline());
+                                tableFormat.getSelectionModel().select(selectedCompetition.getTableFormat());
+                                //
+                                String leagueName;
+                                leagueName = selectedCompetition.getLeague();
+                                if(!leagueName.isEmpty()) {
+                                    LeagueDataManager ldmgr = LeagueDataManager.getInstance();
+                                    league = ldmgr.getLeague(leagueName);
+                                    if(null==league) {
+                                        league = defaultLeague;
+                                    }
                                 }
                             }
+                        } else {
+                            selectedCompetition = null;
                         }
-                    } else {
-                        selectedCompetition = null;
+                    } catch (Exception ex) {
+                        LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                        throw new RuntimeException(ex);
                     }
-                } catch (Exception ex) {
-                    LOGGER.log(Level.SEVERE, "DisciplineValueChanged => Exception: {0}", ex);
-                    throw new RuntimeException(ex);
-                }
-             }    
-         });
+                }    
+            });
+        } catch (Exception ex) {
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+            CommonDialogs.showException(ex);
+        }
     }    
 
     @FXML

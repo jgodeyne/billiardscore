@@ -5,7 +5,9 @@
  */
 package billiard.common;
 
+import java.util.Arrays;
 import java.util.Properties;
+import java.util.logging.Logger;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -25,21 +27,9 @@ import javax.mail.internet.MimeMultipart;
  * @author jean
  */
 public class MailSender {
+    private static final Logger LOGGER = Logger.getLogger(MailSender.class.getName());
 
     public static boolean sendMail(String to, String from, String host, String subject, String msg) {
-        // Recipient's email ID needs to be mentioned.
-        //String to = "jean.godeyne@telenet.be";
-
-        // Sender's email ID needs to be mentioned
-        //String from = "jean.godeyne@telenet.be";
-
-        // Assuming you are sending email from localhost
-        //String host = "smtp.telenet.be";
-
-        // Provide mail server authentication if required
-        //properties.setProperty("mail.user", "myuser");
-        //properties.setProperty("mail.password", "mypwd");
-
         // Get system properties
         Properties properties = System.getProperties();
 
@@ -69,32 +59,19 @@ public class MailSender {
             Transport.send(message);
             
             return true;
-        } catch (MessagingException mex) {
-            mex.printStackTrace();
+        } catch (MessagingException ex) {
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             return false;
         }
     }
 
     public static boolean sendMailWithAttachement(String from, String to, String cc, String host, String subject, String msg, String[] attachements) {
-        // Recipient's email ID needs to be mentioned.
-        //String to = "jean.godeyne@telenet.be";
-
-        // Sender's email ID needs to be mentioned
-        //String from = "jean.godeyne@telenet.be";
-
-        // Assuming you are sending email from localhost
-        //String host = "smtp.telenet.be";
-
         // Get system properties
         Properties properties = System.getProperties();
 
         // Setup mail server
         properties.setProperty("mail.smtp.host", host);
         
-        // Provide mail server authentication if required
-        //properties.setProperty("mail.user", "myuser");
-        //properties.setProperty("mail.password", "mypwd");
-
         // Get the default Session object.
         Session session = Session.getDefaultInstance(properties);
 
@@ -148,8 +125,8 @@ public class MailSender {
             // Send message
             Transport.send(message);
             return true;
-        } catch (MessagingException mex) {
-            mex.printStackTrace();
+        } catch (MessagingException ex) {
+            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             return false;
         }
     }

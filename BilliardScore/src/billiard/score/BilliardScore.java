@@ -27,6 +27,7 @@ import billiard.model.MatchManager;
 import billiard.model.ScoreboardManager;
 import billiard.model.TeamCompetitionManager;
 import billiard.common.AppProperties;
+import billiard.common.CommonDialogs;
 import billiard.model.pointssystem.PointSystemFactory;
 import billiard.common.InitAppConfig;
 import billiard.common.PermittedValues;
@@ -60,7 +61,6 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -86,7 +86,6 @@ public class BilliardScore extends Application {
             mainStage = stage;
             InitAppConfig.initAppConfig(this);
             LogManager.getLogManager().readConfiguration(new FileInputStream(InitAppConfig.getLogPropFile()));
-            //logger.log(Level.FINEST, "Start => Start");
             
             SyncManager.start();
             
@@ -95,7 +94,6 @@ public class BilliardScore extends Application {
             bundle = ResourceBundle.getBundle("languages.lang", locale);
             
             scoreboardId = AppProperties.getInstance().getScoreboardId();
-            //logger.log(Level.FINEST, "Start => scoreboardId: {0}", scoreboardId);
             ScoreboardManager.getInstance().addScoreboard(scoreboardId);
             
             matchManager = MatchManager.getInstance();
@@ -125,7 +123,7 @@ public class BilliardScore extends Application {
                                     }
                                 }
                             } catch (Exception ex) {
-                                LOGGER.log(Level.SEVERE, "StartMatchTopic.onMessage exception: {0}", ex.getMessage());
+                                LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                                 throw new RuntimeException(ex);
                             }
                         }
@@ -146,8 +144,8 @@ public class BilliardScore extends Application {
                                     IndividualCompetitionDataManager.getInstance().writeFile(icItem);
                                     IndividualCompetitionDataManager.getInstance().addCompetition(icItem);
                                 } catch (Exception ex) {
-                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
-                                    throw new RuntimeException(ex);
+                                    LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                                throw new RuntimeException(ex);
                                 }
                             } else if(sdMsg.getActionObject().equals(PermittedValues.ActionObject.TEAM_COMP)) {
                                 try {
@@ -155,8 +153,8 @@ public class BilliardScore extends Application {
                                     TeamCompetitionDataManager.getInstance().writeFile(tcItem);
                                     TeamCompetitionDataManager.getInstance().addCompetition(tcItem);
                                 } catch (Exception ex) {
-                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
-                                    throw new RuntimeException(ex);
+                                    LOGGER.severe(Arrays.toString(ex.getStackTrace()));
+                                throw new RuntimeException(ex);
                                 }
                             } else if(sdMsg.getActionObject().equals(PermittedValues.ActionObject.LEAGUE)) {
                                 try {
@@ -164,7 +162,7 @@ public class BilliardScore extends Application {
                                     LeagueDataManager.getInstance().writeFile(leagueItem);
                                     LeagueDataManager.getInstance().addLeague(leagueItem);
                                 } catch (Exception ex) {
-                                    LOGGER.log(Level.SEVERE, "SendDataTopic.onMessage exception: {0}", ex.getMessage());
+                                    LOGGER.severe(Arrays.toString(ex.getStackTrace()));
                                     throw new RuntimeException(ex);
                                 }
                             }
@@ -227,14 +225,8 @@ public class BilliardScore extends Application {
             stage.close();
             //logger.log(Level.FINEST, "Start => End");
         } catch (Exception ex) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error Dialog");
-            alert.setHeaderText("Please contact app provider and supply message below");
-            alert.setContentText(Arrays.toString(ex.getStackTrace()));
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));
-            ex.printStackTrace();
-
-            alert.showAndWait();
+            CommonDialogs.showException(ex);
         } finally {
             SyncManager.stop();
             Platform.exit();
