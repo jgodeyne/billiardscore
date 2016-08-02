@@ -172,14 +172,7 @@ public class ScoreSheetController {
         String subtitle = prop.getSubTitle();
         String club = prop.getClub();
         String logoLocation = AppProperties.getInstance().getLogoLocation();
- 
-        String dfFormat = "#0.00";
-        if(competition.getDiscipline().contains("Drieband")) {
-            dfFormat = "#0.000";
-        }
-        DecimalFormat df = new DecimalFormat(dfFormat);
-        df.setRoundingMode(RoundingMode.DOWN);
-        
+         
         StringBuilder html = new StringBuilder();
 
         // html head
@@ -376,8 +369,20 @@ public class ScoreSheetController {
             html.append("</tr>").append("\n");
             html.append("<tr>").append("\n");
             html.append("<td class='label'>").append(bundle.getString("label.gem")).append("</td>").append("\n");
+            String dfFormat = "#0.00";
+            if(match.getPlayer1().getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            DecimalFormat df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
             html.append("<td class='value'>").append(df.format(player1Result.getAverage())).append("</td>").append("\n");
             html.append("<td class='label'>").append(bundle.getString("label.gem")).append("</td>").append("\n");
+            dfFormat = "#0.00";
+            if(match.getPlayer2().getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
             html.append("<td class='value'>").append(df.format(player2Result.getAverage())).append("</td>").append("\n");
             html.append("</tr>").append("\n");
             html.append("<tr>").append("\n");

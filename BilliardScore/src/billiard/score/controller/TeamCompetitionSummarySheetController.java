@@ -17,7 +17,6 @@ import billiard.model.TeamCompetitionManager;
 import billiard.model.TeamResult;
 import billiard.score.BilliardScore;
 import billiard.common.AppProperties;
-import billiard.common.CommonDialogs;
 import billiard.common.SceneUtil;
 import java.io.BufferedReader;
 import java.io.File;
@@ -194,13 +193,6 @@ public class TeamCompetitionSummarySheetController {
         String userHome = System.getProperty("user.home");
         String logoLocation = AppProperties.getInstance().getLogoLocation();
 
-        String dfFormat = "#0.00";
-        if(competition.getDiscipline().contains("Drieband")) {
-            dfFormat = "#0.000";
-        }
-        DecimalFormat df = new DecimalFormat(dfFormat);
-        df.setRoundingMode(RoundingMode.DOWN);
-
         StringBuilder html = new StringBuilder();
 
         // html head
@@ -291,6 +283,13 @@ public class TeamCompetitionSummarySheetController {
 
         // players  team 1
         for (Player player : team1.getPlayers()) {
+            String dfFormat = "#0.00";
+            if(player.getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            DecimalFormat df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
+
             PlayerMatchResult result = competition.getPlayerResult(player);
             html.append("<tr>").append("\n");
             html.append("<td>").append(player.getLicentie()).append("</td>").append("\n");
@@ -309,7 +308,17 @@ public class TeamCompetitionSummarySheetController {
         html.append("<td colspan='4' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
         html.append("<td>").append(team1Result.getPoints()).append("</td>").append("\n");
         html.append("<td>").append(team1Result.getInnings()).append("</td>").append("\n");
-        html.append("<td>").append(df.format(team1Result.getAverage())).append("</td>").append("\n");
+        html.append("<td>");
+        if(null!=competition.getDiscipline()) {
+            String dfFormat = "#0.00";
+            if(competition.getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            DecimalFormat df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
+            html.append(df.format(team1Result.getAverage()));
+        }
+        html.append("</td>").append("\n");
         html.append("<td>").append(team1Result.getHighestRun()).append("</td>").append("\n");
         html.append("<td>").append(team1Result.getMatchPoints()).append("</td>").append("\n");
         html.append("</tr>").append("\n");
@@ -335,6 +344,13 @@ public class TeamCompetitionSummarySheetController {
 
         // players  team 2
         for (Player player : team2.getPlayers()) {
+            String dfFormat = "#0.00";
+            if(player.getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            DecimalFormat df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
+
             PlayerMatchResult result = competition.getPlayerResult(player);
             html.append("<tr>").append("\n");
             html.append("<td>").append(player.getLicentie()).append("</td>").append("\n");
@@ -353,7 +369,17 @@ public class TeamCompetitionSummarySheetController {
         html.append("<td colspan='4' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
         html.append("<td>").append(team2Result.getPoints()).append("</td>").append("\n");
         html.append("<td>").append(team2Result.getInnings()).append("</td>").append("\n");
-        html.append("<td>").append(df.format(team2Result.getAverage())).append("</td>").append("\n");
+        html.append("<td>");
+        if(null!=competition.getDiscipline()) {
+            String dfFormat = "#0.00";
+            if(competition.getDiscipline().contains("Drieband")) {
+                dfFormat = "#0.000";
+            }
+            DecimalFormat df = new DecimalFormat(dfFormat);
+            df.setRoundingMode(RoundingMode.DOWN);
+            html.append(df.format(team2Result.getAverage()));
+        }
+        html.append("</td>").append("\n");
         html.append("<td>").append(team2Result.getHighestRun()).append("</td>").append("\n");
         html.append("<td>").append(team2Result.getMatchPoints()).append("</td>").append("\n");
         html.append("</tr>").append("\n");
