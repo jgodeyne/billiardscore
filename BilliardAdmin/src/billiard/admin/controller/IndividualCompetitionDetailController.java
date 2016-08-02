@@ -16,7 +16,6 @@ import billiard.model.pointssystem.PointSystemFactory;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
