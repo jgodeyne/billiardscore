@@ -14,11 +14,13 @@ import java.util.ArrayList;
 public class PointSystemFactory {
     
     public static PointsSystemInterface getPointSystem(String pointSystemString) {
+        System.out.println("billiard.model.pointssystem.PointSystemFactory.getPointSystem(): " + pointSystemString);
         PointSystem pointSystem = PointSystem.valueOf(pointSystemString);
         return getPointSystem(pointSystem);
     }
         
     public static PointsSystemInterface getPointSystem(PointSystem pointSystem) {
+        System.out.println("billiard.model.pointssystem.PointSystemFactory.getPointSystem(): " + pointSystem.toString());
         if(pointSystem.equals(PointSystem.MATCHPOINTS_PERCENTAGE)) {
             return new MatchPointsPercentageSystem();            
         } else if(pointSystem.equals(PointSystem.COMPETITIONPOINTS)) {

@@ -51,8 +51,8 @@ public class IndividualTournament extends Competition implements Serializable {
         return matches;
     }
 
-    public void setMatches(ArrayList<Match> mactches) {
-        this.matches = mactches;
+    public void setMatches(ArrayList<Match> matches) {
+        this.matches = matches;
     }
     
     public void matchEnded(Match match) {
@@ -66,7 +66,7 @@ public class IndividualTournament extends Competition implements Serializable {
         }
         if(!found) {
             PlayerTournamentResult result = new PlayerTournamentResult(this.getId()
-                    , match.getPlayer1().getLicentie());
+                    , match.getPlayer1().getLicentie(), match.getPlayer1().getName());
             result.addResult(match.getPlayer1Result());
             participantsResult.add(result);
         }
@@ -80,11 +80,12 @@ public class IndividualTournament extends Competition implements Serializable {
         }
         if(!found) {
             PlayerTournamentResult result = new PlayerTournamentResult(this.getId()
-                    , match.getPlayer2().getLicentie());
+                    , match.getPlayer2().getLicentie(), match.getPlayer2().getName());
             result.addResult(match.getPlayer2Result());
             participantsResult.add(result);
         }
         match.close();
+        System.out.println("billiard.model.IndividualTournament.matchEnded(): id = " + match.getId());
         matches.set(matches.indexOf(match), match);
     }
     

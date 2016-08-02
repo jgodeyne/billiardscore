@@ -19,10 +19,12 @@ public class PlayerTournamentResult implements Serializable {
     private int matchPoints = 0;
     private final long tournamentId;
     private final String playerLic;
+    private final String playerName;
 
-    public PlayerTournamentResult(long tournamentId, String playerLic) {
+    public PlayerTournamentResult(long tournamentId, String playerLic, String playerName) {
         this.tournamentId=tournamentId;
         this.playerLic=playerLic;
+        this.playerName=playerName;
     }
 
     public long getTournamentId() {
@@ -31,6 +33,10 @@ public class PlayerTournamentResult implements Serializable {
 
     public String getPlayerLic() {
         return playerLic;
+    }
+
+    public String getPlayerName() {
+        return playerName;
     }
 
     public int getPoints() {

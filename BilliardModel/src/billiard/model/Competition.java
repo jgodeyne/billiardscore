@@ -89,7 +89,7 @@ public abstract class Competition implements Serializable {
     }
     
     public ContactDetails getContactDetails() throws Exception {
-        ContactDetails contactDetails = null;
+        ContactDetails contactDetails;
         if(!competitionItemName.isEmpty()) {
             if(this instanceof IndividualCompetition) {
                 IndividualCompetitionItem icItem = IndividualCompetitionDataManager.getInstance().getCompetition(competitionItemName);

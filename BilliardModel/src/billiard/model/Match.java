@@ -6,13 +6,12 @@
 package billiard.model;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 /**
  *
  * @author jean
  */
-public class Match implements Serializable{
+public class Match implements Serializable {
     private static final long serialVersionUID = 1L;
     private final long id;
     private long competitionId=0;
@@ -32,6 +31,7 @@ public class Match implements Serializable{
     
     public Match(long competitionId, String number, String discipline, Player player1, Player player2) {
         this.id = MatchManager.generateMatchId();
+        System.out.println("billiard.model.Match.<init>(): id: " + this.id);
         this.number = number;
         this.discipline = discipline;
         this.player1 = player1;
@@ -170,25 +170,25 @@ public class Match implements Serializable{
     }
 
     @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 97 * hash + (int) (this.competitionId ^ (this.competitionId >>> 32));
-        hash = 97 * hash + Objects.hashCode(this.number);
-        hash = 97 * hash + Objects.hashCode(this.player1);
-        hash = 97 * hash + Objects.hashCode(this.player2);
-        return hash;
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            //System.out.println("billiard.model.Match.equals(): obj = null");
+            return false;
+        }
+        if (!getClass().getSimpleName().equals(obj.getClass().getSimpleName())) {
+            //System.out.println("billiard.model.Match.equals() class not equal");
+            return false;
+        }
+        //System.out.println("billiard.model.Match.equals(): equal");
+        Match other = (Match) obj;
+        return this.id == other.getId();
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        Match other = (Match) obj;
-        return this.id == other.getId();
+    public int hashCode() {
+        int hash = 5;
+        hash = 13 * hash + (int) (this.id ^ (this.id >>> 32));
+        return hash;
     }
         
     private class Status {
