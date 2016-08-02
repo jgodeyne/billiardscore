@@ -148,6 +148,7 @@ public class IndividualCompetitionItem {
         competitionClone.setName(this.getName());
         competitionClone.setDiscipline(this.getDiscipline());
         competitionClone.setTableFormat(this.getTableFormat());
+        competitionClone.setPointSystem(this.getPointSystem());
         
         HashMap<String, PlayerItem> playerCloneList = new HashMap<>();
         for (Map.Entry<String, PlayerItem> entry : players.entrySet()) {
