@@ -90,7 +90,7 @@ public abstract class Competition implements Serializable {
     
     public ContactDetails getContactDetails() throws Exception {
         ContactDetails contactDetails;
-        if(!competitionItemName.isEmpty()) {
+        if(null != competitionItemName && !competitionItemName.isEmpty()) {
             if(this instanceof IndividualCompetition) {
                 IndividualCompetitionItem icItem = IndividualCompetitionDataManager.getInstance().getCompetition(competitionItemName);
                 if(null!= icItem && !icItem.getContactEmail().isEmpty()) {
