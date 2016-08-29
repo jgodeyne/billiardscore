@@ -132,6 +132,7 @@ public class TeamCompetitionDataManager {
         outputFilePath.toFile().getParentFile().mkdirs();
         Transformer xformer = TransformerFactory.newInstance().newTransformer();
         xformer.setOutputProperty(OutputKeys.METHOD, "xml");
+        xformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
         xformer.setOutputProperty(OutputKeys.INDENT, "yes");
         xformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
         String xmlString = competition.toXML();
