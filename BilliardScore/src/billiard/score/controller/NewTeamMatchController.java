@@ -251,14 +251,14 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             Player player11 = new Player(this.player_11_name.getValue()
                     ,this.team_1.getValue()
                     ,new Integer(this.player_11_tsp.getText())
-                    ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_11_discipline.getValue())
+                    ,(!discipline.getValue().isEmpty()?discipline.getValue():player_11_discipline.getValue())
                     ,this.player_11_licentie.getText());
             playersT1.add(player11);
             
             Player player12 = new Player(this.player_12_name.getValue()
                     ,this.team_1.getValue()
                     ,new Integer(this.player_12_tsp.getText())
-                    ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_12_discipline.getValue())
+                    ,(!discipline.getValue().isEmpty()?discipline.getValue():player_12_discipline.getValue())
                     ,this.player_12_licentie.getText());
             playersT1.add(player12);
 
@@ -266,7 +266,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 Player player13 = new Player(this.player_13_name.getValue()
                         ,this.team_1.getValue()
                         ,new Integer(this.player_13_tsp.getText())
-                        ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_13_discipline.getValue())
+                        ,(!discipline.getValue().isEmpty()?discipline.getValue():player_13_discipline.getValue())
                         ,this.player_13_licentie.getText());
                 playersT1.add(player13);
 
@@ -274,7 +274,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                     Player player14 = new Player(this.player_14_name.getValue()
                             ,this.team_1.getValue()
                             ,new Integer(this.player_14_tsp.getText())
-                            ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_14_discipline.getValue())
+                            ,(!discipline.getValue().isEmpty()?discipline.getValue():player_14_discipline.getValue())
                             ,this.player_14_licentie.getText());
                     playersT1.add(player14);
                 }
@@ -286,14 +286,14 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
             Player player21 = new Player(this.player_21_name.getValue()
                     ,this.team_2.getValue()
                     ,new Integer(this.player_21_tsp.getText())
-                    ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_21_discipline.getValue())
+                    ,(!discipline.getValue().isEmpty()?discipline.getValue():player_21_discipline.getValue())
                     ,this.player_21_licentie.getText());
             playersT2.add(player21);
             
             Player player22 = new Player(this.player_22_name.getValue()
                     ,this.team_2.getValue()
                     ,new Integer(this.player_22_tsp.getText())
-                    ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_22_discipline.getValue())
+                    ,(!discipline.getValue().isEmpty()?discipline.getValue():player_22_discipline.getValue())
                     ,this.player_22_licentie.getText());
             playersT2.add(player22);
 
@@ -301,7 +301,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                 Player player23 = new Player(this.player_23_name.getValue()
                         ,this.team_2.getValue()
                         ,new Integer(this.player_23_tsp.getText())
-                        ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_23_discipline.getValue())
+                        ,(!discipline.getValue().isEmpty()?discipline.getValue():player_23_discipline.getValue())
                         ,this.player_23_licentie.getText());
                 playersT2.add(player23);
 
@@ -309,7 +309,7 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
                     Player player24 = new Player(this.player_24_name.getValue()
                             ,this.team_2.getValue()
                             ,new Integer(this.player_24_tsp.getText())
-                            ,(!discipline.getSelectionModel().isEmpty()?discipline.getValue():player_24_discipline.getValue())
+                            ,(!discipline.getValue().isEmpty()?discipline.getValue():player_24_discipline.getValue())
                             ,this.player_24_licentie.getText());
                     playersT2.add(player24);
                 }

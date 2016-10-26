@@ -11,1123 +11,181 @@
     <disciplineplayers/>
     <tspplayers/>
     <team>
-        <name>AMICIA 2</name>
-        <fixedplayers>4:5:6:7:</fixedplayers>
-        <player>
-            <order>8</order>
-            <lic>22</lic>
-            <name>Smeets, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>10</order>
-            <lic>23</lic>
-            <name>Nass, John</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>24</lic>
-            <name>Fischer, Wolfgang</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>3</order>
-            <lic>26</lic>
-            <name>Dirkx, Pol</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>2870</lic>
-            <name>Erdkamp, Jacques</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>3182</lic>
-            <name>Wolters, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
-        </player>
-        <player>
-            <order>2</order>
-            <lic>3839</lic>
-            <name>Heinen, Karl-Heinz</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
-        </player>
-        <player>
-            <order>22</order>
-            <lic>1896</lic>
-            <name>Manders, Hans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>19</order>
-            <lic>1213</lic>
-            <name>Hilkens, Peter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2764</lic>
-            <name>Hoeben, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>9</order>
-            <lic>2321</lic>
-            <name>Wolters, Math</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>23</order>
-            <lic>2420</lic>
-            <name>Dongen van, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>979</lic>
-            <name>Verdonkschot, Henk</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>1</order>
-            <lic>2562</lic>
-            <name>Clermonts, Math</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>120</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3233</lic>
-            <name>Smeets, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3254</lic>
-            <name>Hilkens, Dennis</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>3252</lic>
-            <name>Wolfs, Werner</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>141</lic>
-            <name>Bos, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>18</order>
-            <lic>3704</lic>
-            <name>Houben, Lander</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>2855</lic>
-            <name>Huskens, Jo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>17</order>
-            <lic>3705</lic>
-            <name>Schreurs, Rick</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3706</lic>
-            <name>Steinman, Paul</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>541</lic>
-            <name>Evers, Jo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
-        </player>
-        <player>
-            <order>14</order>
-            <lic>2776</lic>
-            <name>Delissen, Frans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>16</order>
-            <lic>3707</lic>
-            <name>Wolfhagen, Randy</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2698</lic>
-            <name>Munnecom, Ren_</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>13</order>
-            <lic>1761</lic>
-            <name>Peters, Henk</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>2398</lic>
-            <name>Vintges, Nico</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>15</order>
-            <lic>3102</lic>
-            <name>Minkenberg, Dre</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>20</order>
-            <lic>3564</lic>
-            <name>Haren van, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>21</order>
-            <lic>1760</lic>
-            <name>Koelen, Daan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-    </team>
-    <team>
         <name>KLUMPKE 'T 2</name>
-        <fixedplayers>4:5:6:7:</fixedplayers>
-        <player>
-            <order>R</order>
-            <lic>3881</lic>
-            <name>D_renberg, Sef</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>29</tsp>
-        </player>
+        <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
             <order>2</order>
-            <lic>395</lic>
-            <name>Engelen, Pierre</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>397</lic>
-            <name>Gommans, Cor</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2987</lic>
-            <name>Vaessen, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>3</order>
-            <lic>510</lic>
-            <name>Dingelstad, Louis</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>80</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>3457</lic>
-            <name>Cretz, Patrick</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>1751</lic>
-            <name>Quicken, Huub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>413</lic>
-            <name>Weynen, Jos</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>512</lic>
-            <name>Eggels, Jac</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>516</lic>
-            <name>Lai, Giorgio</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>94</lic>
-            <name>Peters, Andr_</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1129</lic>
-            <name>Slabbers, Wiel</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>1</order>
-            <lic>1744</lic>
-            <name>Geerlings, Mat</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>100</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>2830</lic>
-            <name>Jordan, Michael</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>400</lic>
-            <name>Heynen, Tuur</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>17</order>
-            <lic>2213</lic>
-            <name>Kuijpers, Henk</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
             <lic>522</lic>
             <name>Ridderbecks, Henk</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>65</tsp>
         </player>
         <player>
-            <order>9</order>
-            <lic>1860</lic>
-            <name>Kotschi, Walter</name>
+            <order>3</order>
+            <lic>1751</lic>
+            <name>Quicken, Huub</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
+            <tsp>65</tsp>
         </player>
         <player>
-            <order>23</order>
-            <lic>2794</lic>
-            <name>Slabbers, Gerda</name>
+            <order>1</order>
+            <lic>512</lic>
+            <name>Eggels, Jac</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>25</tsp>
+            <tsp>65</tsp>
         </player>
         <player>
-            <order>13</order>
-            <lic>525</lic>
-            <name>Bie de, Rinus</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>14</order>
-            <lic>3663</lic>
-            <name>Schaefer, Theo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>18</order>
-            <lic>3861</lic>
-            <name>Pansters, Ronny</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>25</tsp>
-        </player>
-        <player>
-            <order>7</order>
+            <order>4</order>
             <lic>505</lic>
             <name>Beckers, Joep</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>60</tsp>
         </player>
-        <player>
-            <order>15</order>
-            <lic>3765</lic>
-            <name>Schmeitz, Miranda</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>27</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2717</lic>
-            <name>Vintcent, Marc</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>125</tsp>
-        </player>
     </team>
     <team>
-        <name>WESSEM 2</name>
-        <fixedplayers>4:5:6:7:</fixedplayers>
+        <name>AMICIA 3</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
-            <order>R</order>
-            <lic>929</lic>
-            <name>Vogels, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1385</lic>
-            <name>Driessens, Harry</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>1384</lic>
-            <name>Lommen, Arthur</name>
+            <order>2</order>
+            <lic>22</lic>
+            <name>Smeets, Piet</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2252</lic>
-            <name>Goor van der, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>10</order>
-            <lic>3458</lic>
-            <name>Tubee, Jac</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>1</order>
-            <lic>1862</lic>
-            <name>Smolenaars, Richard</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>105</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1367</lic>
-            <name>Bidlot, Pieter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>95</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>1520</lic>
-            <name>Schoenmakers, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1377</lic>
-            <name>Deneer, Toon</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
         </player>
         <player>
             <order>3</order>
-            <lic>1387</lic>
-            <name>Smeets, Paul</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1376</lic>
-            <name>Dierx, Mathieu</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>2</order>
-            <lic>1386</lic>
-            <name>Roumen, Peter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>75</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>931</lic>
-            <name>Dierx, Pierre</name>
+            <lic>23</lic>
+            <name>Nass, John</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>60</tsp>
-        </player>
-        <player>
-            <order>9</order>
-            <lic>1939</lic>
-            <name>Methorst, Henk</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2817</lic>
-            <name>Zeelen, Iwan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>2816</lic>
-            <name>Hendriks, Robert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2815</lic>
-            <name>Deneer, Peter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
         </player>
         <player>
             <order>4</order>
-            <lic>927</lic>
-            <name>Dierx, Ton</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>80</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>928</lic>
-            <name>Deneer, Jan</name>
+            <lic>24</lic>
+            <name>Fischer, Wolfgang</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>45</tsp>
-        </player>
-    </team>
-    <team>
-        <name>ABC 1</name>
-        <fixedplayers>1:2:3:4:</fixedplayers>
-        <player>
-            <order>R</order>
-            <lic>12</lic>
-            <name>Niessen, Huub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>13</lic>
-            <name>Schmitz, Jeu</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>14</lic>
-            <name>Verheesen, Theo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
         </player>
         <player>
             <order>1</order>
-            <lic>17</lic>
-            <name>Verstraelen, Ad</name>
+            <lic>2321</lic>
+            <name>Wolters, Math</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>70</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3371</lic>
-            <name>Verlinden, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3171</lic>
-            <name>Nijssen, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>2559</lic>
-            <name>Theelen, Jeroen</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1855</lic>
-            <name>Hurck v.d., Leon</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3903</lic>
-            <name>Dijck van, Andr_</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2</lic>
-            <name>Boumans, Pierre</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>23</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3</lic>
-            <name>Cox, Guus</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>9</order>
-            <lic>2314</lic>
-            <name>Verheesen, Wilbert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2203</lic>
-            <name>Obstals, Leo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>2467</lic>
-            <name>Meuter, Nick</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>2313</lic>
-            <name>Krispijn, Wilbert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>3038</lic>
-            <name>Cox, Denny</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2312</lic>
-            <name>Geurts, Laurens</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>31</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>7</lic>
-            <name>Clercx, Peter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>17</order>
-            <lic>1089</lic>
-            <name>Zegers, Theo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1869</lic>
-            <name>Sanders, Ben</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>13</order>
-            <lic>3712</lic>
-            <name>Cox, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3713</lic>
-            <name>Heijnen, Geert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>10</lic>
-            <name>Hendrix, Jo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>16</order>
-            <lic>3714</lic>
-            <name>Nieskens, Jack</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
         </player>
     </team>
     <team>
-        <name>JACHTHUIS 'T 1</name>
+        <name>NUNHEM 3</name>
         <fixedplayers>1:2:3:4:</fixedplayers>
-        <player>
-            <order>R</order>
-            <lic>1484</lic>
-            <name>Masseling, Jaap</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>3054</lic>
-            <name>Vinken, Luc</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>10</order>
-            <lic>2294</lic>
-            <name>Joosten, Mart</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
         <player>
             <order>3</order>
-            <lic>1701</lic>
-            <name>Soentjens, Geert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>1424</lic>
-            <name>Koolen, Louis</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>3204</lic>
-            <name>Dor_, John</name>
+            <lic>764</lic>
+            <name>Rutten, Ger</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>55</tsp>
-        </player>
-        <player>
-            <order>2</order>
-            <lic>1696</lic>
-            <name>Hilgers, Huib</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>1025</lic>
-            <name>Timmermans, Bert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>1013</lic>
-            <name>Suntjens, Sibert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1695</lic>
-            <name>Cobben, Sef</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
         </player>
         <player>
             <order>1</order>
-            <lic>1980</lic>
-            <name>Hoogmans, Thijs</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>80</tsp>
-        </player>
-        <player>
-            <order>9</order>
-            <lic>1012</lic>
-            <name>Rulkens, Mat</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>3732</lic>
-            <name>Jeurninck, Corn_</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>53</lic>
-            <name>Delissen, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>1702</lic>
-            <name>Ramaekers, Geert</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1977</lic>
-            <name>Delissen, Hugo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-    </team>
-    <team>
-        <name>BIERMANSHUIS 2</name>
-        <fixedplayers>4:5:6:7:</fixedplayers>
-        <player>
-            <order>8</order>
-            <lic>3266</lic>
-            <name>Daal van, Ruud</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3164</lic>
-            <name>Bonselaar, Carol</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3197</lic>
-            <name>Vorstermans, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2184</lic>
-            <name>Plaatsman, Jac</name>
-            <discipline>Drieband (KB)</discipline>
-            <tsp>20</tsp>
-        </player>
-        <player>
-            <order>23</order>
-            <lic>3196</lic>
-            <name>Brabander de, Hans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>28</order>
-            <lic>2416</lic>
-            <name>Cranssen, Eric</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>24</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1998</lic>
-            <name>Leenen, Patrick</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>331</lic>
-            <name>Roemen, Jac</name>
+            <lic>1816</lic>
+            <name>Vullers, Frien</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>90</tsp>
         </player>
         <player>
-            <order>15</order>
+            <order>4</order>
+            <lic>3086</lic>
+            <name>Theunissen, Frans</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>1814</lic>
+            <name>Schreurs, Huub</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>75</tsp>
+        </player>
+    </team>
+    <team>
+        <name>TOP 2</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
+        <player>
+            <order>4</order>
+            <lic>1217</lic>
+            <name>Dohmen, Marcel</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>2190</lic>
+            <name>Hofkens, Lei</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>1534</lic>
+            <name>Frenken, Helmut</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>3310</lic>
+            <name>Peters, Ger</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>75</tsp>
+        </player>
+    </team>
+    <team>
+        <name>BIERMANSHUIS 2</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>2416</lic>
+            <name>Cranssen, Eric</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order>4</order>
             <lic>2415</lic>
             <name>Cranssen, Mark</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>2425</lic>
-            <name>Mevissen, Hans</name>
-            <discipline>Drieband (KB)</discipline>
-            <tsp>20</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1512</lic>
-            <name>Crijns, Geert</name>
-            <discipline>Drieband (KB)</discipline>
-            <tsp>18</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2423</lic>
-            <name>Hermans, Ed</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>1</order>
-            <lic>335</lic>
-            <name>Tellers, Jac</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>130</tsp>
-        </player>
-        <player>
-            <order>R</order>
+            <order>2</order>
             <lic>2565</lic>
             <name>Cox, Jan</name>
-            <discipline>Drieband (KB)</discipline>
-            <tsp>20</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>336</lic>
-            <name>Truijen, Jac</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
+            <tsp>70</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>326</lic>
-            <name>Jansen, Huub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>27</order>
-            <lic>1859</lic>
-            <name>Berg v.d., Martien</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>24</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3689</lic>
-            <name>Molenaar, Kees</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2418</lic>
-            <name>Cox, Hans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>32</lic>
-            <name>Clercx, Hans</name>
-            <discipline>Drieband (KB)</discipline>
-            <tsp>20</tsp>
-        </player>
-        <player>
-            <order>14</order>
+            <order>3</order>
             <lic>1889</lic>
             <name>Veens, Harry</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>21</lic>
-            <name>Leenen, Frans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2417</lic>
-            <name>Clercx, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>33</tsp>
         </player>
     </team>
     <team>
         <name>KAROT 1</name>
         <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
-            <order>R</order>
-            <lic>11</lic>
-            <name>Bekkers, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>13</order>
-            <lic>3893</lic>
-            <name>Stokbroeckx, Toine</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>90</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3585</lic>
-            <name>Bekkers, Jos</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>16</order>
-            <lic>3056</lic>
-            <name>Creemers, Sef</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3571</lic>
-            <name>Bekkers, John</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3120</lic>
-            <name>Subasi, Ibrahim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>481</lic>
-            <name>Ommen van, Ria</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>483</lic>
-            <name>Vluggen, Lei</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>476</lic>
-            <name>Noldes, Karel</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>3304</lic>
-            <name>Bessems, Louis</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>597</lic>
-            <name>Sentjens, Jac</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>586</lic>
-            <name>Braat, Chris</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>3501</lic>
-            <name>Janssen, Michiel</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>14</order>
-            <lic>587</lic>
-            <name>Evers, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>3015</lic>
-            <name>Kolken, Frank</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
+            <order>4</order>
             <lic>3586</lic>
             <name>Pleket, Tony</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>60</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>2453</lic>
-            <name>Spieksma, Jan</name>
+            <order>2</order>
+            <lic>3585</lic>
+            <name>Bekkers, Jos</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3795</lic>
-            <name>Creemers, Huub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
+            <tsp>65</tsp>
         </player>
         <player>
             <order>1</order>
@@ -1137,72 +195,16 @@
             <tsp>75</tsp>
         </player>
         <player>
-            <order>9</order>
-            <lic>757</lic>
-            <name>Mestrom, Jack</name>
+            <order>3</order>
+            <lic>3571</lic>
+            <name>Bekkers, John</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3701</lic>
-            <name>Elshout van de, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>3857</lic>
-            <name>Finnema, Mark</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
+            <tsp>65</tsp>
         </player>
     </team>
     <team>
         <name>AAD REMUNJ 1</name>
         <fixedplayers>1:2:3:4:</fixedplayers>
-        <player>
-            <order>9</order>
-            <lic>3771</lic>
-            <name>Schmitz, Carlo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3001</lic>
-            <name>Zalm van der, Jo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>31</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>3000</lic>
-            <name>Rotten van de, Joep</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>3163</lic>
-            <name>Mulders-Buys, Annelies</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
-        </player>
-        <player>
-            <order>10</order>
-            <lic>3261</lic>
-            <name>Cuypers, Stephan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>3260</lic>
-            <name>Deurzen van, Rob</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
         <player>
             <order>3</order>
             <lic>2856</lic>
@@ -1215,474 +217,117 @@
             <lic>1205</lic>
             <name>Aarts, Mat</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>3749</lic>
-            <name>Schmitz, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>3639</lic>
-            <name>Aubert, Chris</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>31</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>3425</lic>
-            <name>Scheffer, Fried</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>33</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>3577</lic>
-            <name>Wassenberg, Theo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3819</lic>
-            <name>Lutgens, Jacky</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>31</tsp>
+            <tsp>60</tsp>
         </player>
         <player>
             <order>1</order>
             <lic>1078</lic>
             <name>Joosten, Frits</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>3260</lic>
+            <name>Deurzen van, Rob</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>45</tsp>
         </player>
     </team>
     <team>
         <name>LOT 1</name>
         <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
-            <order>R</order>
-            <lic>3291</lic>
-            <name>Beurskens, Sjors</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>3290</lic>
-            <name>Beurskens, Rick</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3288</lic>
-            <name>Roy van, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>271</lic>
-            <name>Horne van, Hans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>474</lic>
-            <name>Keijzer, Martin</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>7</order>
-            <lic>1775</lic>
-            <name>Schreurs, Eric</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3708</lic>
-            <name>Smeets, Rico</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>268</lic>
-            <name>Gubbels, Har</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>3709</lic>
-            <name>Smeets, Ton</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1772</lic>
-            <name>Achten, Will</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>5</order>
+            <order>1</order>
             <lic>2882</lic>
             <name>Joosten, Bert</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>80</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>2266</lic>
-            <name>Delissen, Twan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>35</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>844</lic>
-            <name>Verstappen, Herman</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>1</order>
-            <lic>1816</lic>
-            <name>Vullers, Frien</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>90</tsp>
-        </player>
-        <player>
-            <order>R</order>
+            <order>2</order>
             <lic>3710</lic>
             <name>Aelmans, Berry</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>55</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>3711</lic>
-            <name>Ververs, Paul</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>2</order>
-            <lic>1814</lic>
-            <name>Schreurs, Huub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
             <order>3</order>
-            <lic>3679</lic>
-            <name>Schreurs, Peter</name>
+            <lic>1063</lic>
+            <name>Smeets, Peter</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
         </player>
         <player>
-            <order>6</order>
-            <lic>2749</lic>
-            <name>Smeets, Frank</name>
+            <order>4</order>
+            <lic>3628</lic>
+            <name>Gijsen, Ad</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
         </player>
     </team>
     <team>
-        <name>STEVENSWEERT 3</name>
-        <fixedplayers>7:8:9:10:</fixedplayers>
+        <name>MANESLUST 1</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
-            <order>12</order>
-            <lic>67</lic>
-            <name>Beckers, Leon</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>5</order>
-            <lic>3626</lic>
-            <name>Beulen, Jeffrey</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>75</tsp>
-        </player>
-        <player>
-            <order>11</order>
-            <lic>2404</lic>
-            <name>Omloo, Frans</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1348</lic>
-            <name>Schumans, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>10</order>
-            <lic>2106</lic>
-            <name>Everaerts, Rodney</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2667</lic>
-            <name>Stams, Wouter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3838</lic>
-            <name>Moonen, Jos</name>
+            <order>4</order>
+            <lic>78</lic>
+            <name>Sillekens, Dr�</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>45</tsp>
         </player>
         <player>
-            <order>1</order>
-            <lic>1346</lic>
-            <name>Vos, Leon</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>120</tsp>
-        </player>
-        <player>
             <order>2</order>
-            <lic>1555</lic>
-            <name>Brekel v.d., Werner</name>
+            <lic>3069</lic>
+            <name>Janssen, Theo</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
+            <tsp>55</tsp>
         </player>
         <player>
-            <order>3</order>
-            <lic>1126</lic>
-            <name>Pustjens, Jan</name>
+            <order>1</order>
+            <lic>649</lic>
+            <name>Sijbers, Wim</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>80</tsp>
         </player>
         <player>
-            <order>7</order>
-            <lic>124</lic>
-            <name>Richter, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2666</lic>
-            <name>Sormani, Henri</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1445</lic>
-            <name>Tubee, Rik</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2379</lic>
-            <name>Vleeshouwers, Pierre</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>8</order>
-            <lic>2960</lic>
-            <name>Bongers, Ton</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>1100</lic>
-            <name>Paal, Eddy</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>13</order>
-            <lic>117</lic>
-            <name>Janssen, Eric</name>
+            <order>3</order>
+            <lic>75</lic>
+            <name>Janssen, Nico</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1111</lic>
-            <name>Baren, Hub</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>2464</lic>
-            <name>Tonnaer, Piet</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>4</order>
-            <lic>1929</lic>
-            <name>Robinson, Humphrey</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>85</tsp>
-        </player>
-        <player>
-            <order>14</order>
-            <lic>109</lic>
-            <name>Schreurs, Peter</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>9</order>
-            <lic>3768</lic>
-            <name>Michels, Mark</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1306</lic>
-            <name>Mohren, Roger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
         </player>
     </team>
     <team>
         <name>ALLERHAND 2</name>
-        <fixedplayers>4:5:6:7:</fixedplayers>
-        <player>
-            <order>R</order>
-            <lic>2551</lic>
-            <name>Rutten, Rob</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>50</tsp>
-        </player>
+        <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
             <order>4</order>
-            <lic>2062</lic>
-            <name>Meusen, Kay</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3492</lic>
-            <name>Heijmann, Ad</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>6</order>
-            <lic>3491</lic>
-            <name>Smeets, Roy</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>2</order>
-            <lic>1425</lic>
-            <name>Hendrix, Cor</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>70</tsp>
-        </player>
-        <player>
-            <order>7</order>
             <lic>1730</lic>
             <name>Simons, Wiel</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>50</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>1443</lic>
-            <name>Brokmann, Wiel</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
             <order>1</order>
-            <lic>3598</lic>
-            <name>Weeres, Leon</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>95</tsp>
-        </player>
-        <player>
-            <order>5</order>
             <lic>1871</lic>
             <name>Hendrix, Ringo</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>12</order>
-            <lic>1431</lic>
-            <name>Simons, Ger</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>65</tsp>
-        </player>
-        <player>
-            <order>15</order>
-            <lic>2805</lic>
-            <name>Bouten, Har</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3678</lic>
-            <name>Pollen, Hay</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>14</order>
-            <lic>2804</lic>
-            <name>Crins, Har</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1429</lic>
-            <name>Levels, Wim</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1428</lic>
-            <name>Lomm van, Ger</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>70</tsp>
         </player>
         <player>
-            <order>13</order>
-            <lic>1405</lic>
-            <name>Pansters, Piet</name>
+            <order>2</order>
+            <lic>2062</lic>
+            <name>Meusen, Kay</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>55</tsp>
+            <tsp>65</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>1427</lic>
-            <name>Kinderen der, Leo</name>
+            <order>3</order>
+            <lic>3491</lic>
+            <name>Smeets, Roy</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
+            <tsp>55</tsp>
         </player>
     </team>
     <team>
@@ -1700,49 +345,53 @@
             <lic>3826</lic>
             <name>Boesten, Roland</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>1303</lic>
-            <name>Coenen, Jan</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>45</tsp>
-        </player>
-        <player>
-            <order>R</order>
-            <lic>3827</lic>
-            <name>Dick, Rolf</name>
-            <discipline>Vrijspel (KB)</discipline>
-            <tsp>40</tsp>
+            <tsp>50</tsp>
         </player>
         <player>
             <order>1</order>
             <lic>3333</lic>
             <name>Pustjens, Harry</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>75</tsp>
+            <tsp>70</tsp>
         </player>
         <player>
             <order>3</order>
             <lic>3097</lic>
             <name>Tissen, Pierre</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>60</tsp>
+            <tsp>55</tsp>
         </player>
+    </team>
+    <team>
+        <name>ROERMOND/OVU 3</name>
+        <fixedplayers>1:2:3:4:</fixedplayers>
         <player>
-            <order>R</order>
-            <lic>1518</lic>
-            <name>Gerwe, Hans</name>
+            <order>3</order>
+            <lic>1022</lic>
+            <name>Schmitz, Hans</name>
             <discipline>Vrijspel (KB)</discipline>
-            <tsp>31</tsp>
+            <tsp>50</tsp>
         </player>
         <player>
-            <order>R</order>
-            <lic>1317</lic>
-            <name>Tegels, Driek</name>
+            <order>4</order>
+            <lic>1935</lic>
+            <name>Daal van, Ruud</name>
             <discipline>Vrijspel (KB)</discipline>
             <tsp>45</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>2946</lic>
+            <name>Smits, Patrick</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>1</order>
+            <lic>3490</lic>
+            <name>Boessen, Thei</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>65</tsp>
         </player>
     </team>
 </competition>

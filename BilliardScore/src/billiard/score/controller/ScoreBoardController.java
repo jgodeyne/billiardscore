@@ -406,7 +406,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             }
             double avg = (double) score / getInnings();
             String dfFormat = "#0.00";
-            if (player_1_discipline.getText().equalsIgnoreCase("Drieband")) {
+            if (player_1_discipline.getText().contains("Drieband")) {
                 dfFormat = "#0.000";
             }
             DecimalFormat formatter = new DecimalFormat(dfFormat);

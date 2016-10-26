@@ -97,6 +97,7 @@ public class BilliardAdmin extends Application {
                 }
             } while(menuChoice!=MenuController.MenuOptions.EXIT);
         } catch (Exception ex) {
+            LOGGER.severe(ex.getMessage());
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             CommonDialogs.showException(ex);
         } finally {

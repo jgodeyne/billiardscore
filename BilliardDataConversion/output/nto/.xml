@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name/>
+    <contactname/>
+    <contactemail/>
+    <league>NTO</league>
+    <group/>
+    <pointsystem>MATCHPOINTS</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <discipline>Vrijspel (KB)</discipline>
+    <nbrofplayers>3</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers/>
+    <team>
+        <name>reserve</name>
+        <fixedplayers>:::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>78</lic>
+            <name>W.Schoenmakers</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>202</lic>
+            <name>J.Deneer</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>44</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>237</lic>
+            <name>A.Lommen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>62</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>85</lic>
+            <name>H.Bijlmakers</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>70</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>54</lic>
+            <name>H.Smeets</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>34</tsp>
+        </player>
+    </team>
+</competition>

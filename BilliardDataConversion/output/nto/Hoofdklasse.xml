@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name>Hoofdklasse</name>
+    <contactname/>
+    <contactemail/>
+    <league>NTO</league>
+    <group/>
+    <pointsystem>MATCHPOINTS</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <discipline>Vrijspel (KB)</discipline>
+    <nbrofplayers>3</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers/>
+    <team>
+        <name>Heytse 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>231</lic>
+            <name>Hub Konickx</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>46</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>72</lic>
+            <name>W. Prinssen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>73</lic>
+            <name>A.v.d.Kop</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>78</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>75</lic>
+            <name>Ton Timmermans</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>56</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Oude Smidse 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>14</lic>
+            <name>L.Jeurninck</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>44</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>80</lic>
+            <name>H.Biermans</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>96</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>81</lic>
+            <name>J. Nijsen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>66</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>82</lic>
+            <name>H.Kierkels</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Carambola 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>8</lic>
+            <name>Mart Snellen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>52</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>92</lic>
+            <name>Harrie Snellen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>78</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>93</lic>
+            <name>Cor Greijmans</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>80</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>94</lic>
+            <name>Lei Steijvers</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Wessem 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>77</lic>
+            <name>A. Dierx</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>68</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>55</lic>
+            <name>P.Dierx</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>79</lic>
+            <name>M.Tonnaer</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>56</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>76</lic>
+            <name>Jan Derickx</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>92</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Grathem 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>68</lic>
+            <name>J.Prinssen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>136</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>228</lic>
+            <name>Harrie v.Lier</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>52</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>192</lic>
+            <name>Theo Dalemans</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>44</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>71</lic>
+            <name>Caspar Koninkx</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>44</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Beegden 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>60</lic>
+            <name>Jo Aerts</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>164</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>61</lic>
+            <name>M. Adams</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>74</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>62</lic>
+            <name>Jan Kuypers</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>66</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>63</lic>
+            <name>Math Seems</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>50</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Beegden 2</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>66</lic>
+            <name>M Smeets</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>68</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>67</lic>
+            <name>P. Delissen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>4</lic>
+            <name>A.Visschedijk</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>60</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>65</lic>
+            <name>Sjra Theunissen</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>80</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Tenniscenter 1</name>
+        <fixedplayers>::::</fixedplayers>
+        <player>
+            <order/>
+            <lic>88</lic>
+            <name>J. Tubee</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>86</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>89</lic>
+            <name>M. Mestrom</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>62</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>90</lic>
+            <name>J.Rijks</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>58</tsp>
+        </player>
+        <player>
+            <order/>
+            <lic>91</lic>
+            <name>Pol Tubee</name>
+            <discipline>Vrijspel (KB)</discipline>
+            <tsp>44</tsp>
+        </player>
+    </team>
+</competition>

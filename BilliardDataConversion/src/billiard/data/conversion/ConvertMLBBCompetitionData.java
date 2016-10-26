@@ -42,8 +42,8 @@ public class ConvertMLBBCompetitionData {
     private static int nbrOfClubs = 0;
     private static int nbrOfTeams = 0;
     private static int nbrOfPlayers = 0;
-    private static HashMap<String, TeamCompetitionItem> competitions = new HashMap<>();
-    private static HashMap<String, Club> clubs = new HashMap<>();
+    private static final HashMap<String, TeamCompetitionItem> COMPETITIONS = new HashMap<>();
+    private static final HashMap<String, Club> CLUBS = new HashMap<>();
 
     /**
      * @param args the command line arguments
@@ -51,7 +51,7 @@ public class ConvertMLBBCompetitionData {
      */
     public static void main(String[] args) throws Exception {
         LogManager.getLogManager().readConfiguration(ConvertMLBBCompetitionData.class.getResourceAsStream("/logging.properties"));
-        Path dir = Paths.get("input/mlbb/MLBB Bondslijst.csv");
+        Path dir = Paths.get("input/mlbb/Bondslijst MLBB.csv");
         convertFile(dir);
         LOGGER.log(Level.INFO, "Nbr of competitions: {0}", nbrOfCompetitions);
         LOGGER.log(Level.INFO, "Nbr of clubs: {0}", nbrOfClubs);
@@ -80,47 +80,43 @@ public class ConvertMLBBCompetitionData {
             Team team = null;
             int order = 0;
             Club club = null;
-            boolean reserves = false;
+            boolean reserve = false;
             boolean nonActive = false;
             while (itRecords.hasNext()) {
                 CSVRecord csvRecord = itRecords.next();
-                if(csvRecord.get(0).equalsIgnoreCase("CLUBKODE")) {
-                    //Header => skip
-                    continue;
-                }
                 if(!csvRecord.get(0).isEmpty()) {
                     // Club
                     order=0;
                     String lic = csvRecord.get(0).trim();
                     String name = csvRecord.get(1).trim();
-                    club = clubs.get(lic);
+                    club = CLUBS.get(lic);
                     if(club==null) {
                         nbrOfClubs++;
                         club= new Club();
                         club.setLic(lic);
                         club.setName(name);
-                        clubs.put(lic, club);
+                        CLUBS.put(lic, club);
                     }
                 }
                 if(!csvRecord.get(2).isEmpty()) {
                     //Team
                     String teamName = csvRecord.get(2);
                     if(teamName.equalsIgnoreCase("reserves")) {
-                        reserves=true;
+                        reserve=true;
                         continue;
                     }
-                    reserves = false;
+                    reserve = false;
                     if(teamName.equalsIgnoreCase("niet actief")) {
                         nonActive=true;
                         continue;
                     }
                     nonActive = false;
                     String competitionName = csvRecord.get(3).trim();
-                    TeamCompetitionItem competition = competitions.get(competitionName);
+                    TeamCompetitionItem competition = COMPETITIONS.get(competitionName);
                     if(competition==null) {
                         nbrOfCompetitions++;
                         competition = createCompetition(competitionName);
-                        competitions.put(competitionName, competition);
+                        COMPETITIONS.put(competitionName, competition);
                     }
                     if(team==null || !team.getName().equalsIgnoreCase(teamName)) {
                         nbrOfTeams++;
@@ -130,6 +126,7 @@ public class ConvertMLBBCompetitionData {
                         if (club!=null) {
                             team.setClub(club.getLic());
                         }
+                        team.setCompetition(competitionName);
                     }
                     continue;
                 }
@@ -141,26 +138,31 @@ public class ConvertMLBBCompetitionData {
                     nbrOfPlayers++;
                     Player player = new Player();
                     player.setLic(csvRecord.get(5).trim());
-                    player.setOrder(Integer.toString(++order));
+                    player.setOrder(csvRecord.get(6).trim());
                     player.setName(csvRecord.get(7).trim());
                     player.setAvg(csvRecord.get(10).trim());
                     player.setTsp(csvRecord.get(11).trim());
                     if(!nonActive) {
-                        if(club!=null) {
-                            if(reserves) {
-                                player.setOrder("R");
-                                if(type.equalsIgnoreCase("L") || type.equalsIgnoreCase("S")) {
-                                    player.setDiscipline("Vrijspel (KB)");
-                                } else if (type.equalsIgnoreCase("D")) {
-                                    player.setDiscipline("Drieband (KB)");
-                                } else if (type.equalsIgnoreCase("K")) {
-                                    player.setDiscipline("K38/2");
-                                }
-                            } else {                                
-                                if(team!=null) {
-                                    player.setTeamName(team.getName());
-                                }
+                        if(reserve) {
+                            player.setOrder("R");
+                            if(type.equalsIgnoreCase("L") || type.equalsIgnoreCase("S")) {
+                                player.setDiscipline("Vrijspel (KB)");
+                            } else if (type.equalsIgnoreCase("D")) {
+                                player.setDiscipline("Drieband (KB)");
+                            } else if (type.equalsIgnoreCase("K")) {
+                                player.setDiscipline("K38/2");
                             }
+                        } else {
+                            if(team!=null) {
+                                player.setTeamName(team.getName());
+                                player.setDiscipline(COMPETITIONS.get(team.getCompetition()).getDiscipline());
+                                String fixedPlayers = team.getFixedPlayers();
+                                fixedPlayers+=player.getOrder()+":";
+                                team.setFixedPlayers(fixedPlayers);
+                                team.putPlayer(player);
+                            }
+                        }
+                        if(club!=null) {
                             club.addPlayer(player);
                         }
                     }
@@ -172,40 +174,39 @@ public class ConvertMLBBCompetitionData {
         }
 
         // Add players to teams
-        for(TeamCompetitionItem competition: competitions.values()) {
-            for(TeamItem tmpTeamItem: competition.getTeams().values()) {
-                Team tmpTeam = (Team) tmpTeamItem;
-                String fixedPlayers = "";
-                Club tmpClub = clubs.get(tmpTeam.getClub());
-                for(Player player: tmpClub.getPlayers()) {
-                    if(player.getDiscipline().isEmpty()) {
-                        player.setDiscipline(competition.getDiscipline());
-                    }
-                    if(player.getTeamName() != null && player.getTeamName().equalsIgnoreCase(tmpTeam.getName())) {
-                        fixedPlayers+=player.getOrder()+":";
-                    }
-                    tmpTeam.putPlayer(player);
-                }
-                tmpTeam.setFixedPlayers(fixedPlayers);
-            }
-        }
+//        for(TeamCompetitionItem competition: COMPETITIONS.values()) {
+//            for(TeamItem tmpTeamItem: competition.getTeams().values()) {
+//                Team tmpTeam = (Team) tmpTeamItem;
+//                String fixedPlayers = "";
+//                Club tmpClub = CLUBS.get(tmpTeam.getClub());
+//                for(Player player: tmpClub.getPlayers()) {
+//                    if(player.getDiscipline().isEmpty()) {
+//                        player.setDiscipline(competition.getDiscipline());
+//                    }
+//                    if(player.getTeamName() != null && player.getTeamName().equalsIgnoreCase(tmpTeam.getName())) {
+//                        tmpTeam.putPlayer(player);
+//                    }
+//                }
+//                tmpTeam.setFixedPlayers(fixedPlayers);
+//            }
+//        }
         
-        return competitions.values();
+        return COMPETITIONS.values();
     }  
 
         
     private static void createLeagueFile() throws Exception {
         LeagueItem league = new LeagueItem();
-        league.setName("MLBB");
+        league.setName(LEAGUE_NAME);
         league.setTurnIndicatorsColor("YELLOW");
         league.setWarmingUpTime("3");
-        for(Club club: clubs.values()) {
+        for(Club club: CLUBS.values()) {
             ClubItem clubItem = new ClubItem();
             clubItem.setLic(club.getLic());
             clubItem.setName(club.getName());
             league.putClub(clubItem);
         }
-        for(TeamCompetitionItem competition: competitions.values()) {
+        for(TeamCompetitionItem competition: COMPETITIONS.values()) {
             for(TeamItem tmpTeamItem: competition.getTeams().values()) {
                 Team tmpTeam = (Team) tmpTeamItem;
                 for(PlayerItem tmpPlayer: tmpTeam.getPlayers().values()) {
@@ -217,7 +218,12 @@ public class ConvertMLBBCompetitionData {
                     tsp.setTsp(player.getTsp());
                     tsp.setDiscipline(player.getDiscipline());
                     member.putTsp(tsp);
-                    league.putMember(member);
+                    MemberItem existingMember = league.getMember(member.getLic());
+                    if(null==existingMember) {
+                        league.putMember(member);
+                    } else {
+                        existingMember.putTsp(tsp);
+                    }
                 }
             }
         }
@@ -230,7 +236,8 @@ public class ConvertMLBBCompetitionData {
         competition.setName(name);
         competition.setLeague(LEAGUE_NAME);
 
-        String discipline ="Vrijspel (KB)";
+//        String discipline ="Vrijspel (KB)";
+        String discipline ="";
         String nbrPlayers = "3";
         String tableFormat = "2,30m";
         String pointSystem = "MATCHPOINTS";
@@ -276,9 +283,9 @@ public class ConvertMLBBCompetitionData {
         } else if(name.equals("Hoofdklasse Vrijspel (KB)")) {
             discipline = "Vrijspel (KB)";            
         } else if(name.equals("1e Klasse DB")) {
-            discipline = "Drieband";            
+            discipline = "Drieband (KB)";            
         } else if(name.equals("Hoofdklasse DB")) {
-            discipline = "Drieband";            
+            discipline = "Drieband (KB)";            
         } else if(name.equals("Hoofdklasse Kader")) {
             discipline = "K38/2";            
         }

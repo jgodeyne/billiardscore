@@ -21,7 +21,6 @@ import java.io.File;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -43,171 +42,155 @@ public class ConvertNTOCompetitionData {
     private static int nbrOfClubs = 0;
     private static int nbrOfTeams = 0;
     private static int nbrOfPlayers = 0;
-    private static int licNbr = 0;
-    private static int clubLicNbr = 0;
-    private static HashMap<String, Club> clubs = new HashMap<>(); 
+    private static final HashMap<String, TeamCompetitionItem> COMPETITIONS = new HashMap<>();
+    private static final HashMap<String, Club> CLUBS = new HashMap<>();
+
     /**
      * @param args the command line arguments
      * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
         LogManager.getLogManager().readConfiguration(ConvertNTOCompetitionData.class.getResourceAsStream("/logging.properties"));
-        loadReservePlayers(Paths.get("input/nto/NTO - Reserve Spelers.csv"));
-        convertFiles();
+        Path dir = Paths.get("input/nto/Bondslijst NTO.csv");
+        convertFile(dir);
         LOGGER.log(Level.INFO, "Nbr of competitions: {0}", nbrOfCompetitions);
         LOGGER.log(Level.INFO, "Nbr of clubs: {0}", nbrOfClubs);
         LOGGER.log(Level.INFO, "Nbr of teams: {0}", nbrOfTeams);
         LOGGER.log(Level.INFO, "Nbr of players: {0}", nbrOfPlayers);
     }
         
-    private static void convertFiles() throws Exception {
-        ArrayList<TeamCompetitionItem> competitions = new ArrayList<>();
-        LOGGER.log(Level.FINEST, "convertFile => file: {0}", "input/nto/NTO - Hoofdklasse.csv");
-        competitions.add(loadfile(Paths.get("input/nto/NTO - Hoofdklasse.csv")));
-        LOGGER.log(Level.FINEST, "convertFile => file: {0}", "input/nto/NTO - Klasse A.csv");
-        competitions.add(loadfile(Paths.get("input/nto/NTO - Klasse A.csv")));
-        LOGGER.log(Level.FINEST, "convertFile => file: {0}", "input/nto/NTO - Klasse B.csv");
-        competitions.add(loadfile(Paths.get("input/nto/NTO - Klasse B.csv")));
-        LOGGER.log(Level.FINEST, "convertFile => file: {0}", "input/nto/NTO - Klasse C.csv");
-        competitions.add(loadfile(Paths.get("input/nto/NTO - Klasse C.csv")));
-
-        // Add reserver players to teams
-        for(TeamCompetitionItem competitionItem: competitions) {
-            for(TeamItem tmpTeamItem: competitionItem.getTeams().values()) {
-                Team tmpTeam = (Team) tmpTeamItem;
-                Club tmpClub = clubs.get(tmpTeam.getClub());
-                LOGGER.log(Level.FINEST, "convertFile => team: {0} club: {1}", new String[]{tmpTeam.getName(), tmpTeam.getClub()});
-                for(Player player: tmpClub.getPlayers()) {
-                    if(player.getDiscipline().isEmpty()) {
-                        player.setDiscipline(competitionItem.getDiscipline());
-                    }
-                    tmpTeam.putPlayer(player);
-                }
-            }
-        }
-        
+    private static void convertFile(Path inputFilePath) throws Exception {
+        LOGGER.log(Level.FINEST, "convertFile => file: {0}", inputFilePath);
+        Collection<TeamCompetitionItem> competitions = loadfile(inputFilePath);
         for (TeamCompetitionItem competition : competitions) {
             LOGGER.log(Level.FINEST, "convertFile => competition: {0}", competition.getName());
-            String outputPath = "output/nto/";
-            Paths.get(outputPath).toFile().mkdirs();
-            Path outputFilePath = Paths.get(outputPath+ competition.getName() + " - "+ competition.getGroup() + ".xml");
+            Paths.get("output/nto/").toFile().mkdirs();
+            Path outputFilePath = Paths.get("output/nto/"+ competition.getName() + ".xml");
             TeamCompetitionDataManager.writeFile(competition, outputFilePath);
         }
-        createLeagueFile(competitions);
+        createLeagueFile();
     }
     
-    private static void loadReservePlayers(Path inputFilePath) throws Exception {
+    private static Collection<TeamCompetitionItem> loadfile(Path inputFilePath) throws Exception {
         LOGGER.log(Level.FINEST, "loadfile => file: {0}", inputFilePath);
         File csvData = inputFilePath.toFile();
-
-        try (CSVParser parser = CSVParser.parse(csvData, Charset.defaultCharset(), CSVFormat.EXCEL.withDelimiter(';'))) {
-            Iterator<CSVRecord> itRecords = parser.iterator();
-            Club club = null;
-            while (itRecords.hasNext()) {
-                CSVRecord csvRecord = itRecords.next();
-                if(!csvRecord.get(0).isEmpty()) {
-                    LOGGER.log(Level.FINEST, "loadfile => club: {0}", csvRecord.get(0));
-                    String name = csvRecord.get(0).trim();
-                    // Club
-                    nbrOfClubs++;
-                    club= new Club();
-                    club.setLic(Integer.toString(++clubLicNbr));
-                    club.setName(name);
-                    clubs.put(name, club);
-                    
-                    Player player = new Player();
-                    player.setLic(Integer.toString(++licNbr));
-                    player.setName(csvRecord.get(1).trim());
-                    player.setAvg(csvRecord.get(3).trim());
-                    player.setTsp(csvRecord.get(2).trim());
-                    player.setDiscipline("Libre");
-                    player.setOrder("R");
-                    club.addPlayer(player);
-                } else {
-                    // Player
-                    LOGGER.log(Level.FINEST, "loadfile => player: {0}", csvRecord.get(1));
-                    nbrOfPlayers++;
-                    Player player = new Player();
-                    player.setLic(Integer.toString(++licNbr));
-                    player.setName(csvRecord.get(1).trim());
-                    player.setAvg(csvRecord.get(3).trim());
-                    player.setTsp(csvRecord.get(2).trim());
-                    player.setDiscipline("Libre");
-                    player.setOrder("R");
-                    if(club!=null) {
-                        club.addPlayer(player);
-                    }
-                }
-            }
-        }
-    }
-        
-    private static TeamCompetitionItem loadfile(Path inputFilePath) throws Exception {
-        LOGGER.log(Level.FINEST, "loadfile => file: {0}", inputFilePath);
-        File csvData = inputFilePath.toFile();
-
-        String competitionName = inputFilePath.getFileName().toString().split("[.]")[0];
-        LOGGER.log(Level.FINEST, "loadfile => competition: {0}", competitionName);
-        nbrOfCompetitions++;
-        TeamCompetitionItem competition = createCompetition(competitionName);
         
         try (CSVParser parser = CSVParser.parse(csvData, Charset.defaultCharset(), CSVFormat.EXCEL.withDelimiter(';'))) {
             Iterator<CSVRecord> itRecords = parser.iterator();
             Team team = null;
             int order = 0;
+            Club club = null;
+            boolean reserve = false;
+            boolean nonActive = false;
             while (itRecords.hasNext()) {
                 CSVRecord csvRecord = itRecords.next();
-                if(csvRecord.get(1).isEmpty()) {
+                if(!csvRecord.get(0).isEmpty()) {
+                    // Club
+                    order=0;
+                    String lic = csvRecord.get(0).trim();
+                    String name = csvRecord.get(1).trim();
+                    club = CLUBS.get(lic);
+                    if(club==null) {
+                        nbrOfClubs++;
+                        club= new Club();
+                        club.setLic(lic);
+                        club.setName(name);
+                        CLUBS.put(lic, club);
+                    }
+                }
+                if(!csvRecord.get(2).isEmpty()) {
                     //Team
-                    order = 0;
-                    String name = csvRecord.get(0).trim();
-                    LOGGER.log(Level.FINEST, "loadfile => team: {0}", name);
-                    nbrOfTeams++;
-                    team = new Team();
-                    team.setName(name);
-                    team.setFixedPlayers("1:2::3:4");
-                    competition.putTeam(team);
-                    team.setClub(name.substring(0, name.length()-2));
-                } else {
+                    String teamName = csvRecord.get(2);
+                    if(teamName.equalsIgnoreCase("reserve")) {
+                        reserve=true;
+                        continue;
+                    }
+                    reserve = false;
+                    if(teamName.equalsIgnoreCase("niet actief")) {
+                        nonActive=true;
+                        continue;
+                    }
+                    nonActive = false;
+                    String competitionName = csvRecord.get(3).trim();
+                    TeamCompetitionItem competition = COMPETITIONS.get(competitionName);
+                    if(competition==null) {
+                        nbrOfCompetitions++;
+                        competition = createCompetition(competitionName);
+                        COMPETITIONS.put(competitionName, competition);
+                    }
+                    if(team==null || !team.getName().equalsIgnoreCase(teamName)) {
+                        nbrOfTeams++;
+                        team = new Team();
+                        team.setName(teamName);
+                        competition.putTeam(team);
+                        if (club!=null) {
+                            team.setClub(club.getLic());
+                        }
+                        team.setCompetition(competitionName);
+                    }
+                    continue;
+                }
+                if(!csvRecord.get(5).isEmpty()) {
                     // Player
-                    LOGGER.log(Level.FINEST, "loadfile => player: {0}", csvRecord.get(0));
+                    LOGGER.log(Level.FINEST, "loadfile => player: {0}", csvRecord.get(7));
+                    String type = csvRecord.get(6).trim();
+                    
                     nbrOfPlayers++;
                     Player player = new Player();
-                    player.setLic(Integer.toString(++licNbr));
-                    player.setOrder(Integer.toString(++order));
-                    player.setName(csvRecord.get(0).trim());
-                    player.setAvg(csvRecord.get(2).trim());
-                    player.setTsp(csvRecord.get(1).trim());
-                    player.setDiscipline("Libre");
-                    if(team != null) {
-                        team.putPlayer(player);
+                    player.setLic(csvRecord.get(5).trim());
+                    //player.setOrder(csvRecord.get(6).trim());
+                    player.setName(csvRecord.get(6).trim());
+                    player.setAvg(csvRecord.get(7).trim());
+                    player.setTsp(csvRecord.get(8).trim());
+                    if(!nonActive) {
+                        if(reserve) {
+                            player.setOrder("R");
+//                            if(type.equalsIgnoreCase("L") || type.equalsIgnoreCase("S")) {
+//                                player.setDiscipline("Vrijspel (KB)");
+//                            } else if (type.equalsIgnoreCase("D")) {
+//                                player.setDiscipline("Drieband (KB)");
+//                            } else if (type.equalsIgnoreCase("K")) {
+//                                player.setDiscipline("K38/2");
+//                            }
+                        } else {
+                            if(team!=null) {
+                                player.setTeamName(team.getName());
+                                player.setDiscipline(COMPETITIONS.get(team.getCompetition()).getDiscipline());
+                                String fixedPlayers = team.getFixedPlayers();
+                                fixedPlayers+=player.getOrder()+":";
+                                team.setFixedPlayers(fixedPlayers);
+                                team.putPlayer(player);
+                            }
+                        }
+                        if(club!=null) {
+                            club.addPlayer(player);
+                        }
+                    }
+                    else if (nonActive) {
+                        //do nothing
                     }
                 }
             }
-        }
-        return competition;
+        }        
+        return COMPETITIONS.values();
     }  
 
         
-    private static void createLeagueFile(Collection<TeamCompetitionItem> competitions) throws Exception {
-        LeagueItem leagueItem = new LeagueItem();
-        leagueItem.setName(LEAGUE_NAME);
-        leagueItem.setTurnIndicatorsColor("YELLOW");
-        leagueItem.setWarmingUpTime("3");
-        LOGGER.log(Level.FINEST, "createLeagueFile => league: {0}", "NTO");
-        for(Club club: clubs.values()) {
+    private static void createLeagueFile() throws Exception {
+        LeagueItem league = new LeagueItem();
+        league.setName(LEAGUE_NAME);
+        league.setTurnIndicatorsColor("YELLOW");
+        league.setWarmingUpTime("3");
+        for(Club club: CLUBS.values()) {
             ClubItem clubItem = new ClubItem();
             clubItem.setLic(club.getLic());
             clubItem.setName(club.getName());
-            leagueItem.putClub(clubItem);
+            league.putClub(clubItem);
         }
-        for(TeamCompetitionItem competition: competitions) {
-            LOGGER.log(Level.FINEST, "createLeagueFile => competition: {0}", competition.getName());
+        for(TeamCompetitionItem competition: COMPETITIONS.values()) {
             for(TeamItem tmpTeamItem: competition.getTeams().values()) {
                 Team tmpTeam = (Team) tmpTeamItem;
-                LOGGER.log(Level.FINEST, "createLeagueFile => team: {0}", tmpTeam.getName());
                 for(PlayerItem tmpPlayer: tmpTeam.getPlayers().values()) {
-                    LOGGER.log(Level.FINEST, "createLeagueFile => player: {0}", tmpPlayer.getName());
                     Player player = (Player) tmpPlayer;
                     MemberItem member = new MemberItem(tmpTeam.getClub());
                     member.setName(player.getName());
@@ -216,12 +199,17 @@ public class ConvertNTOCompetitionData {
                     tsp.setTsp(player.getTsp());
                     tsp.setDiscipline(player.getDiscipline());
                     member.putTsp(tsp);
-                    leagueItem.putMember(member);
+                    MemberItem existingMember = league.getMember(member.getLic());
+                    if(null==existingMember) {
+                        league.putMember(member);
+                    } else {
+                        existingMember.putTsp(tsp);
+                    }
                 }
             }
         }
-        Path outputFilePath = Paths.get("output/nto/"+ leagueItem.getName()+ ".xml");
-        LeagueDataManager.writeFile(leagueItem, outputFilePath);
+        Path outputFilePath = Paths.get("output/nto/"+ league.getName()+ ".xml");
+        LeagueDataManager.writeFile(league, outputFilePath);
     }
 
     private static TeamCompetitionItem createCompetition(String name) {
@@ -230,10 +218,59 @@ public class ConvertNTOCompetitionData {
         competition.setLeague(LEAGUE_NAME);
 
         String discipline ="Vrijspel (KB)";
-        String nbrPlayers = "4";
+        //String discipline ="";
+        String nbrPlayers = "3";
         String tableFormat = "2,30m";
         String pointSystem = "MATCHPOINTS";
         
+        if(name.equals("2e Klasse A")) {
+            discipline = "Vrijspel (KB)";
+        } else if (name.equals("3e Klasse D")) {            
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("3e Klasse B")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("4e Klasse B")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("2e Klasse C")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("3e Klasse A")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("4e Klasse A")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("5e Klasse C")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("1e Klasse E")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("2e Klasse D")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("5e Klasse B")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("1e Klasse D")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("3e Klasse C")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("4e Klasse C")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("1e Klasse C")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("1e Klasse A")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("1e Klasse B")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("2e Klasse B")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("5e Klasse A")) {
+            discipline = "Vrijspel (KB)";
+        } else if(name.equals("Hoofdklasse Vrijspel (KB)")) {
+            discipline = "Vrijspel (KB)";            
+        } else if(name.equals("1e Klasse DB")) {
+            discipline = "Drieband (KB)";            
+        } else if(name.equals("Hoofdklasse DB")) {
+            discipline = "Drieband (KB)";            
+        } else if(name.equals("Hoofdklasse Kader")) {
+            discipline = "K38/2";            
+        }
+
         competition.setDiscipline(discipline);
         competition.setNbrOfPlayers(nbrPlayers);
         competition.setTableFormat(tableFormat);

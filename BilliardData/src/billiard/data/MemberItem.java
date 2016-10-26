@@ -24,9 +24,11 @@ public class MemberItem {
     public MemberItem(String clubLic) {
         this.clubLic.setValue(clubLic);
         for (String discipline : PermittedValues.DISCIPLINES) {
-            TSPItem tsp = new TSPItem();
-            tsp.setDiscipline(discipline);
-            tsps.put(discipline, tsp);
+            if(!discipline.isEmpty()) {
+                TSPItem tsp = new TSPItem();
+                tsp.setDiscipline(discipline);
+                tsps.put(discipline, tsp);
+            }
         }
     }
 

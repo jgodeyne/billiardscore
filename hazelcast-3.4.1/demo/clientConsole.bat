@@ -1,0 +1,1 @@
+java -server -cp ../lib/hazelcast-all-3.4.1.jar com.hazelcast.client.console.ClientConsoleApp

@@ -13,6 +13,7 @@ import billiard.data.TeamItem;
  */
 public class Team extends TeamItem {
     private String club = "";
+    private String competition = "";
 
     public String getClub() {
         return club;
@@ -20,5 +21,13 @@ public class Team extends TeamItem {
 
     public void setClub(String club) {
         this.club = club;
+    }
+
+    public String getCompetition() {
+        return competition;
+    }
+
+    public void setCompetition(String competition) {
+        this.competition = competition;
     }
 }
