@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name>Senioren</name>
+    <league>MLBB</league>
+    <group>S</group>
+    <pointsystem>MP</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <discipline>Libre</discipline>
+    <nbrofplayers>3</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers/>
+</competition>

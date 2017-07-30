@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" styleClass="entryform-pane" stylesheets="@../../../../../BilliardCommon/resources/config_example/default.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billiard.score.controller.EnterMatchResultController">
+   <children>
+      <VBox styleClass="vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox styleClass="hbox">
+               <children>
+                  <Label fx:id="lblPlayer1Name" />
+                  <Label fx:id="lblPlayer1TSP" />
+                  <Label fx:id="lblPlayer1Discipline" />
+               </children>
+            </HBox>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="%label.punten" />
+                  <Label text="%label.beurten" GridPane.columnIndex="1" />
+                  <Label text="%label.hr" GridPane.columnIndex="2" />
+                  <TextField fx:id="tfPlayer1Points" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="75.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfPlayer1Innings" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfPlayer1HR" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+               <styleClass>
+                  <String fx:value="grid-pane" />
+                  <String fx:value="dimmer-background-green" />
+               </styleClass>
+            </GridPane>
+            <Separator />
+            <HBox styleClass="hbox">
+               <children>
+                  <Label fx:id="lblPlayer2Name" />
+                  <Label fx:id="lblPlayer2TSP" />
+                  <Label fx:id="lblPlayer2Discipline" />
+               </children>
+            </HBox>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="%label.punten" />
+                  <Label text="%label.beurten" GridPane.columnIndex="1" />
+                  <Label text="%label.hr" GridPane.columnIndex="2" />
+                  <TextField fx:id="tfPlayer2Points" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="75.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfPlayer2Innings" disable="true" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfPlayer2HR" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+               <styleClass>
+                  <String fx:value="grid-pane" />
+                  <String fx:value="dimmer-background-green" />
+               </styleClass>
+            </GridPane>
+            <HBox styleClass="hbox-with-buttons">
+               <children>
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#btnOK_OnAction" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Yes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button cancelButton="true" mnemonicParsing="false" onAction="#btnCancel_OnAction" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

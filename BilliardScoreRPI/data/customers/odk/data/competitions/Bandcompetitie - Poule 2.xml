@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<competition>
+    <name>Bandcompetitie - Poule 2</name>
+    <league>KNBB</league>
+    <group>Poule 2</group>
+    <pointsystem>MP+PERC</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <nbrofplayers>3</nbrofplayers>
+    <discipline>Band</discipline>
+    <tspplayers></tspplayers>
+    <team>
+        <name>Op de Klos 1</name>
+        <fixedplayers>1:2:3</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>181319</lic>
+            <name>Jean Godeyne</name>
+            <discipline>Band</discipline>
+            <tsp>140</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>237006</lic>
+            <name>Marcel Angeletti</name>
+            <discipline>Band</discipline>
+            <tsp>100</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>159571</lic>
+            <name>Jean-Marie Schuijren</name>
+            <discipline>Band</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>125763</lic>
+            <name>André Feijs</name>
+            <discipline>Band</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>125865</lic>
+            <name>Jean Vranken</name>
+            <discipline>Band</discipline>
+            <tsp>32</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>182117</lic>
+            <name>Giel Weerts</name>
+            <discipline>Band</discipline>
+            <tsp>32</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>159572</lic>
+            <name>Corné Horbach</name>
+            <discipline>Band</discipline>
+            <tsp>20</tsp>
+        </player>
+    </team>
+    <team>
+        <name>BV Nazareth 2</name>
+        <fixedplayers>4:5:7</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>203051</lic>
+            <name>Harrie Muutjens</name>
+            <discipline>Band</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>126790</lic>
+            <name>John in de Braek</name>
+            <discipline>Band</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>115930</lic>
+            <name>Harrij Peters</name>
+            <discipline>Band</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>126789</lic>
+            <name>Jo in de Braek</name>
+            <discipline>Band</discipline>
+            <tsp>35</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>166863</lic>
+            <name>Loe Hensels</name>
+            <discipline>Band</discipline>
+            <tsp>35</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>237446</lic>
+            <name>Ed Borro</name>
+            <discipline>Band</discipline>
+            <tsp>32</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>212933</lic>
+            <name>John Humblet</name>
+            <discipline>Band</discipline>
+            <tsp>17</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Los Band 1</name>
+        <fixedplayers>1:5:8</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>126080</lic>
+            <name>Huub Loo</name>
+            <discipline>Band</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>125838</lic>
+            <name>Wiel Odekerken</name>
+            <discipline>Band</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>230201</lic>
+            <name>John Nelissen</name>
+            <discipline>Band</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>215560</lic>
+            <name>Jean Hameleers</name>
+            <discipline>Band</discipline>
+            <tsp>32</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>110478</lic>
+            <name>Nico Timmermans</name>
+            <discipline>Band</discipline>
+            <tsp>30</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>126083</lic>
+            <name>Bér Pachen</name>
+            <discipline>Band</discipline>
+            <tsp>27</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>215700</lic>
+            <name>Helena Odekerken-Meijs</name>
+            <discipline>Band</discipline>
+            <tsp>25</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>162168</lic>
+            <name>Phili van Domburg</name>
+            <discipline>Band</discipline>
+            <tsp>22</tsp>
+        </player>
+    </team>
+    <team>
+        <name>Herremeniezaal Hier 1</name>
+    </team>
+    <team>
+        <name>BC Maarland 1</name>
+        <fixedplayers>3:4:8</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>136777</lic>
+            <name>Peter Haanen</name>
+            <discipline>Band</discipline>
+            <tsp>120</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>202927</lic>
+            <name>Maurice Sangen</name>
+            <discipline>Band</discipline>
+            <tsp>75</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>164870</lic>
+            <name>Emiel Roijen</name>
+            <discipline>Band</discipline>
+            <tsp>65</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>126035</lic>
+            <name>Twan Thijssen</name>
+            <discipline>Band</discipline>
+            <tsp>55</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>125835</lic>
+            <name>Harry van Neer</name>
+            <discipline>Band</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>154386</lic>
+            <name>Henk Weijers</name>
+            <discipline>Band</discipline>
+            <tsp>45</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>142344</lic>
+            <name>Pierre Spee</name>
+            <discipline>Band</discipline>
+            <tsp>35</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>122468</lic>
+            <name>Willie Meijs</name>
+            <discipline>Band</discipline>
+            <tsp>35</tsp>
+        </player>
+    </team>
+    <team>
+        <name>BC Amby 3</name>
+        <fixedplayers>3:6:8</fixedplayers>
+        <player>
+            <order>1</order>
+            <lic>125938</lic>
+            <name>Harrie Crijns</name>
+            <discipline>Band</discipline>
+            <tsp>50</tsp>
+        </player>
+        <player>
+            <order>2</order>
+            <lic>207416</lic>
+            <name>Eddy Geijselaars</name>
+            <discipline>Band</discipline>
+            <tsp>40</tsp>
+        </player>
+        <player>
+            <order>3</order>
+            <lic>136076</lic>
+            <name>Jo Duchateau</name>
+            <discipline>Band</discipline>
+            <tsp>27</tsp>
+        </player>
+        <player>
+            <order>4</order>
+            <lic>136071</lic>
+            <name>Henny van Lijf</name>
+            <discipline>Band</discipline>
+            <tsp>25</tsp>
+        </player>
+        <player>
+            <order>5</order>
+            <lic>166855</lic>
+            <name>Jo Lemmens</name>
+            <discipline>Band</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>6</order>
+            <lic>218139</lic>
+            <name>Ed Wintjens</name>
+            <discipline>Band</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>7</order>
+            <lic>166383</lic>
+            <name>Pierre Rutten</name>
+            <discipline>Band</discipline>
+            <tsp>22</tsp>
+        </player>
+        <player>
+            <order>8</order>
+            <lic>216877</lic>
+            <name>Bert Luckerhof</name>
+            <discipline>Band</discipline>
+            <tsp>20</tsp>
+        </player>
+    </team>
+</competition>
