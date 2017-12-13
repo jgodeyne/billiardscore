@@ -13,6 +13,73 @@ and open the template in the editor.
     -fx-font-size: 16px;
 }
 
+/* Scoreboard Styles */
+.scoreboard-pane {
+    -fx-background-color: black;
+}
+
+.scoreboard-vbox {
+    -fx-spacing: 20;
+}
+.player1-alignment {
+    -fx-alignment: TOP_LEFT;
+}
+
+.player2-alignment {
+    -fx-alignment: TOP_RIGHT;    
+}
+
+.player-name {
+    -fx-font-size: 64px;
+    -fx-font-weigth: bold;
+    -fx-text-fill: yellow;
+}
+
+.player-club {
+    
+}
+
+.player-discipline {
+    -fx-font-size: 64px;    
+    -fx-text-fill: white;    
+}
+
+.player-tsp {
+    -fx-font-size: 64px;    
+    -fx-text-fill: white;
+}
+
+.player-info {
+    -fx-font-size: 36px;    
+    -fx-text-fill: white;
+}
+
+.player-points {
+    -fx-font-size: 224px;    
+    -fx-text-fill: burlywood;
+}
+
+.innings {
+    -fx-font-size: 164px;
+    -fx-text-fill: orange
+}
+
+.player-score-info {
+    -fx-font-size: 24px;  
+    -fx-text-fill: white;
+}
+
+.run-entry {
+    -fx-font-size: 80px;
+    -fx-pref-width: 200px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.adverticement {
+    
+}
+
 /* Custom classes for default javafx controls */
 .grid-pane {
     -fx-hgap: 10;
@@ -59,65 +126,6 @@ and open the template in the editor.
 /* Entry Form Dialog Styles */
 .entryform-pane {
     -fx-padding: 10;
-}
-
-/* Scoreboard Styles */
-.scoreboard-pane {
-    -fx-background-color: black;
-}
-
-.scoreboard-vbox {
-    -fx-spacing: 20;
-}
-.player1-alignment {
-    -fx-alignment: TOP_LEFT;
-}
-
-.player2-alignment {
-    -fx-alignment: TOP_RIGHT;    
-}
-
-.player-name {
-    -fx-font-size: 64px;
-    -fx-font-weigth: bold;
-    -fx-text-fill: yellow;
-}
-
-.player-info {
-    -fx-font-size: 36px;    
-    -fx-text-fill: white;
-}
-
-.player-tsp {
-    -fx-font-size: 64px;    
-    -fx-text-fill: white;
-}
-
-.player-points {
-    -fx-font-size: 224px;    
-    -fx-text-fill: burlywood;
-}
-
-.player-innings {
-    -fx-font-size: 164px;
-    -fx-text-fill: orange
-}
-
-.player-score-info {
-    -fx-font-size: 24px;  
-    -fx-text-fill: white;
-}
-
-.run-entry {
-    -fx-font-size: 80px;
-    -fx-pref-width: 200px;
-    -fx-background-color: gray;
-    -fx-text-fill: white;
-}
-
-.remaining {
-    -fx-font-size: 80px;
-    -fx-text-fill: red;
 }
 
 .dimmer {

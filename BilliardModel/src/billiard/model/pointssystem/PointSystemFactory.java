@@ -21,19 +21,21 @@ public class PointSystemFactory {
         
     public static PointsSystemInterface getPointSystem(PointSystem pointSystem) {
         System.out.println("billiard.model.pointssystem.PointSystemFactory.getPointSystem(): " + pointSystem.toString());
-        if(pointSystem.equals(PointSystem.MATCHPOINTS_PERCENTAGE)) {
-            return new MatchPointsPercentageSystem();            
+        if(pointSystem.equals(PointSystem.PERCENTAGEPOINTS)) {
+            return new PercentagePointsSystem();            
         } else if(pointSystem.equals(PointSystem.COMPETITIONPOINTS)) {
             return new CompetitionPointsSystem();
         } else if(pointSystem.equals(PointSystem.MATCHPOINTS_PROM)) {
             return new MatchPointsPromSystem();
+        } else if(pointSystem.equals(pointSystem.MATCHPOINTS_PERCENTAGE_BONUS)) {
+            return new MatchPointsPercentageBonusSystem();
         } else {
             return new MatchPointsSystem();
         }
     }
 
     public enum PointSystem {
-        MATCHPOINTS, COMPETITIONPOINTS, MATCHPOINTS_PERCENTAGE, MATCHPOINTS_PROM;
+        MATCHPOINTS, COMPETITIONPOINTS, PERCENTAGEPOINTS, MATCHPOINTS_PROM, MATCHPOINTS_PERCENTAGE_BONUS;
         
         public static ArrayList<String> stringValues() {
             ArrayList<String> values = new ArrayList<>();

@@ -33,22 +33,34 @@
                               <Font name="System Bold" size="64.0" />
                            </font>
                         </Label>
-                        <Label fx:id="player_1_club" layoutX="13.0" layoutY="71.0" styleClass="player-info" text="Club 1" textAlignment="CENTER" textFill="#2b2b2b">
+                        <Label fx:id="player_1_club" layoutX="13.0" layoutY="71.0" text="Club 1" textAlignment="CENTER" textFill="#2b2b2b">
                            <font>
                               <Font size="36.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="player-info" />
+                              <String fx:value="player-club" />
+                           </styleClass>
                         </Label>
                         <HBox spacing="20.0" styleClass="player1-alignment">
                            <children>
-                              <Label fx:id="player_1_pts" styleClass="player-tsp" text="TSP" textAlignment="CENTER" textFill="#2b2b2b">
+                              <Label fx:id="player_1_pts" text="TSP" textAlignment="CENTER" textFill="#2b2b2b">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
+                                 <styleClass>
+                                    <String fx:value="player-tsp" />
+                                    <String fx:value="player-info" />
+                                 </styleClass>
                               </Label>
-                              <Label fx:id="player_1_discipline" styleClass="player-tsp" text="Discipline" textFill="#2b2b2b">
+                              <Label fx:id="player_1_discipline" text="Discipline" textFill="#2b2b2b">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
+                                 <styleClass>
+                                    <String fx:value="player-discipline" />
+                                    <String fx:value="player-info" />
+                                 </styleClass>
                               </Label>
                            </children>
                         </HBox>
@@ -65,22 +77,34 @@
                               <Font name="System Bold" size="64.0" />
                            </font>
                         </Label>
-                        <Label fx:id="player_2_club" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="541.0" layoutY="71.0" styleClass="player-info" text="Club 2" textAlignment="CENTER" textFill="#2b2b2b" VBox.vgrow="ALWAYS">
+                        <Label fx:id="player_2_club" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="541.0" layoutY="71.0" text="Club 2" textAlignment="CENTER" textFill="#2b2b2b" VBox.vgrow="ALWAYS">
                            <font>
                               <Font size="36.0" />
                            </font>
+                           <styleClass>
+                              <String fx:value="player-info" />
+                              <String fx:value="player-club" />
+                           </styleClass>
                         </Label>
                         <HBox alignment="CENTER_RIGHT" spacing="20.0" styleClass="player2-alignment">
                            <children>
-                              <Label fx:id="player_2_pts" alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="player-tsp" text="TSP" textAlignment="CENTER" textFill="#2b2b2b">
+                              <Label fx:id="player_2_pts" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="TSP" textAlignment="CENTER" textFill="#2b2b2b">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
+                                 <styleClass>
+                                    <String fx:value="player-tsp" />
+                                    <String fx:value="player-info" />
+                                 </styleClass>
                               </Label>
-                              <Label fx:id="player_2_discipline" alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="player-tsp" text="Discipline" textAlignment="CENTER" textFill="#2b2b2b">
+                              <Label fx:id="player_2_discipline" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Discipline" textAlignment="CENTER" textFill="#2b2b2b">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
+                                 <styleClass>
+                                    <String fx:value="player-discipline" />
+                                    <String fx:value="player-info" />
+                                 </styleClass>
                               </Label>
                            </children>
                         </HBox>
@@ -111,7 +135,7 @@
                   </VBox>
                   <VBox alignment="CENTER">
                      <children>
-                        <Label fx:id="innings" alignment="CENTER" contentDisplay="CENTER" styleClass="player-innings" text="99" textFill="#2b2b2b">
+                        <Label fx:id="innings" alignment="CENTER" contentDisplay="CENTER" styleClass="innings" text="99" textFill="#2b2b2b">
                            <font>
                               <Font size="164.0" />
                            </font>
@@ -386,7 +410,7 @@
             <HBox fx:id="timerBox" alignment="CENTER" />
             <HBox alignment="CENTER" styleClass="hbox">
                <children>
-                  <ImageView fx:id="banner_img" fitHeight="100.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="banner_img" fitHeight="100.0" pickOnBounds="true" preserveRatio="true" styleClass="adverticement">
                      <image>
                         <Image url="@../../../images/banner.jpg" />
                      </image>

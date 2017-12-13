@@ -94,9 +94,10 @@ public class WarmingUpCountDownController implements Initializable, ControllerIn
                 } else {
                     txtTimer.setFill(Paint.valueOf("Black"));                    
                 }
-                if (current.equals(end)) {
-                    this.cancel();
-                    timerRunning = false;
+                if (current.after(end)) {
+                    btnStop_OnAction(null);
+//                    task.cancel();
+//                    timerRunning = false;
                 }
             }
         };

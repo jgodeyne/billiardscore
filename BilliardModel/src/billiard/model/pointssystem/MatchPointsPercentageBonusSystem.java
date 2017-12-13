@@ -12,21 +12,19 @@ import billiard.model.Match;
  *
  * @author jean
  */
-public class MatchPointsPercentageSystem implements PointsSystemInterface {
+public class MatchPointsPercentageBonusSystem implements PointsSystemInterface {
 
     @Override
     public void determineMatchPoints(Match match) {
-        int percPlayer1 = (match.getPlayer1Result().getPoints() * 10) / match.getPlayer1().getTsp();
-        int percPlayer2 = (match.getPlayer2Result().getPoints() * 10) / match.getPlayer2().getTsp();
         if(match.getWinner()==0) {
-            match.getPlayer1Result().setMatchPoints(1+percPlayer1);
-            match.getPlayer2Result().setMatchPoints(1+percPlayer2);
+            match.getPlayer1Result().setMatchPoints(1);
+            match.getPlayer2Result().setMatchPoints(1);
         } else if (match.getWinner()==1) {
-            match.getPlayer1Result().setMatchPoints(2+percPlayer1);
-            match.getPlayer2Result().setMatchPoints(0+percPlayer2);            
+            match.getPlayer1Result().setMatchPoints(2);
+            match.getPlayer2Result().setMatchPoints(0);            
         } else {
-            match.getPlayer1Result().setMatchPoints(0+percPlayer1);
-            match.getPlayer2Result().setMatchPoints(2+percPlayer2);
+            match.getPlayer1Result().setMatchPoints(0);
+            match.getPlayer2Result().setMatchPoints(2);
         }
     }
 
@@ -46,7 +44,16 @@ public class MatchPointsPercentageSystem implements PointsSystemInterface {
                 intPointsT2 += match.getPlayer2Result().getMatchPoints();
             }
         }
-        competition.getTeam1Result().setMatchPoints(intPointsT1);
-        competition.getTeam2Result().setMatchPoints(intPointsT2);
+        int bonus1= 0; int bonus2 = 0;
+        if(competition.getTeam1Result().getPercentage() > competition.getTeam2Result().getPercentage()) {
+            bonus1 = 2;
+        }
+        else if (competition.getTeam1Result().getPercentage() < competition.getTeam2Result().getPercentage()) {
+            bonus2 = 2;
+        } else {
+            bonus1 = 1; bonus2 = 1;
+        }
+        competition.getTeam1Result().setMatchPoints(intPointsT1+bonus1);
+        competition.getTeam2Result().setMatchPoints(intPointsT2+bonus2);
     }    
 }

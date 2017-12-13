@@ -51,7 +51,7 @@ public class ConvertMLBBCompetitionData {
      */
     public static void main(String[] args) throws Exception {
         LogManager.getLogManager().readConfiguration(ConvertMLBBCompetitionData.class.getResourceAsStream("/logging.properties"));
-        Path dir = Paths.get("input/mlbb/Bondslijst MLBB.csv");
+        Path dir = Paths.get("input/mlbb/Bondslijst MLBB - 2016-2017.csv");
         convertFile(dir);
         LOGGER.log(Level.INFO, "Nbr of competitions: {0}", nbrOfCompetitions);
         LOGGER.log(Level.INFO, "Nbr of clubs: {0}", nbrOfClubs);

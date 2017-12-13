@@ -60,5 +60,4 @@ public class PlayerMatchResult implements Serializable {
     public void setMatchPoints(int matchPoints) {
         this.matchPoints = matchPoints;
     }
-
 }
