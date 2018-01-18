@@ -11,6 +11,7 @@ import billiard.common.PermittedValues;
 import billiard.data.PlayerItem;
 import billiard.data.TeamItem;
 import java.net.URL;
+import java.util.Comparator;
 import java.util.ResourceBundle;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -132,6 +133,7 @@ public class TeamDetailController implements Initializable, ControllerInterface 
         } else {
             tblPlayers.getSelectionModel().clearSelection();
         }
+        tblPlayers.getItems().sort(Comparator.comparing(PlayerItem::getOrder));
         
         btnUpdate.setDisable(true);
         btnDelete.setDisable(true);

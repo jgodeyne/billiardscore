@@ -282,7 +282,13 @@ public class TeamCompetitionSummarySheetController {
         html.append("</tr>").append("\n");
 
         // players  team 1
-        for (Player player : team1.getPlayers()) {
+        for (Match match : competition.getMatches()) {
+            Player player = null;
+            if(team1.isPlayerOfTeam(match.getPlayer1())) {
+                player = match.getPlayer1();
+            } else {
+                player = match.getPlayer2();
+            }
             String dfFormat = "#0.00";
             if(player.getDiscipline().contains("Drieband")) {
                 dfFormat = "#0.000";
@@ -290,7 +296,7 @@ public class TeamCompetitionSummarySheetController {
             DecimalFormat df = new DecimalFormat(dfFormat);
             df.setRoundingMode(RoundingMode.DOWN);
 
-            PlayerMatchResult result = competition.getPlayerResult(player);
+            PlayerMatchResult result = competition.getPlayerResult(match.getId(), player);
             html.append("<tr>").append("\n");
             html.append("<td>").append(player.getLicentie()).append("</td>").append("\n");
             html.append("<td class='naam'>").append(player.getName()).append("</td>").append("\n");
@@ -343,7 +349,13 @@ public class TeamCompetitionSummarySheetController {
         html.append("</tr>").append("\n");
 
         // players  team 2
-        for (Player player : team2.getPlayers()) {
+        for (Match match : competition.getMatches()) {
+            Player player = null;
+            if(team2.isPlayerOfTeam(match.getPlayer1())) {
+                player = match.getPlayer1();
+            } else {
+                player = match.getPlayer2();
+            }
             String dfFormat = "#0.00";
             if(player.getDiscipline().contains("Drieband")) {
                 dfFormat = "#0.000";
@@ -351,7 +363,7 @@ public class TeamCompetitionSummarySheetController {
             DecimalFormat df = new DecimalFormat(dfFormat);
             df.setRoundingMode(RoundingMode.DOWN);
 
-            PlayerMatchResult result = competition.getPlayerResult(player);
+            PlayerMatchResult result = competition.getPlayerResult(match.getId(), player);
             html.append("<tr>").append("\n");
             html.append("<td>").append(player.getLicentie()).append("</td>").append("\n");
             html.append("<td class='naam'>").append(player.getName()).append("</td>").append("\n");

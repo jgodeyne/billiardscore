@@ -6,7 +6,11 @@
 package billiard.data;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -54,10 +58,10 @@ public class TeamItem {
 
     public ArrayList getPlayerNames() {
         ArrayList<String> names = new ArrayList<>();
-        for (Map.Entry<String, PlayerItem> entry : players.entrySet()) {
-            String key = entry.getKey();
-            PlayerItem value = entry.getValue();
-            names.add(value.getName());
+        List<PlayerItem> list = new ArrayList<>(players.values());
+        Collections.sort(list, Comparator.comparing(PlayerItem::getOrder));
+        for (PlayerItem playerItem : list) {
+            names.add(playerItem.getName());
         }
         return names;
     }

@@ -104,6 +104,20 @@ public class TeamCompetition extends Competition implements Serializable {
         return result;
     }
     
+    public PlayerMatchResult getPlayerResult(long matchID, Player player) {
+        ArrayList<Match> matches = this.getMatches();
+        for (Match match : matches) {
+            if(match.getId() == matchID) {
+                if(match.getPlayer1().getLicentie().equals(player.getLicentie())) {
+                    return match.getPlayer1Result();
+                } else if (match.getPlayer2().getLicentie().equals(player.getLicentie())) {
+                    return match.getPlayer2Result();
+                }
+            }
+        }
+        return null;
+    }
+    
     public PlayerMatchResult getPlayerResult(Player player) {
         ArrayList<Match> matches = this.getMatches();
         for (Match match : matches) {
@@ -115,7 +129,7 @@ public class TeamCompetition extends Competition implements Serializable {
         }
         return null;
     }
-    
+
     public String toCSV() {
         StringBuilder sb = new StringBuilder();
         sb.append("lic;name;tsp;points;innings;highest run;matchpoints\n");

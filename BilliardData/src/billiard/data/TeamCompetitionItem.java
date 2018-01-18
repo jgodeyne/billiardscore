@@ -9,7 +9,10 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -185,10 +188,10 @@ public class TeamCompetitionItem {
 
     public ArrayList getTeamNames() {
         ArrayList<String> names = new ArrayList<>();
-        for (Map.Entry<String, TeamItem> entry : teams.entrySet()) {
-            String key = entry.getKey();
-            TeamItem value = entry.getValue();
-            names.add(value.getName());
+        List<TeamItem> list = new ArrayList<>(teams.values());
+        Collections.sort(list, Comparator.comparing(TeamItem::getName));
+        for (TeamItem teamItem : list) {
+            names.add(teamItem.getName());
         }
         return names;
     }
