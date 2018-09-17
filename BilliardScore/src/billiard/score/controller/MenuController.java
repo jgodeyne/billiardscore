@@ -16,11 +16,14 @@ import billiard.common.CommonDialogs;
 import billiard.common.hazelcast.SyncManager;
 import billiard.model.ScoreboardManager;
 import com.hazelcast.core.ITopic;
+import com.hazelcast.core.ItemEvent;
+import com.hazelcast.core.ItemListener;
 import com.hazelcast.core.Message;
 import com.hazelcast.core.MessageListener;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -64,16 +67,15 @@ public class MenuController implements Initializable, ControllerInterface {
     public void initialize(URL url, ResourceBundle rb) {
         try {
             if(SyncManager.isHazelcastEnabled()) {
-                ledConnected.setFill(Paint.valueOf("green"));
                 MatchManager matchManager = MatchManager.getInstance();
                 topic = matchManager.getStartMatchTopic();
                 topicId = topic.addMessageListener(new MessageListener() {
                     @Override
                     public void onMessage(Message message) {
                         StartMatchMessage msg = (StartMatchMessage )message.getMessageObject();
-                        System.out.println("Match received: " + msg.getScoreBoardId() + " - " + msg.getMatchId());
+                        LOGGER.log(Level.FINEST, "Match received: " + msg.getScoreBoardId() + " - " + msg.getMatchId());
                         Match match = matchManager.getMatch(msg.getMatchId());
-                        System.out.println("Match found: " + match.toString());
+                        LOGGER.log(Level.FINEST, "Match found: " + match.toString());
                         String scoreboardId;
                         try {
                             scoreboardId = AppProperties.getInstance().getScoreboardId();
@@ -92,8 +94,32 @@ public class MenuController implements Initializable, ControllerInterface {
                         }
                     }
                 });
-            } else {
-                ledConnected.setFill(Paint.valueOf("red"));
+                ScoreboardManager scoreboardManager = ScoreboardManager.getInstance();
+                if(scoreboardManager.nbrOfScoreboards() > 1) {
+                    ledConnected.setFill(Paint.valueOf("green"));
+                } else {
+                    ledConnected.setFill(Paint.valueOf("red"));
+                }
+                scoreboardManager.addItemListener(new ItemListener() {
+                    @Override
+                    public void itemAdded(ItemEvent ie) {
+                        if(scoreboardManager.nbrOfScoreboards() > 1) {
+                            ledConnected.setFill(Paint.valueOf("green"));
+                        } else {
+                            ledConnected.setFill(Paint.valueOf("red"));
+                        }
+                    }
+
+                    @Override
+                    public void itemRemoved(ItemEvent ie) {
+                        if(scoreboardManager.nbrOfScoreboards() > 1) {
+                            ledConnected.setFill(Paint.valueOf("green"));
+                        } else {
+                            ledConnected.setFill(Paint.valueOf("red"));
+                        }
+                    }
+                });
+                
             }
         } catch (Exception ex) {
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));

@@ -6,7 +6,10 @@
 package billiard.model;
 
 import billiard.common.hazelcast.SyncManager;
+import com.hazelcast.core.EntryListener;
 import com.hazelcast.core.IList;
+import com.hazelcast.core.IMap;
+import com.hazelcast.core.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,5 +62,18 @@ public class ScoreboardManager {
         } else {
             return new ArrayList(localScoreboards);
         }
+    }
+    
+    public void addItemListener(ItemListener listener) {
+        if(SyncManager.isHazelcastEnabled()) {
+            scoreboards.addItemListener(listener, true);
+        }
+    }
+    
+    public int nbrOfScoreboards() {
+        if(SyncManager.isHazelcastEnabled()) {
+            return scoreboards.size();
+        }
+        return 1;
     }
 }
