@@ -64,6 +64,8 @@ public class TeamCompetitionSummarySheetController {
 
     private static final Logger LOGGER = Logger.getLogger(TeamCompetitionSummarySheetController.class.getName(), null);
     private static final String SUMMARYSHEET_CSS = "/summarysheet.css";
+    private static final String DF_2_DEC = "#0.00";
+    private static final String DF_3_DEC = "#0.000";
 
     Stage stage;
     final WebView browser;
@@ -158,7 +160,7 @@ public class TeamCompetitionSummarySheetController {
         AnchorPane pane = new AnchorPane();
         pane.setPrefSize(1024, 768);
         pane.getChildren().add(browser);
-        String html = genScroreSheet();
+        String html = genScoreSheet();
         competition.setSummarySheetHTML(html);
         TeamCompetitionManager.getInstance().updateTeamCompetition(competition);
         webEngine.loadContent(html);
@@ -184,7 +186,7 @@ public class TeamCompetitionSummarySheetController {
         LOGGER.log(Level.FINEST, "TeamCompetitionSummarySheetController => End");
     }
 
-    private String genScroreSheet() throws Exception {
+    private String genScoreSheet() throws Exception {
         LOGGER.log(Level.FINEST, "TeamCompetitionSummarySheetController.genScroreSheet => Start");
 
         String title = AppProperties.getInstance().getTitle();
@@ -192,6 +194,8 @@ public class TeamCompetitionSummarySheetController {
         String club = AppProperties.getInstance().getClub();
         String userHome = System.getProperty("user.home");
         String logoLocation = AppProperties.getInstance().getLogoLocation();
+        DecimalFormat df = new DecimalFormat();
+        df.setRoundingMode(RoundingMode.DOWN);
 
         StringBuilder html = new StringBuilder();
 
@@ -275,6 +279,7 @@ public class TeamCompetitionSummarySheetController {
         html.append("<td class='label'>").append(bundle.getString("hdng.discipline")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.tsp")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.punten")).append("</td>").append("\n");
+        html.append("<td class='label'>").append(bundle.getString("hdng.percentage")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.beurten")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.gem")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.hr")).append("</td>").append("\n");
@@ -289,12 +294,6 @@ public class TeamCompetitionSummarySheetController {
             } else {
                 player = match.getPlayer2();
             }
-            String dfFormat = "#0.00";
-            if(player.getDiscipline().contains("Drieband")) {
-                dfFormat = "#0.000";
-            }
-            DecimalFormat df = new DecimalFormat(dfFormat);
-            df.setRoundingMode(RoundingMode.DOWN);
 
             PlayerMatchResult result = competition.getPlayerResult(match.getId(), player);
             html.append("<tr>").append("\n");
@@ -303,7 +302,14 @@ public class TeamCompetitionSummarySheetController {
             html.append("<td>").append(player.getDiscipline()).append("</td>").append("\n");
             html.append("<td>").append(player.getTsp()).append("</td>").append("\n");
             html.append("<td>").append(result.getPoints()).append("</td>").append("\n");
+            df.applyPattern(DF_2_DEC);
+            html.append("<td>").append(df.format(result.getPercentage())).append("</td>").append("\n");
             html.append("<td>").append(result.getInnings()).append("</td>").append("\n");
+            if(player.getDiscipline().contains("Drieband")) {
+                df.applyPattern(DF_3_DEC);
+            } else {
+                df.applyPattern(DF_2_DEC);
+            }
             html.append("<td>").append(df.format(result.getAverage())).append("</td>").append("\n");
             html.append("<td>").append(result.getHighestRun()).append("</td>").append("\n");
             html.append("<td>").append(result.getMatchPoints()).append("</td>").append("\n");
@@ -311,17 +317,19 @@ public class TeamCompetitionSummarySheetController {
         }
         TeamResult team1Result = competition.getTeam1Result();
         html.append("<tr>").append("\n");
-        html.append("<td colspan='4' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
+        html.append("<td colspan='3' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
+        html.append("<td>").append(team1Result.getTsp()).append("</td>").append("\n");
         html.append("<td>").append(team1Result.getPoints()).append("</td>").append("\n");
+        df.applyPattern(DF_2_DEC);
+        html.append("<td>").append(df.format(team1Result.getPercentage())).append("</td>").append("\n");
         html.append("<td>").append(team1Result.getInnings()).append("</td>").append("\n");
         html.append("<td>");
         if(null!=competition.getDiscipline()) {
-            String dfFormat = "#0.00";
             if(competition.getDiscipline().contains("Drieband")) {
-                dfFormat = "#0.000";
+                df.applyPattern(DF_3_DEC);
+            } else {
+                df.applyPattern(DF_2_DEC);
             }
-            DecimalFormat df = new DecimalFormat(dfFormat);
-            df.setRoundingMode(RoundingMode.DOWN);
             html.append(df.format(team1Result.getAverage()));
         }
         html.append("</td>").append("\n");
@@ -342,6 +350,7 @@ public class TeamCompetitionSummarySheetController {
         html.append("<td class='label'>").append(bundle.getString("hdng.discipline")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.tsp")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.punten")).append("</td>").append("\n");
+        html.append("<td class='label'>").append(bundle.getString("hdng.percentage")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.beurten")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.gem")).append("</td>").append("\n");
         html.append("<td class='label'>").append(bundle.getString("hdng.hr")).append("</td>").append("\n");
@@ -356,13 +365,6 @@ public class TeamCompetitionSummarySheetController {
             } else {
                 player = match.getPlayer2();
             }
-            String dfFormat = "#0.00";
-            if(player.getDiscipline().contains("Drieband")) {
-                dfFormat = "#0.000";
-            }
-            DecimalFormat df = new DecimalFormat(dfFormat);
-            df.setRoundingMode(RoundingMode.DOWN);
-
             PlayerMatchResult result = competition.getPlayerResult(match.getId(), player);
             html.append("<tr>").append("\n");
             html.append("<td>").append(player.getLicentie()).append("</td>").append("\n");
@@ -370,7 +372,14 @@ public class TeamCompetitionSummarySheetController {
             html.append("<td>").append(player.getDiscipline()).append("</td>").append("\n");
             html.append("<td>").append(player.getTsp()).append("</td>").append("\n");
             html.append("<td>").append(result.getPoints()).append("</td>").append("\n");
+            df.applyPattern(DF_2_DEC);
+            html.append("<td>").append(df.format(result.getPercentage())).append("</td>").append("\n");
             html.append("<td>").append(result.getInnings()).append("</td>").append("\n");
+            if(player.getDiscipline().contains("Drieband")) {
+                df.applyPattern(DF_3_DEC);
+            } else {
+                df.applyPattern(DF_2_DEC);
+            }
             html.append("<td>").append(df.format(result.getAverage())).append("</td>").append("\n");
             html.append("<td>").append(result.getHighestRun()).append("</td>").append("\n");
             html.append("<td>").append(result.getMatchPoints()).append("</td>").append("\n");
@@ -378,17 +387,19 @@ public class TeamCompetitionSummarySheetController {
         }
         TeamResult team2Result = competition.getTeam2Result();
         html.append("<tr>").append("\n");
-        html.append("<td colspan='4' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
+        html.append("<td colspan='3' class='label'>").append(bundle.getString("label.totaal")).append("</td>").append("\n");
+        html.append("<td>").append(team2Result.getTsp()).append("</td>").append("\n");
         html.append("<td>").append(team2Result.getPoints()).append("</td>").append("\n");
+        df.applyPattern(DF_2_DEC);
+        html.append("<td>").append(df.format(team2Result.getPercentage())).append("</td>").append("\n");
         html.append("<td>").append(team2Result.getInnings()).append("</td>").append("\n");
         html.append("<td>");
         if(null!=competition.getDiscipline()) {
-            String dfFormat = "#0.00";
             if(competition.getDiscipline().contains("Drieband")) {
-                dfFormat = "#0.000";
+                df.applyPattern(DF_3_DEC);
+            } else {
+                df.applyPattern(DF_2_DEC);
             }
-            DecimalFormat df = new DecimalFormat(dfFormat);
-            df.setRoundingMode(RoundingMode.DOWN);
             html.append(df.format(team2Result.getAverage()));
         }
         html.append("</td>").append("\n");

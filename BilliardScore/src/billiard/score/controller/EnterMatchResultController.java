@@ -70,12 +70,14 @@ public class EnterMatchResultController implements Initializable , ControllerInt
                             , Integer.parseInt(tfPlayer1Innings.getText())
                             , Integer.parseInt(tfPlayer1HR.getText()),
                             null, null);
+            player1Result.setPercentage((double) player1Result.getPoints() / match.getPlayer1().getTsp() * 100);
 
             PlayerMatchResult player2Result 
                     = new PlayerMatchResult(Integer.parseInt(tfPlayer2Points.getText())
                             , Integer.parseInt(tfPlayer2Innings.getText())
                             , Integer.parseInt(tfPlayer2HR.getText()), 
                             null, null);
+            player2Result.setPercentage((double) player2Result.getPoints() / match.getPlayer2().getTsp() * 100);
 
             int winner = 0;
             if(player1Result.getPoints() != match.getPlayer1().getTsp()) {

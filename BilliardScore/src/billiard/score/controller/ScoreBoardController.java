@@ -511,10 +511,12 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         PlayerMatchResult player1Result
                 = new PlayerMatchResult(getScorePlayer1(), getInnings(), getHRPlayer1(),
                         runPlayer1, totalPlayer1);
+        player1Result.setPercentage(player1Result.getPoints()/getTspPlayer(1)*100);
 
         PlayerMatchResult player2Result
                 = new PlayerMatchResult(getScorePlayer2(), getInnings(), getHRPlayer2(),
                         runPlayer2, totalPlayer2);
+        player2Result.setPercentage(player2Result.getPoints()/getTspPlayer(2)*100);
 
         match.setResult(winner, player1Result, player2Result);
 

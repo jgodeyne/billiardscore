@@ -491,7 +491,7 @@ public class BilliardScore extends Application {
         //logger.log(Level.FINEST, "calculateCompetitionResult => competition: {0}", competition.getName());
         int tsp1 = 0, points1 = 0, innings1 = 0, hr1 = 0, mp1= 0, cp1 = 0;
         int tsp2 = 0, points2 = 0, innings2 = 0, hr2 = 0, mp2= 0, cp2 = 0;
-        float perc1, perc2;
+        double perc1, perc2;
         
         PointsSystemInterface pointSystem = PointSystemFactory.getPointSystem(competition.getPointsSystem());
         for(Match match: competition.getMatches()) {
@@ -532,10 +532,10 @@ public class BilliardScore extends Application {
                 mp2 += playerResult.getMatchPoints();
             }
         }
-        perc1 = points1 / tsp1;
-        competition.setTeam1Result(new TeamResult(points1, innings1, hr1, mp1, perc1));
-        perc2 = points2 / tsp2;
-        competition.setTeam2Result(new TeamResult(points2, innings2, hr2, mp2, perc2));
+        perc1 = (double) points1 / tsp1 * 100;
+        competition.setTeam1Result(new TeamResult(tsp1, points1, innings1, hr1, mp1, perc1));
+        perc2 = (double) points2 / tsp2 * 100;
+        competition.setTeam2Result(new TeamResult(tsp2, points2, innings2, hr2, mp2, perc2));
         pointSystem.determineCompetitionPoints(competition);
         //logger.log(Level.FINEST, "calculateCompetitionResult => End");
     }

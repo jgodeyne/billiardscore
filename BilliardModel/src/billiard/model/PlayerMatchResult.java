@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class PlayerMatchResult implements Serializable {
     private static final long serialVersionUID = 1L;
     private int points = 0;
+    private double percentage = 0;
     private int innings = 0;
     private int highestRun = 0;
     private int matchPoints = 0;
@@ -59,5 +60,13 @@ public class PlayerMatchResult implements Serializable {
 
     public void setMatchPoints(int matchPoints) {
         this.matchPoints = matchPoints;
+    }
+
+    public double getPercentage() {
+        return percentage;
+    }
+
+    public void setPercentage(double percentage) {
+        this.percentage = percentage;
     }
 }

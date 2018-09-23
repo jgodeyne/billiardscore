@@ -553,4 +553,4 @@ public class TeamCompetitionItem {
         LOGGER.log(Level.FINEST, "readPlayer => End");
         return player;
     }
-}
+    }

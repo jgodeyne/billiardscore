@@ -13,14 +13,16 @@ import java.io.Serializable;
  */
 public class TeamResult implements Serializable {
     private static final long serialVersionUID = 1L;
+    private int tsp = 0;
     private int points = 0;
     private int innings = 0;
     private int highestRun = 0;
     private int matchPoints = 0;
-    private float percentage = 0;
+    private double percentage = 0;
 
-    public TeamResult(int points, int innings, int highestRun, int matchPoints, 
-            float percentage) {
+    public TeamResult(int tsp, int points, int innings, int highestRun, int matchPoints, 
+            double percentage) {
+        this.tsp = tsp;
         this.points = points;
         this.innings = innings;
         this.highestRun = highestRun;
@@ -44,7 +46,7 @@ public class TeamResult implements Serializable {
         return matchPoints;
     }
 
-    public float getPercentage() {
+    public double getPercentage() {
         return percentage;
     }
 
@@ -55,4 +57,12 @@ public class TeamResult implements Serializable {
     public void setMatchPoints(int matchPoints) {
         this.matchPoints = matchPoints;
     }    
+
+    public int getTsp() {
+        return tsp;
+    }
+
+    public void setTsp(int tsp) {
+        this.tsp = tsp;
+    }
 }
