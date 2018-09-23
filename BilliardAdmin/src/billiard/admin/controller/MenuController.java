@@ -8,6 +8,8 @@ package billiard.admin.controller;
 import billiard.common.ControllerInterface;
 import billiard.common.hazelcast.SyncManager;
 import billiard.model.ScoreboardManager;
+import com.hazelcast.core.ItemEvent;
+import com.hazelcast.core.ItemListener;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -50,9 +52,31 @@ public class MenuController implements Initializable,  ControllerInterface {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         if(SyncManager.isHazelcastEnabled()) {
-            ledConnected.setFill(Paint.valueOf("green"));
-        } else {
-            ledConnected.setFill(Paint.valueOf("red"));
+                ScoreboardManager scoreboardManager = ScoreboardManager.getInstance();
+                if(scoreboardManager.nbrOfScoreboards() > 0) {
+                    ledConnected.setFill(Paint.valueOf("green"));
+                } else {
+                    ledConnected.setFill(Paint.valueOf("red"));
+                }
+                scoreboardManager.addItemListener(new ItemListener() {
+                    @Override
+                    public void itemAdded(ItemEvent ie) {
+                        if(scoreboardManager.nbrOfScoreboards() > 0) {
+                            ledConnected.setFill(Paint.valueOf("green"));
+                        } else {
+                            ledConnected.setFill(Paint.valueOf("red"));
+                        }
+                    }
+
+                    @Override
+                    public void itemRemoved(ItemEvent ie) {
+                        if(scoreboardManager.nbrOfScoreboards() > 0) {
+                            ledConnected.setFill(Paint.valueOf("green"));
+                        } else {
+                            ledConnected.setFill(Paint.valueOf("red"));
+                        }
+                    }
+                });
         }
     }    
 
