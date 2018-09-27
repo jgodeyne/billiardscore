@@ -7,25 +7,17 @@ package billiard.score.controller;
 
 import billiard.common.ControllerInterface;
 import billiard.common.PermittedValues;
-import billiard.common.hazelcast.StartMatchMessage;
-import billiard.model.Match;
-import billiard.model.MatchManager;
 import billiard.score.BilliardScore;
-import billiard.common.AppProperties;
 import billiard.common.CommonDialogs;
 import billiard.common.hazelcast.SyncManager;
 import billiard.model.ScoreboardManager;
 import com.hazelcast.core.ITopic;
 import com.hazelcast.core.ItemEvent;
 import com.hazelcast.core.ItemListener;
-import com.hazelcast.core.Message;
-import com.hazelcast.core.MessageListener;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -67,33 +59,6 @@ public class MenuController implements Initializable, ControllerInterface {
     public void initialize(URL url, ResourceBundle rb) {
         try {
             if(SyncManager.isHazelcastEnabled()) {
-                MatchManager matchManager = MatchManager.getInstance();
-                topic = matchManager.getStartMatchTopic();
-                topicId = topic.addMessageListener(new MessageListener() {
-                    @Override
-                    public void onMessage(Message message) {
-                        StartMatchMessage msg = (StartMatchMessage )message.getMessageObject();
-                        LOGGER.log(Level.FINEST, "Match received: " + msg.getScoreBoardId() + " - " + msg.getMatchId());
-                        Match match = matchManager.getMatch(msg.getMatchId());
-                        LOGGER.log(Level.FINEST, "Match found: " + match.toString());
-                        String scoreboardId;
-                        try {
-                            scoreboardId = AppProperties.getInstance().getScoreboardId();
-                            if (msg.getScoreBoardId().equals(scoreboardId)) {
-                                action = BilliardScore.MenuOptions.TOURNAMENT;
-                                Platform.runLater(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        close();
-                                    }
-                                });                        
-                            }
-                        } catch (Exception ex) {
-                            LOGGER.severe(Arrays.toString(ex.getStackTrace()));
-                            CommonDialogs.showException(ex);
-                        }
-                    }
-                });
                 ScoreboardManager scoreboardManager = ScoreboardManager.getInstance();
                 if(scoreboardManager.nbrOfScoreboards() > 1) {
                     ledConnected.setFill(Paint.valueOf("green"));

@@ -378,8 +378,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
 
     private void endOfTurn() throws Exception {
         if (!match.isStarted()) {
-            match.start();
-            matchManager.updateMatch(match);
+            match.start(AppProperties.getInstance().getScoreboardId());
         }
 
         try {
@@ -457,6 +456,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
                 endOfMatch();
             }
         }
+        matchManager.updateMatch(match);
         switchTurnIndicator();
         currentRun = 0;
         run.setText(String.valueOf(currentRun));
