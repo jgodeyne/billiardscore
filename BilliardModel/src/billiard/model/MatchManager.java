@@ -21,19 +21,16 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class MatchManager {
     private static final String MATCH_ID = "matchId";
-    private static final String START_MATCH_TOPIC = "start_match";
     private static final String MATCHES_MAP = "matches";
 
     private static MatchManager instance;
     private static IMap<Long, Match> matches;
     private static HashMap<Long, Match> localMatches;
     private static AtomicLong matchId;
-    private static ITopic startMatchTopic;
 
     private MatchManager() {
         if(SyncManager.isHazelcastEnabled()) {
             matches = SyncManager.getHazelCastInstance().getMap(MATCHES_MAP);
-            startMatchTopic = SyncManager.getHazelCastInstance().getTopic(START_MATCH_TOPIC);
         } else {
             localMatches = new HashMap<>();
         }
@@ -129,19 +126,6 @@ public class MatchManager {
         return matchList;
     }    
 
-    public void sendMatch(Match match, String scoreboardId) {
-        if(startMatchTopic!=null) {
-            StartMatchMessage msg = new StartMatchMessage(match.getId(), scoreboardId);
-            startMatchTopic.publish(msg);
-        }
-        match.reserve();
-        putMatch(match);
-    }
-
-    public ITopic getStartMatchTopic() {
-        return startMatchTopic;
-    }
-    
     public static long generateMatchId() {
         if (SyncManager.isHazelcastEnabled()) {
             return SyncManager.getHazelCastInstance().getIdGenerator(MATCH_ID).newId();

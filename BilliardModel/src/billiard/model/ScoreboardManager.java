@@ -6,9 +6,7 @@
 package billiard.model;
 
 import billiard.common.hazelcast.SyncManager;
-import com.hazelcast.core.EntryListener;
 import com.hazelcast.core.IList;
-import com.hazelcast.core.IMap;
 import com.hazelcast.core.ItemListener;
 import java.util.ArrayList;
 import java.util.List;

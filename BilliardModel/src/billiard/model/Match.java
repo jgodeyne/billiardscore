@@ -24,6 +24,7 @@ public class Match implements Serializable {
     private final String discipline;
     private String status;
     private String scoreSheetHTML;
+    private String scoreboardId;
 
     public Match(String number, String discipline, Player player1, Player player2) {
         this(-1, number,discipline,player1,player2);
@@ -91,6 +92,14 @@ public class Match implements Serializable {
     public void setPlayer2(Player player2) {
         this.player2 = player2;
     }
+
+    public String getScoreboardId() {
+        return scoreboardId;
+    }
+
+    public void setScoreboardId(String scoreboardId) {
+        this.scoreboardId = scoreboardId;
+    }
     
     public void setResult(int winner, PlayerMatchResult player1Result, PlayerMatchResult player2Result) {
         this.winner = winner;
@@ -148,20 +157,21 @@ public class Match implements Serializable {
         this.player2 = player;
     }
     
-    public void start() {
-        status = Status.STARTED;
+    public void start(String scoreboardId) {
+        this.status = Status.STARTED;
+        this.scoreboardId = scoreboardId;
     }
     
     public void cancel() {
-        status = Status.CREATED;
+        this.status = Status.CREATED;
     }
     
     public void reserve() {
-        status = Status.RESERVED;
+        this.status = Status.RESERVED;
     }
 
     public void close() {
-        status = Status.CLOSED;
+        this.status = Status.CLOSED;
     }
     
     @Override

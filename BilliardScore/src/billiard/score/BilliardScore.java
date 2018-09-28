@@ -6,7 +6,6 @@
 
 package billiard.score;
 
-import billiard.common.hazelcast.StartMatchMessage;
 import billiard.score.controller.MenuController;
 import billiard.score.controller.NewIndividualMatchController;
 import billiard.score.controller.NewSimpleScoreBoard;
@@ -48,7 +47,6 @@ import com.hazelcast.core.Message;
 import com.hazelcast.core.MessageListener;
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
@@ -72,7 +70,6 @@ public class BilliardScore extends Application {
     private static final Logger LOGGER = Logger.getLogger(BilliardScore.class.getName());
     
     private String scoreboardId;
-    private ArrayDeque<Match> matchQue;
     private MatchManager matchManager;
     private IndividualCompetitionManager individualCompetitionManager;
     private TeamCompetitionManager teamCompetitionManager;
@@ -100,36 +97,7 @@ public class BilliardScore extends Application {
             individualCompetitionManager = IndividualCompetitionManager.getInstance();
             teamCompetitionManager = TeamCompetitionManager.getInstance();
             
-            
-            matchQue = new ArrayDeque<>();
-            
-            ITopic startMatchTopic = null;
-            String startMatchTopicId = "";
             if(SyncManager.isHazelcastEnabled()) {
-                startMatchTopic = matchManager.getStartMatchTopic();
-                startMatchTopicId = startMatchTopic.addMessageListener(new MessageListener() {
-                    @Override
-                    public void onMessage(Message message) {
-                        LOGGER.log(Level.FINEST, "BilliardScore.onMessage => message: {0}", message.toString());
-                        if(message.getMessageObject() instanceof StartMatchMessage) {
-                            StartMatchMessage msg = (StartMatchMessage )message.getMessageObject();
-                            LOGGER.log(Level.FINEST, "BilliardScore.onMessage => Match received: {0} - {1}", new Object[] {msg.getScoreBoardId(),msg.getMatchId()});
-                            try {
-                                if (msg.getScoreBoardId().equals(scoreboardId)) {
-                                    Match match = matchManager.getMatch(msg.getMatchId());
-                                    LOGGER.log(Level.FINEST, "BilliardScore.onMessage => Match found: {0}", match.toString());
-                                    if(!matchQue.contains(match)) {
-                                        matchQue.addLast(match);
-                                    }
-                                }
-                            } catch (Exception ex) {
-                                LOGGER.severe(Arrays.toString(ex.getStackTrace()));
-                                throw new RuntimeException(ex);
-                            }
-                        }
-                    }
-                });
-                
                 ITopic sendDataTopic = SyncManager.getHazelCastInstance().getTopic("send_data");
                 sendDataTopic.addMessageListener(new MessageListener() {
                     @Override
@@ -171,8 +139,6 @@ public class BilliardScore extends Application {
                 });                
             }
             
-                        
-            
             do {
                 //logger.log(Level.FINEST, "choseAction => Start");
                 FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.MENU),bundle);
@@ -196,31 +162,14 @@ public class BilliardScore extends Application {
                     startIndividualCompetition();
                 } else if (menuChoice==MenuOptions.TEAM) {
                     selectTeamCompetition();
-                } else if (menuChoice==MenuOptions.TOURNAMENT) {
-                    Match match = matchQue.getFirst();
-                    startTournamentMatch(match);
-                    matchManager.putMatch(match);
-                    matchQue.remove(match);
                 } else if (menuChoice==MenuOptions.CONF) {
                     startAdminConfiguration();
                 } else if (menuChoice==MenuOptions.IMPORT) {
                     PermittedValues.ActionObject actionObject = controller.getActionObject();
                     importData(actionObject);
                 }
-                if (!matchQue.isEmpty()) {
-                    do {
-                        //logger.log(Level.FINEST, "Start => !matchQue.isEmpty");
-                        Match match = matchQue.getFirst();
-                        //logger.log(Level.FINEST, "Start => Picking match from que: {0}", match.toString());
-                        startTournamentMatch(match);
-                        matchQue.remove(match);
-                    } while (!matchQue.isEmpty());
-                }
             } while(menuChoice!=0);
             
-            if(null!=startMatchTopic) {
-                startMatchTopic.removeMessageListener(startMatchTopicId);
-            }
             ScoreboardManager.getInstance().removeScoreboard(scoreboardId);
             stage.close();
             //logger.log(Level.FINEST, "Start => End");

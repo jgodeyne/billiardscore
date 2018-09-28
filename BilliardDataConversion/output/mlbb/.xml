@@ -1,0 +1,3685 @@
+<?xml version="1.0" encoding="UTF-8"?><competition>
+    <name/>
+    <contactname/>
+    <contactemail/>
+    <league>MLBB</league>
+    <group/>
+    <pointsystem>MATCHPOINTS</pointsystem>
+    <tableformat>2,30m</tableformat>
+    <discipline/>
+    <nbrofplayers>3</nbrofplayers>
+    <disciplineplayers/>
+    <tspplayers/>
+    <team>
+        <name>Creemers, Ton   (LGH1)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nieskens, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boessen, Thei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Haye de la, Joep</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sanders, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Giesberts, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slaats, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijkers, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hilkens, Dennis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meijer de, Rene</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wassenberg, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Waeyen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heatubun, Bram</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spreeuwenberg, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lurvink, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Derix, Herm</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Sjeng</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dolmans, Jean</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aarle van, Jeroen</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Habraken, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kempen van, Nick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Ralph</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geerlings, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Reefs, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Niesten, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schoenmakers, Terry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bijlmakers, Marcel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verkoulen, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kanters, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koolen, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beulen, Jeffrey</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brouns, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verlinden, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meulen, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schrurs, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Minses, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vossen, Victor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mestrum, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wilms, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frencken, Math</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coolen, Michel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dingemans, Cyril</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Melis van, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tubee, Rik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Theunissen, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roumen, Roger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stoop, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Delissen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>R�mkens, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Craemers, Jim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wouters, Toos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoof van, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beijnsbergen, Jeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Poeth, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Erdkamp, Jacques</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bekkers, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Parren, Ine</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>DI</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hunnekens, Ronald</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kolken, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>DO</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lausen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrix, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Deneer, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ridderbecks, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jeurninck, Corn�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gorts, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thissen, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clerx, Miel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijman, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pols, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nieskens, Jack</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verdonkschot, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schnock, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verhaeg, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Selder, Robert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aspers, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ramakers, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tissen, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Simons, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thijssen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Binee, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Craemers, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jeurissen, Ed</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssens, Ferry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kurvers, Hai</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Craemers, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wouters, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Feller, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wal van der, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Suntjens, Sibert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geerlings, Mat</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Simons, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Soest van, G�rard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koelen, Daan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Liebregts, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meijer, Ron</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coolen, Tinus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brentjens, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verstappen, Sjra</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coolen, Karel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Willems, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frenken, Bill</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cobben, Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pollen, Hay</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Manders, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jeurnink, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Reijnen, Hub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hofkens, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koppen, Math</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stienen, Joey</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Goot van der, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Bas</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Metsemakers, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouten, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Will</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Burhenne, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bos, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Baars, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Sjaak</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendriks, Robert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nass, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bonten, Thijs</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Joop</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Duisters, Albert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Delissen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Werdt de, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kruijs v.d., Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Housmans, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pothoven, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Perri�ns, Sjef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Leenders, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verkooyen, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Diels, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beek van, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jeurninck, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vogelzang, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Topeeters, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kessels, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kinderen der, Tiny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Paal, Eddy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frenken, Helmut</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dohmen, Marcel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Broens, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peeters, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Faessen, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sillen, G�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Eck van, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Krutzen, Jean</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijnands, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jong de, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dierx, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Huskens, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heugten van, Engelien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouwels, Willie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Maessen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vinken, Luc</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heltzel, Robin</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vossen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Knippenberg van, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koch, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stevens, Mike</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Guus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Levels, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stoffels, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spieksma, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Briels, Johan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Erdkamp, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>MA</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Manders, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verber, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schuman, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Seems, Math</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schreurs, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bellinghausen, Dietmund</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Michiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Joosten, Frits</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kuijen van, Rinus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mertens, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rotten van de, Joep</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Creemers, Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Sem</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gerbers, Willie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weber, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Henderickx, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bos, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aubert, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geris, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keuren, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hannen, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolf de, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pustjens, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vissers, Nard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Noldes, Karel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Strijbos, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Haren van, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geurts, Chretien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Eykenboom, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoeben, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dielissen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coumans, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clercx, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Theunissen, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vintges, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mestrom, Jack</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smolenaars, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Adams, Kenny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Claassen, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linssen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kunder de, Ronald</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hekers, Lion</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thorington, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongaerts, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tijssen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Joosten, Bart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Caris, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beurskens, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mulders, Miel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heltzel, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hermans, Barry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beulen, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kurstjens, Berr</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Soest van, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hawinkels, Biek</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vermeulen, Rene�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Evers, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongers, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boom v.d., Mathieu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heinen, Karl-Heinz</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijkers, Thieu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Methorst, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vorstermans, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijssen, Gerrit</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lenaerts, Will</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roumen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gommans, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Loo v.d., Victor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hansen, Paul   (BS)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gommans, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kempkens, Johan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Voncken, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hintzen, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Munnicks, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Selder, Wally</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Steuten, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slaats, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Raemakers, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Metsemakers, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verdonkschot, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brentjens, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schrurs, Sjef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smolenaars, Richard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geurts, Laurens</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrix, Ringo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nieskens, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Goor van der, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Poell, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Fischer, Wolfgang</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aarts, Mat</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongen, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrickx, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijnands, Roel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Moberts, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beek v.d., Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmeitz, Miranda</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sieben, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boessen, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Burhenne, Don</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weerden v.d., Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zegers, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gommans, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roemen, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vogels, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ratelband, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Balendonck, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linssen, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Omloo, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hermans, Bart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verstraelen, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bruijn de, Anton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tegels, Driek</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Corsten, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Berg op den, Bas</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ketelaars, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouweriks, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrikx, Edith</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geene, Alexander</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verbugt, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weber, Sjef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lamerigts, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beijers, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zwart, Bert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nies, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Basten, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koch, Wiel   (BS)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijer den, Dick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pouwelsen, Michel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>VR</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Henckens, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolfhagen, Randy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pollaert, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koolen, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koerts, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Joep</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vliegenthart, Hennie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>WO</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clercx, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kooiman, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Helwegen, Arthur</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Berben, Wilbert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verheiden, Guus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Piepers, Bert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Truijen, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ferneoeboen, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cloudt, Ot</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Evers, Giel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dick, Rolf</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schoote van, Silf</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendriks, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ackermans, Ricardo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijmen, Govert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rietjens, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thielens, Freddy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Broen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dierx, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Melick van, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Konickx, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ruiten, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ewalts, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heiligers, Ron</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aerts, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beeren, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brekel v.d., Werner</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Adams, Tjeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kruys van de, Tjeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ramaekers, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dor�, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tanburoglu, Seyfi</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lommen, Arthur</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stokbroeckx, Toine</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Reyven, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rijk de, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Engelen, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keizers, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keijerts, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wirtz, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kierkels, Danny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Buggenum van, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vullers, Jack   (LGH2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Leenen, Patrick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kop van der, Albert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rens van, Joop</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gartsen, Krijn</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beek van de, Bryan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijsen, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jordan, Lucienne</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssens, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vissers, Joep</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Doensen, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuter, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zwets, Rien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kop van der, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tubee, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lemaire, Richard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Martens, Truus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linden v.d., Wiljan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Giesen, Cle</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Voets, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vissers, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssens, Tom</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Theunissen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hikspoors, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linden v.d., Andr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Osterop, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schuman, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Knapen, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geelen, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>D�renberg, Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lier van, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mevissen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrickx, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Berben, Had</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jeurninck, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Marx, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beuningen van, Toon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouwels, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Driessen, Will</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stams, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hut, Martin</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cretz, Patrick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stienen, Thei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuter, Nick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heuts, Hein</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Snijders, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geel van, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeths, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gageldonk van, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoenen, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Maessen, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dongen van, Rene</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoogmans, Thijs</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kusters, Erik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schuren, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Waeijen, Petra</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Karis, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hannen, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lannott, Heinz</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kaam van, Jean-Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Moberts, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geneygen van, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coenen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cranssen, Mark</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bilzen van, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Willms, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cuypers, Riny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Eggels, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smaak, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kessels, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouwels, Djarno</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Strijbos, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Snijders, Pe</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Perriens, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Subasi, Ibrahim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Jeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dierx, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuwissen, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pansters, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijman, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gijsen, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hunnekens, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Goedbloed, Jan-Willem</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beek v.d., Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Eck van, Ron</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stienen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kosar, Abbas</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hattum van, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brunenberg, Thei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Poeth, Roel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Jim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ottenheim, Hub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beerens, Christian</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Welles, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Camp op de, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Timmermans, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lansbergen, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Quicken, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kotschi, Walter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ramakers, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Joosten, Rik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Doorn, van Stefan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mechelen van, Edu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Leenen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linssen, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Engels, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kierkels, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Masolijn, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijnen, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dirkx, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kessel van, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijk van, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tellers, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rutten, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beeks, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Penners, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoogmans, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clercx, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pr�st, Diana</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Twiss, James</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mans, Wil</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Braat, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spee, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Helden van, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frencken, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongarts, Mat</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lieshout van, Martijn</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Horsten, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Graat, Had</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Mathieu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Balendonck, Tjeerd</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Scheijvens, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijnen, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mans, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Caris, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verheesen, Wilbert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linssen, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heuyerjans, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meisters, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Munnecom, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Quicken, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Eck van, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Salentijn, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Giesberts, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verdonschot, Fred</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouwens, Max</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coenen, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Renet de, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Fermont, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Joosten, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Klaessen, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Have ten, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weeres, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hammer, Huib</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aendekerk, Wilbert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ewalts, Johan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hennissen, Andr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Burgt van de, Lambert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Arntz, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dijk van, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gilis, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Erp van, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Scheffer, Fried</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Raemakers, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Habets, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frencken, Pierre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Creemers, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Konickx, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Buitenhuis, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vullers, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Martens, Johan   (BS)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Elshout van de, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Niessen, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hanegraaf, Sten</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hilkens, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Houben, Koen</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verschueren, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heymann, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>B�mers, Gerrit</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hilgers, Huib</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dieterich, Joop</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>V�lke, Ron</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Haldermans, Tom</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kessels, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gorts, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cuypers, Stephan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mulders-Buys, Annelies</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Demarteau, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geraedts, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slabbers, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Everaerts, Rodney</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rutten, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gehlen, Maurice</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Joosten, Bert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuter, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrikx, Miel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pol van, Richard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Houben, Lander</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijs, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kunder de, Han</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peeters, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Inderhees, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schreurs, Rick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roosmalen van, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wulms, Erik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Soentjens, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dielissen, Hans   (LGH1)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thielens, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lieshout van, Pieter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Philipsen, Had</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beek v.d., Emiel   (57/2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Blok, Jaap</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Moor de, Leopold</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dekkers, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jennekens, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Baini, Ermado</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijkers, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bekkers, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bremmers, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrickx, Frank</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bremmers, Guus</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jansen, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schuman, Sonny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schreurs, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rulkens, Mat</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Muijzers, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Fieten, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peters, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Maessen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jordan, Michael</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrikx, Harald</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bos, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pollaert, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongers, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heynen, Tuur</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dierijck, Philip</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ketelaars, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Obstals, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spooremakers, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Goossens, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Maurice</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koopmans, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zelen, Pieter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boesten, Roland</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heiligers, Roger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heugten van, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bonselaar, Carol</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuter, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schmitz, Carlo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vluggen, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tummers, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Fermont, Jannie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geene, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schonkeren, Geer</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Opbroek, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Surprise, Steve</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Briels, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rossum van, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meusen, Kay</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Ron</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weiss, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bos, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Jong de, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wouters, Nathalie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boonen, Joop</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Buschman, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bilzen van, Ronald</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Elmpt van, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Frencken, Broer</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Daal van, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thissen, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Op Hey, Raf</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Maenen, Wil</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pollaert, Sjra</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aben, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kroos, Wilbert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lomm van, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kanters, Hub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vonck, Phil</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hermans, Jorge</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schroeten, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Suntjens, Andr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bremmers, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vossen, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Berg v.d., Martien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Snellen, Tjeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Weijnen, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Seuren, Koos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Knoops, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clumpkens, Maan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoof van, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sanders, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heuts, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wilms, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geerlings, Thijs</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wilms, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schuman, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hurck v.d., Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heijnen, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijen, Well</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zeelen, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Munnichs, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hendrix, Cor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cillekens, Eed</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slangen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Crijnen, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Michels, Mark</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kempen van, Tony</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meuwissen, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verstappen, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spelthan, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hermans, Koos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Crijns, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Mark</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meulendijks, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Denny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brentjens, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kemmerling, Jos   (LGH2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Masseling, Jaap</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slabbers, Gerda</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Willie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Mart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Loo van der, Jeroen</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Raemakers, Erik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vrijenhoef, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vullings, Twan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Fusers, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dijck van, Andr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brokmann, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Strik, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Werens, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boogaart v.d., Nic</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zalm van der, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schreurs, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wieriks, Roger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slaats, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schoenmakers, Rens</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hodzelmans, Peter-Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hompes, Gerard</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Looyen, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roumen, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Greyn, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Driessen, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clerx, Mieke</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sijbers, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aben, Geer</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heynen, Pieter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rijks, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tijssen, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Balendonck, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Deurzen van, Rob</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Driessen, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stoffels, Arno</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sanden v.d., Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verheesen, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ewalts, Will</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Martens, Johan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Zelen, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gabriels, Bart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vullers, Frien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Noorbeek, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijssen, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Adriaans, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Neelen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kempen van, Sjaak</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijssen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nieskens, Michel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lupinu, Salvatore</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pansters, Ronny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Deurzen van, Joop</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Herk van, Sjaak</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vliet van de, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meewis, Henny</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lai, Giorgio</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brouns, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wegberg van, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stultjens, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Leijendeckers, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vintcent, Pieter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pol van, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Slijpen, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tissen, Chris</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Steegh, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Spitters, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pol van, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hansen, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heber, Roel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Siemensma, Freek</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Scheeren, Roel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coolen, Thei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beeren, Sef</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>IJsermans, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Engelen, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hamers, Ren�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smits, Antoine</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rutten, Albert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smits, Patrick</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heugten van, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Klaessen, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Delissen, Twan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hoelsgens, Lei</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dongen van, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pleket, Tony</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Welten, Wim   (57/2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Louwarts, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Berlo van, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bouten, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Math</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bogaart van den, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tienen van, Ria</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brabander de, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stoffels, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nass, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Bongaerts, Giel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Deurzen van, Fred</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Swinkels, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cranssen, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Theelen, Jeroen</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roeper de, Antoon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wit de, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kierkels, Hans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Notte, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vogels, Ton</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Sillekens, Dr�</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brink, Ad</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heinemans, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dingelstad, Louis</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Munnecom, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nott�, Wim</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clout, Erik</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tullemans, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Minkenberg, Dre</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Melick van, Huub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolfs, Werner</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Derksen, Paul</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Herten van, Cleo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Baeten, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kanters, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Tillmans, Marco</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kanters, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Claassen, Els</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Plaatsman, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Timmermans, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Buckinx, Hay</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verstappen, Nico</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Janssen, Teppe</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Linssen, Victor</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kiggen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Verkoulen, Jokke</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Ruud</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aelmans, Berry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geurtjens, Cees</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heemels, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nott�, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Coenen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Clumpkens, Robert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Cox, Theo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Peeters, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dierx, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hansen, Tjeu</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Damen, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schepers, Henk</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hawinkels, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Meulendijks, Carlo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Renett de, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Leenders, Karel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Liepertz, Edwin</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dwarswaard, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Geraets, Jack</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Boersen, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keijsers, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Evers, Jos</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ubachs, Ben</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Timmermans, Bert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smits, Jac</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Springer, Jeroen</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Aelmans, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Gerbers, Mike</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Pustjens, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schaefer, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Giebels, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Rievers, Willemien</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Koelen, Daan    (BS)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>F�sers, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mans, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Adams, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Simons, Wiel</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lier van, Roy</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Mooren, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Smeets, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Thijssen, Thijs</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wijnands, Ger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Veens, Harry</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Richter, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Louw de, Bart</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Deneer, Peter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Versluis, Leo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Heinders, Hub</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Schreurs, Eric</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stoks, Jo</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Dungen van de, Erwin</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Ogier, Sjaak</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Nijssen, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Robinson, Humphrey</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Creemers, Roger</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stals, Harrie</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Burhenne, Sjeng   (LGH2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Kirkels, Thijs</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolter, John</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Arts, Pieter</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wolters, Herman</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Roemen, Chrit</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Balendonck, Bert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keijerts, Jan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Relouw, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Krispijn, Wilbert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Soentjens, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Keijerts, Petra</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Huskens, Geert</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Stams, Wim   (57/2)</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Brummans, Piet</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Walstock, Twan</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Vos, Leon</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Huskens, Wil</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Beckers, Har</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Wilde de, Wil</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Hinssen, Frans</name>
+        <fixedplayers/>
+    </team>
+    <team>
+        <name>Lutgens, Ger</name>
+        <fixedplayers/>
+    </team>
+</competition>
