@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -131,6 +132,7 @@
                               <Insets bottom="-40.0" top="-40.0" />
                            </padding>
                         </Label>
+                        <ProgressBar fx:id="player_1_progress" maxWidth="1.7976931348623157E308" progress="0.0" styleClass="progressbar" />
                      </children>
                   </VBox>
                   <VBox alignment="CENTER">
@@ -155,6 +157,7 @@
                               <Insets bottom="-40.0" top="-40.0" />
                            </padding>
                         </Label>
+                        <ProgressBar fx:id="player_2_progress" maxWidth="1.7976931348623157E308" progress="0.0" styleClass="progressbar" />
                      </children>
                   </VBox>
                </children>
@@ -407,12 +410,11 @@
                   </Circle>
                </children>
             </HBox>
-            <HBox fx:id="timerBox" alignment="CENTER" />
             <HBox alignment="CENTER" styleClass="hbox">
                <children>
                   <ImageView fx:id="banner_img" fitHeight="100.0" pickOnBounds="true" preserveRatio="true" styleClass="adverticement">
                      <image>
-                        <Image url="@../../../images/banner.jpg" />
+                        <Image url="@../../images/banner.jpg" />
                      </image>
                   </ImageView>
                </children>

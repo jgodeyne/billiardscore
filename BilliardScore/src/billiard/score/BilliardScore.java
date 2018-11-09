@@ -467,14 +467,14 @@ public class BilliardScore extends Application {
             playerResult = match.getPlayer2Result();
             if(competition.getTeam1().isPlayerOfTeam(match.getPlayer2())) {
                 //logger.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam1", match.getPlayer2().getName());
-                tsp1 += match.getPlayer1().getTsp();
+                tsp1 += match.getPlayer2().getTsp();
                 points1+= playerResult.getPoints();
                 innings1 += playerResult.getInnings();
                 hr1 = (hr1>playerResult.getHighestRun()?hr1:playerResult.getHighestRun());
                 mp1 += playerResult.getMatchPoints();
             } else if(competition.getTeam2().isPlayerOfTeam(match.getPlayer2())) {
                 //logger.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam2", match.getPlayer2().getName());
-                tsp2 += match.getPlayer1().getTsp();
+                tsp2 += match.getPlayer2().getTsp();
                 points2+= playerResult.getPoints();
                 innings2 += playerResult.getInnings();
                 hr2 = (hr2>playerResult.getHighestRun()?hr2:playerResult.getHighestRun());

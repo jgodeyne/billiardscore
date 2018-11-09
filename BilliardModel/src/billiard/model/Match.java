@@ -32,7 +32,6 @@ public class Match implements Serializable {
     
     public Match(long competitionId, String number, String discipline, Player player1, Player player2) {
         this.id = MatchManager.generateMatchId();
-        System.out.println("billiard.model.Match.<init>(): id: " + this.id);
         this.number = number;
         this.discipline = discipline;
         this.player1 = player1;

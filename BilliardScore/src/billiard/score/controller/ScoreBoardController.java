@@ -30,6 +30,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -38,6 +39,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
@@ -54,6 +56,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 /**
  *
@@ -72,6 +75,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
     private boolean equalizingInning;
     private int winner;
     private Match match;
+    
     private ArrayList<Integer> runPlayer1 = new ArrayList<>();
     private ArrayList<Integer> totalPlayer1 = new ArrayList<>();
     private ArrayList<Integer> runPlayer2 = new ArrayList<>();
@@ -168,7 +172,9 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
     @FXML
     private HBox extraInfo2;
     @FXML
-    private HBox timerBox;
+    private ProgressBar player_1_progress;
+    @FXML
+    private ProgressBar player_2_progress;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -181,9 +187,6 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
 
             loadBanners();
 
-            timerBox.setVisible(false);
-            timerBox.setManaged(false);
-
             equalizingInning = false;
             winner = 0;
 
@@ -191,11 +194,13 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             player_1_score.setText("0");
             player_1_avg.setText("0");
             player_1_hr.setText("0");
+            player_1_progress.setProgress(0);
 
             // Initialize player 2
             player_2_score.setText("0");
             player_2_avg.setText("0");
             player_2_hr.setText("0");
+            player_2_progress.setProgress(0);
 
             // Initialize innings and currentRun
             innings.setText("0");
@@ -414,7 +419,9 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             setScorePlayer(1, inningsInt, currentRun, score);
 
             turn = 2;
-
+            
+            double pct = (double) score/match.getPlayer1().getTsp().intValue();
+            player_1_progress.setProgress(pct);
             if (score == match.getPlayer1().getTsp()) {
                 equalizingInning = true;
                 winner = 1;
@@ -445,6 +452,8 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
 
             turn = 1;
 
+            double pct = (double) score/match.getPlayer2().getTsp().intValue();
+            player_2_progress.setProgress(pct);
             if (score == match.getPlayer2().getTsp()) {
                 if (equalizingInning) {
                     winner = 0;
@@ -511,12 +520,12 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         PlayerMatchResult player1Result
                 = new PlayerMatchResult(getScorePlayer1(), getInnings(), getHRPlayer1(),
                         runPlayer1, totalPlayer1);
-        player1Result.setPercentage(player1Result.getPoints()/getTspPlayer(1)*100);
+        player1Result.setPercentage((double)player1Result.getPoints()/getTspPlayer(1)*100);
 
         PlayerMatchResult player2Result
                 = new PlayerMatchResult(getScorePlayer2(), getInnings(), getHRPlayer2(),
                         runPlayer2, totalPlayer2);
-        player2Result.setPercentage(player2Result.getPoints()/getTspPlayer(2)*100);
+        player2Result.setPercentage((double)player2Result.getPoints()/getTspPlayer(2)*100);
 
         match.setResult(winner, player1Result, player2Result);
 
@@ -537,7 +546,13 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         SceneUtil.setStylesheet(scene);
         dialog.setScene(scene);
         dialog.centerOnScreen();
-        dialog.showAndWait();
+        dialog.show();
+        PauseTransition wait = new PauseTransition(Duration.seconds(5));
+        wait.setOnFinished((e) -> {
+            dialog.close();
+            wait.playFromStart();
+        });
+        wait.play();
 
         if (controller.getReply().equals(EndOfMatchController.Reply.CORRECT)) {
             if (!correctScore()) {
@@ -550,6 +565,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             }
             primaryStage.hide();
         }
+
     }
 
     private void levelingInning() throws Exception {
@@ -572,7 +588,13 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         SceneUtil.setStylesheet(scene);
         dialog.setScene(scene);
         dialog.centerOnScreen();
-        dialog.showAndWait();
+        dialog.show();
+        PauseTransition wait = new PauseTransition(Duration.seconds(5));
+        wait.setOnFinished((e) -> {
+            dialog.close();
+            wait.playFromStart();
+        });
+        wait.play();
     }
 
     private void setScorePlayer(int player, int inning, int score, int total) throws Exception {
