@@ -568,7 +568,6 @@ public class NewTeamMatchController implements Initializable, ControllerInterfac
         boolean valid;
         
         valid=FormValidation.validateComboBox(competition)
-                && FormValidation.validateTextField(matchNumber)
                 && FormValidation.validateComboBox(team_1)
                 && FormValidation.validateComboBox(team_2)
                 && FormValidation.validateComboBox(player_11_name)
