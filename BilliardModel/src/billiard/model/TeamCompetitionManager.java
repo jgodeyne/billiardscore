@@ -6,6 +6,7 @@
 package billiard.model;
 
 import billiard.common.hazelcast.SyncManager;
+import com.hazelcast.core.IMap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,13 +19,13 @@ public class TeamCompetitionManager extends CompetitionManager {
     private static final String COMPETITIONS_MAP = "competitions";
 
     private static TeamCompetitionManager instance;
-    private Map<Long, TeamCompetition> teamCompetitions;
+    private IMap<Long, TeamCompetition> teamCompetitions;
 
     private TeamCompetitionManager() {
         if(SyncManager.isHazelcastEnabled()) {
             teamCompetitions = SyncManager.getHazelCastInstance().getMap(COMPETITIONS_MAP);
         } else {
-            teamCompetitions = new HashMap<>();
+//            teamCompetitions = new IMap<Long, TeamCompetition>();
         }
     }
     
@@ -58,7 +59,7 @@ public class TeamCompetitionManager extends CompetitionManager {
     public ArrayList listTeamCompetitions() {
         ArrayList competitionList = new ArrayList();
         if(SyncManager.isHazelcastEnabled()) {
-            teamCompetitions = SyncManager.getHazelCastInstance().getMap(COMPETITIONS_MAP);
+//            teamCompetitions = SyncManager.getHazelCastInstance().getMap(COMPETITIONS_MAP);
         }
         if (null!=teamCompetitions) {
             competitionList.addAll(teamCompetitions.values());

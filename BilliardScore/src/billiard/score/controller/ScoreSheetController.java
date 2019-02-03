@@ -29,6 +29,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
+import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -48,6 +49,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 /**
  *
@@ -161,7 +163,13 @@ public class ScoreSheetController {
         Scene scene = new Scene(rootPane);
 
         stage.setScene(scene);
-        stage.showAndWait();
+        stage.show();
+        PauseTransition wait = new PauseTransition(Duration.seconds(60));
+        wait.setOnFinished((e) -> {
+            stage.hide();
+            wait.playFromStart();
+        });
+        wait.play();
     }
 
     private String genScroreSheet() throws Exception {

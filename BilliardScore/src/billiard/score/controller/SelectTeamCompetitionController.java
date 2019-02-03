@@ -84,4 +84,11 @@ public class SelectTeamCompetitionController implements Initializable, Controlle
     public PermittedValues.Action getAction() {
         return action;
     }
+
+    @FXML
+    private void onActionButtonDelete(ActionEvent event) {
+        action = PermittedValues.Action.DELETE;
+        selectedCompetition=competitions.get(list.getSelectionModel().getSelectedIndex());
+        this.primaryStage.hide();
+    }
 }

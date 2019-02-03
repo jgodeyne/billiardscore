@@ -28,6 +28,15 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionButtonDelete" styleClass="def-button">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                   <Button mnemonicParsing="false" onAction="#OnActionButtonNew" styleClass="def-button">
                      <graphic>
                         <ImageView pickOnBounds="true" preserveRatio="true">

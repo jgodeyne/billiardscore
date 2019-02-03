@@ -516,6 +516,10 @@ public class BilliardScore extends Application {
                 selectedCompetition = newTeamCompetition();
             } else if (action.equals(PermittedValues.Action.SELECT)) {
                 selectedCompetition = controller.getSelectedCompetition();
+            } else if (action.equals(PermittedValues.Action.DELETE)) {
+                selectedCompetition = controller.getSelectedCompetition();
+                teamCompetitionManager.removeTeamCompetition(selectedCompetition);
+                return;
             } else if (action.equals(PermittedValues.Action.CANCEL)) {
                 return;
             }
