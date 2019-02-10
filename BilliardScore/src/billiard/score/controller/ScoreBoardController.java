@@ -549,7 +549,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         dialog.show();
         PauseTransition wait = new PauseTransition(Duration.seconds(5));
         wait.setOnFinished((e) -> {
-            dialog.close();
+            dialog.hide();
             wait.playFromStart();
         });
         wait.play();

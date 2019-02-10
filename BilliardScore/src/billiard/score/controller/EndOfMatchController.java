@@ -31,7 +31,7 @@ public class EndOfMatchController implements Initializable, ControllerInterface 
     
     private Stage primaryStage;
     private ResourceBundle bundle;
-    private Reply reply;
+    private Reply reply = EndOfMatchController.Reply.OK;
     
     /**
      * Initializes the controller class.
