@@ -163,13 +163,13 @@ public class ScoreSheetController {
         Scene scene = new Scene(rootPane);
 
         stage.setScene(scene);
-        stage.show();
         PauseTransition wait = new PauseTransition(Duration.seconds(60));
         wait.setOnFinished((e) -> {
             stage.hide();
             wait.playFromStart();
         });
         wait.play();
+        stage.showAndWait();
     }
 
     private String genScroreSheet() throws Exception {

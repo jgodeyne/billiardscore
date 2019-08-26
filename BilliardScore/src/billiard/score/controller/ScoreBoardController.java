@@ -420,7 +420,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
 
             turn = 2;
             
-            double pct = (double) score/match.getPlayer1().getTsp().intValue();
+            double pct = (double) score/match.getPlayer1().getTsp();
             player_1_progress.setProgress(pct);
             if (score == match.getPlayer1().getTsp()) {
                 equalizingInning = true;
@@ -452,7 +452,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
 
             turn = 1;
 
-            double pct = (double) score/match.getPlayer2().getTsp().intValue();
+            double pct = (double) score/match.getPlayer2().getTsp();
             player_2_progress.setProgress(pct);
             if (score == match.getPlayer2().getTsp()) {
                 if (equalizingInning) {
@@ -546,13 +546,13 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         SceneUtil.setStylesheet(scene);
         dialog.setScene(scene);
         dialog.centerOnScreen();
-        dialog.show();
         PauseTransition wait = new PauseTransition(Duration.seconds(5));
         wait.setOnFinished((e) -> {
             dialog.hide();
             wait.playFromStart();
         });
         wait.play();
+        dialog.showAndWait();
 
         if (controller.getReply().equals(EndOfMatchController.Reply.CORRECT)) {
             if (!correctScore()) {
