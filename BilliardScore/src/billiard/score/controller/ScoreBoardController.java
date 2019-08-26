@@ -546,7 +546,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         SceneUtil.setStylesheet(scene);
         dialog.setScene(scene);
         dialog.centerOnScreen();
-        PauseTransition wait = new PauseTransition(Duration.seconds(5));
+        PauseTransition wait = new PauseTransition(Duration.seconds(10));
         wait.setOnFinished((e) -> {
             dialog.hide();
             wait.playFromStart();

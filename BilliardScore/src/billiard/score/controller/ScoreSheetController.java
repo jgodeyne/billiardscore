@@ -163,7 +163,7 @@ public class ScoreSheetController {
         Scene scene = new Scene(rootPane);
 
         stage.setScene(scene);
-        PauseTransition wait = new PauseTransition(Duration.seconds(60));
+        PauseTransition wait = new PauseTransition(Duration.seconds(20));
         wait.setOnFinished((e) -> {
             stage.hide();
             wait.playFromStart();
