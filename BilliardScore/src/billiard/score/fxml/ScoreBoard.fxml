@@ -212,7 +212,7 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <GridPane gridLinesVisible="true" layoutX="280.0" layoutY="549.0" style="-fx-background-color: #FBFBFB;" HBox.hgrow="ALWAYS">
+                        <GridPane gridLinesVisible="true" layoutX="280.0" layoutY="549.0" style="-fx-background-color: #FBFBFB;" styleClass="player-score-info-innings-list" HBox.hgrow="ALWAYS">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="34.0" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="0.0" prefWidth="47.0" />
@@ -295,7 +295,7 @@
                   </TextField>
                   <HBox fx:id="extraInfo2" styleClass="hbox" HBox.hgrow="ALWAYS">
                      <children>
-                        <GridPane gridLinesVisible="true" layoutX="584.0" layoutY="549.0" style="-fx-background-color: #FBFBFB;" HBox.hgrow="ALWAYS">
+                        <GridPane gridLinesVisible="true" layoutX="584.0" layoutY="549.0" style="-fx-background-color: #FBFBFB;" styleClass="player-score-info-innings-list" HBox.hgrow="ALWAYS">
                            <children>
                               <Text fx:id="inning21" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="RIGHT">
                                  <GridPane.margin>

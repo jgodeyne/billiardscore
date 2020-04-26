@@ -35,6 +35,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -55,6 +56,7 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 /**
  *
@@ -106,7 +108,7 @@ public class TeamCompetitionSummarySheetController {
         buttonPrint.setPrefSize(100, 20);
         buttonPrint
                 .setOnAction((ActionEvent e) -> {
-                    print();
+                    print(false, 1);
                 });
         toolbar.getChildren().add(buttonPrint);
 
@@ -182,8 +184,29 @@ public class TeamCompetitionSummarySheetController {
         Scene scene = new Scene(rootPane);
 
         stage.setScene(scene);
-        stage.showAndWait();
-        LOGGER.log(Level.FINEST, "TeamCompetitionSummarySheetController => End");
+        AppProperties aprop = AppProperties.getInstance();
+        if(aprop.autoPrintSummarySheet()) {
+            stage.show();
+            print(true, aprop.getAutoPrintCopiesPrintSummary());
+            stage.close();
+        } else {        
+            if(aprop.hidePrintSummarySheet()) {
+                if(aprop.getAutoHideSecondsPrintSummary()>0) {
+                    PauseTransition wait = new PauseTransition(Duration.seconds(aprop.getAutoHideSecondsPrintSummary()));
+                    wait.setOnFinished((e) -> {
+                        stage.hide();
+                        wait.playFromStart();
+                    });
+                    wait.play();
+                    stage.showAndWait();
+                } else {
+                    stage.close();
+                }
+            } else {
+                stage.showAndWait();
+            }
+        }
+         LOGGER.log(Level.FINEST, "TeamCompetitionSummarySheetController => End");
     }
 
     private String genScoreSheet() throws Exception {
@@ -440,10 +463,14 @@ public class TeamCompetitionSummarySheetController {
         return html.toString();
     }
 
-    private void print() {
+    private void print(boolean auto, int copies) {
         LOGGER.log(Level.FINEST, "TeamCompetitionSummarySheetController.print => Start");
         PrinterJob job = PrinterJob.createPrinterJob();
-        if (job != null && job.showPrintDialog(stage)) {
+        job.getJobSettings().setCopies(copies);
+        if (job != null) {
+            if(auto) {
+                job.showPrintDialog(stage);
+            }
             PageLayout layout = job.getPrinter().createPageLayout(Paper.A4, PageOrientation.LANDSCAPE, Printer.MarginType.HARDWARE_MINIMUM);
             job.getJobSettings().setPageLayout(layout);
             webEngine.print(job);

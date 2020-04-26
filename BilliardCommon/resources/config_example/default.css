@@ -69,6 +69,10 @@ and open the template in the editor.
     -fx-text-fill: white;
 }
 
+.player-score-info-innings-list {
+    -fx-font-size: 20px;  
+}
+
 .run-entry {
     -fx-font-size: 80px;
     -fx-pref-width: 200px;

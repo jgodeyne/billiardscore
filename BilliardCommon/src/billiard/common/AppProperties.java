@@ -33,6 +33,8 @@ public final class AppProperties extends Properties{
     private static final String ARCHIVE_LOCATION = "archive_location";
     private static final String DATA_LOCATION = "data_location";
     private static final String USER_HOME = "user.home";
+    private static final String PRINT_MATCH_SHEET = "print_match_sheet";
+    private static final String PRINT_SUMMARY_SHEET = "print_summary_sheet";
     
     private boolean emailConfigured = false;
    
@@ -46,6 +48,8 @@ public final class AppProperties extends Properties{
                 && getEmailServer()!=null && !getEmailServer().isEmpty()) {
             emailConfigured = true;
         }
+        System.out.println("getPrintMatchSheet: >" + this.getPrintMatchSheet() + "<");
+        System.out.println("getPrintSummarySheet: >" + this.getPrintSummarySheet()+ "<");
     }
 
     public static AppProperties getInstance() throws Exception {
@@ -154,6 +158,103 @@ public final class AppProperties extends Properties{
     public String getLogoLocation() {
         return System.getProperty(USER_HOME) + "/." + PermittedValues.APP_NAME + "/logo.png";
 
+    }
+    
+    public String getPrintMatchSheet() {
+        return this.getProperty(PRINT_MATCH_SHEET);
+    }
+    
+    public String getPrintSummarySheet() {
+        return this.getProperty(PRINT_SUMMARY_SHEET);
+    }
+    
+    public void setPrintMatchSheet(String value) {
+        this.setProperty(PRINT_MATCH_SHEET, value);
+    }
+    
+    public void setPrintSummarySheet(String value) {
+        this.setProperty(PRINT_SUMMARY_SHEET, value);
+    }
+    
+    public boolean autoPrintMatchSheet() {
+        boolean result = false;
+        if(null!=this.getPrintMatchSheet() && !this.getPrintMatchSheet().isEmpty()) {
+            if(this.getPrintMatchSheet().startsWith("A")) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    
+    public boolean autoPrintSummarySheet() {
+        boolean result = false;
+        if(null!=this.getPrintSummarySheet() && !this.getPrintSummarySheet().isEmpty()) {
+            if(this.getPrintSummarySheet().startsWith("A")) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    
+    public boolean hidePrintMatchSheet() {
+        boolean result = false;
+        if(null!=this.getPrintMatchSheet() && !this.getPrintMatchSheet().isEmpty()) {
+            if(this.getPrintMatchSheet().startsWith("H")) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    
+    public boolean hidePrintSummarySheet() {
+        boolean result = false;
+        if(null!=this.getPrintSummarySheet() && !this.getPrintSummarySheet().isEmpty()) {
+            if(this.getPrintSummarySheet().startsWith("H")) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    
+    public int getAutoHideSecondsPrintMatch() {
+        int result = 0;
+        if(this.hidePrintMatchSheet()) {
+            System.out.println("this.getPrintMatchSheet().length(): " + this.getPrintMatchSheet().length());
+            if(this.getPrintMatchSheet().length()==3) {
+                result = Integer.parseInt(this.getPrintMatchSheet().substring(1,3));
+            }
+        }
+        return result;
+    }
+    
+    public int getAutoHideSecondsPrintSummary() {
+        int result = 0;
+        if(this.hidePrintSummarySheet()) {
+            if(this.getPrintSummarySheet().length()==3) {
+                result = Integer.parseInt(this.getPrintSummarySheet().substring(1,3));
+            }
+        }
+        return result;
+    }
+
+    public int getAutoPrintCopiesPrintMatch() {
+        int result = 1;
+        if(this.autoPrintMatchSheet()) {
+            if(this.getPrintMatchSheet().length()==3) {
+                result = Integer.parseInt(this.getPrintMatchSheet().substring(1,3));
+            }
+        }
+        return result;
+    }
+    
+    public int getAutoPrintCopiesPrintSummary() {
+        int result = 1;
+        if(this.autoPrintSummarySheet()) {
+            if(this.getPrintSummarySheet().length()==3) {
+                result = Integer.parseInt(this.getPrintSummarySheet().substring(1,3));
+            }
+        }
+        return result;
     }
     public void save() throws Exception {
         this.store(new FileOutputStream(file), "");

@@ -219,7 +219,7 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
                     ,player1,player2);
             individualCompetition.setGroup(group.getText());
             individualCompetition.setTableNumber(tableNumber.getText());
-            individualCompetition.setLeagueName(league.getName());
+            individualCompetition.setLeagueName((null!=league?league.getName():""));
             individualCompetition.setCompetitionItemName(cbCompetition.getValue());
             
             primaryStage.hide();

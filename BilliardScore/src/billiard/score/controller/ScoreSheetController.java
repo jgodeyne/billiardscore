@@ -99,7 +99,7 @@ public class ScoreSheetController {
         buttonPrint.setPrefSize(100, 20);
         buttonPrint
                 .setOnAction((ActionEvent e) -> {
-            print();
+            print(false, 1);
         });
         toolbar.getChildren().add(buttonPrint);
 
@@ -163,13 +163,28 @@ public class ScoreSheetController {
         Scene scene = new Scene(rootPane);
 
         stage.setScene(scene);
-        PauseTransition wait = new PauseTransition(Duration.seconds(20));
-        wait.setOnFinished((e) -> {
-            stage.hide();
-            wait.playFromStart();
-        });
-        wait.play();
-        stage.showAndWait();
+        AppProperties aprop = AppProperties.getInstance();
+        if(aprop.autoPrintMatchSheet()) {
+            stage.show();
+            print(true, aprop.getAutoPrintCopiesPrintMatch());
+            stage.close();
+        } else {        
+            if(aprop.hidePrintMatchSheet()) {
+                if(aprop.getAutoHideSecondsPrintMatch()>0) {
+                    PauseTransition wait = new PauseTransition(Duration.seconds(aprop.getAutoHideSecondsPrintMatch()));
+                    wait.setOnFinished((e) -> {
+                        stage.hide();
+                        wait.playFromStart();
+                    });
+                    wait.play();
+                    stage.showAndWait();
+                } else {
+                    stage.close();
+                }
+            } else {
+                stage.showAndWait();
+            }
+        }
     }
 
     private String genScroreSheet() throws Exception {
@@ -458,9 +473,13 @@ public class ScoreSheetController {
         return html.toString();
     }
 
-    private void print() {
+    private void print(boolean auto, int copies) {
         PrinterJob job = PrinterJob.createPrinterJob();
-        if (job != null && job.showPrintDialog(stage)) {
+        if (job != null) {
+            job.getJobSettings().setCopies(copies);
+            if(!auto) {
+                job.showPrintDialog(stage);
+            }
             PageLayout layout = job.getPrinter().createPageLayout(Paper.A4, PageOrientation.PORTRAIT, Printer.MarginType.HARDWARE_MINIMUM);
             job.getJobSettings().setPageLayout(layout);
             webEngine.print(job);

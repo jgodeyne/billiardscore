@@ -1,0 +1,5390 @@
+<?xml version="1.0" encoding="UTF-8"?><league>
+    <name>KNBB 2de Divisie</name>
+    <contactname/>
+    <contactemail/>
+    <turnindicatorscolor>WHITE</turnindicatorscolor>
+    <warminguptime>5</warminguptime>
+    <clubs>
+        <club>
+            <lic>10086</lic>
+            <name>S&amp;P De Molenvliet</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15650</lic>
+            <name>de molen 2</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>ClubNr</lic>
+            <name>ClubNaam</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15839</lic>
+            <name>Cafe Het Wapen van Strijp</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15848</lic>
+            <name>aMate Communications</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>11817</lic>
+            <name>Thekes / Park Tivoli</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>13026</lic>
+            <name>B.C. Goirle</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>11993</lic>
+            <name>Het Wapen van Eerschot</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15814</lic>
+            <name>VB1 / Gorissen Furniture</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15802</lic>
+            <name>Eddies-HR.nl</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>13512</lic>
+            <name>Van den Berg Biljarts</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>11579</lic>
+            <name>B.C. Tegelen 1</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+        <club>
+            <lic>15624</lic>
+            <name>Teleng Schilderwerken BV</name>
+            <contactname/>
+            <contactemail/>
+        </club>
+    </clubs>
+    <members>
+        <member>
+            <lic>159016</lic>
+            <name>Toine Bongers</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>134878</lic>
+            <name>Ronnie Brands</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>217346</lic>
+            <name>Paul Stroobants</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>269347</lic>
+            <name>Cyriel Cortjens</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>158407</lic>
+            <name>Toine Henskens</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>162863</lic>
+            <name>Micha van Bochem</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>111432</lic>
+            <name>Richard Geurden</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>215166</lic>
+            <name>Patrick Adams</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>156547</lic>
+            <name>Edwin Junggeburt</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>216492</lic>
+            <name>Freddy Staelens</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>164247</lic>
+            <name>Wilfrie Vermeer</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>224711</lic>
+            <name>Kevin van Hees</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>205837</lic>
+            <name>Luc Thon</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>205835</lic>
+            <name>Paul Jaubin</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>107493</lic>
+            <name>Martien van den Tillaar</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>143591</lic>
+            <name>Peter van der Heijden</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>228169</lic>
+            <name>Wiel Pelzer</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>126644</lic>
+            <name>Marcel van Berkel</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>149526</lic>
+            <name>Wil de Wit</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>178921</lic>
+            <name>Wilco Meusen</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>269355</lic>
+            <name>Tom Goossens</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>147629</lic>
+            <name>Frank Smetsers</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>162658</lic>
+            <name>Guus Schellekens</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>264122</lic>
+            <name>Daniel van Rompaey</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>264121</lic>
+            <name>Dirk Delmez</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>130004</lic>
+            <name>Marcel van den Heuvel</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>144095</lic>
+            <name>Jos de Brouwer</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>131459</lic>
+            <name>Ren� Soeterboek</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>157704</lic>
+            <name>Peter van Hees</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>129394</lic>
+            <name>Karina Jetten</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>123567</lic>
+            <name>Ton Rovers</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>127769</lic>
+            <name>Hub Vereggen</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>140441</lic>
+            <name>William Peters</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>201050</lic>
+            <name>Jean Bessems</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>179408</lic>
+            <name>Uwe Arndt</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>200282</lic>
+            <name>Erwin Kivits</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>101596</lic>
+            <name>Huub Adriaanse</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>181319</lic>
+            <name>Jean Godeyne</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>141974</lic>
+            <name>Roger Spijkers</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>216815</lic>
+            <name>Mitchell Schilders</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>167508</lic>
+            <name>Roger Schoens</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>219805</lic>
+            <name>Rudy Evers</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>142869</lic>
+            <name>Ren� Peters</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>146908</lic>
+            <name>Ludy Keuten</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>113172</lic>
+            <name>Jos Bongers</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>152141</lic>
+            <name>Marco Wolfs</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>124815</lic>
+            <name>Marcel Persoons</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>178870</lic>
+            <name>Maarten Janssen</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>130497</lic>
+            <name>John van Tienen</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>134851</lic>
+            <name>Erik van Loon</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>222478</lic>
+            <name>Koen van Camp</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>147096</lic>
+            <name>Wilbert van der Heijden</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>159915</lic>
+            <name>Niels Verlouw</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>153979</lic>
+            <name>Roger Roefs</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>156806</lic>
+            <name>Peter van de Sande</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>154508</lic>
+            <name>Edwin van Woerkum</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>156927</lic>
+            <name>Jurgen Zeegers</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>182772</lic>
+            <name>Peter Wolters</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>223690</lic>
+            <name>Rene Snijders</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>170742</lic>
+            <name>Jurgen de Ruijter</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>143520</lic>
+            <name>Joop van Hastenberg</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>101606</lic>
+            <name>Frans Pelders</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>137292</lic>
+            <name>Ad Burgmans</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>151822</lic>
+            <name>Marten van Engelen</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>203165</lic>
+            <name>Frank Dolmans</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>271364</lic>
+            <name>Ken Dierckx</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>142874</lic>
+            <name>Luc Royberghs</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>127952</lic>
+            <name>Toon van den Heuvel</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>143522</lic>
+            <name>Pieter Hulsen</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>128888</lic>
+            <name>May Hamers</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>214528</lic>
+            <name>Henny de Jongh</name>
+            <club>10086</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>148739</lic>
+            <name>Dennis Timmers</name>
+            <club>11817</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>156130</lic>
+            <name>Toine Dekkers</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>179311</lic>
+            <name>Ren� van den Bogaard</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>135877</lic>
+            <name>Jacques Teleng</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>154375</lic>
+            <name>Willy Smetsers</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>209152</lic>
+            <name>Frans Sysmans</name>
+            <club>15650</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>156312</lic>
+            <name>Eric Hendrickx</name>
+            <club>13026</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>182625</lic>
+            <name>Anton van den Hurk</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>134266</lic>
+            <name>Stephan Rutten</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>107644</lic>
+            <name>Jaco van der Ven</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>128324</lic>
+            <name>Ger Holka</name>
+            <club>15814</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>102035</lic>
+            <name>Willie Minkels</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>167050</lic>
+            <name>Eric Aerts</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>LidNr</lic>
+            <name>LidNaam</name>
+            <club>ClubNr</club>
+            <tsps>
+                <tsp>VrijspelKlein</tsp>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>K47/2</tsp>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>BandKlein</tsp>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>K38/2</tsp>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp>VrijspelGroot</tsp>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>BandGroot</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp>DriebandKlein</tsp>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>DriebandGroot</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>145560</lic>
+            <name>Noud van Haren</name>
+            <club>11579</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>164770</lic>
+            <name>Piet Blankers</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>207734</lic>
+            <name>Ruud Sikkers</name>
+            <club>15848</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>211307</lic>
+            <name>Jan van Zutphen</name>
+            <club>13512</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>126977</lic>
+            <name>Jacky Geerlings</name>
+            <club>15624</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>139082</lic>
+            <name>Edwin van den Boom</name>
+            <club>11993</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>152523</lic>
+            <name>Frank Gielen</name>
+            <club>15802</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+        <member>
+            <lic>268199</lic>
+            <name>Bart Burmanje</name>
+            <club>15839</club>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K47/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Band (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K38/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Vrijspel (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp>35</tsp>
+                <discipline>Band (GB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Neo K57/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K71/2</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>Drieband (KB)</discipline>
+            </tsps>
+            <tsps>
+                <tsp/>
+                <discipline>K57/1</discipline>
+            </tsps>
+            <tsps>
+                <tsp>30</tsp>
+                <discipline>Drieband (GB)</discipline>
+            </tsps>
+        </member>
+    </members>
+</league>

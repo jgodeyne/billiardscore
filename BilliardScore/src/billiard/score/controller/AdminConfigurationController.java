@@ -9,11 +9,9 @@ import billiard.common.ControllerInterface;
 import billiard.data.LeagueDataManager;
 import billiard.common.AppProperties;
 import billiard.common.CommonDialogs;
-import billiard.score.BilliardScore;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -60,6 +58,7 @@ public class AdminConfigurationController implements Initializable , ControllerI
     public void initialize(URL url, ResourceBundle rb) {
         try {
             LeagueDataManager leagueMngr = LeagueDataManager.getInstance();
+            cbLeague.getItems().add("");
             cbLeague.getItems().addAll(leagueMngr.getLeagueNames());
             appProp = AppProperties.getInstance();
             tfBilliardScoreId.setText(appProp.getScoreboardId());

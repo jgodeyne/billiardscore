@@ -19,10 +19,9 @@
         <replace file="${basedir}/package/windows/${application.title}.iss" token="{applname}" value="${application.title}"/>
         <replace file="${basedir}/package/windows/${application.title}.iss" token="{version}" value="${javafx.application.implementation.version}"/>
         <replace file="${basedir}/package/windows/${application.title}.iss" token="{vendor}" value="${application.vendor}"/>
-        <replace file="${basedir}/package/windows/${application.title}.iss" token="arch" value="${os.arch}"/>
-        
+        <replace file="${basedir}/package/windows/${application.title}.iss" token="arch" value="${os.arch}"/>      
     </target>
-
+    
     <target depends="create-iss-file" name="-post-jfx-deploy">
         <fx:deploy width="${javafx.run.width}" height="${javafx.run.height}" 
                   nativeBundles="all" verbose="true"

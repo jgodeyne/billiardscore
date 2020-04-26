@@ -28,7 +28,7 @@ import org.apache.commons.csv.CSVRecord;
  */
 public class ConvertKBBBLedenLijst {
     private static final Logger LOGGER = Logger.getLogger(ConvertKBBBLedenLijst.class.getName());
-    private static final String LEAGUE_NAME = "KBBB";
+    private static final String LEAGUE_NAME = "KNBB 1ste Divisie";
     private static int nbrOfClubs = 0;
     private static int nbrOfMembers = 0;
 
@@ -38,7 +38,7 @@ public class ConvertKBBBLedenLijst {
      */
     public static void main(String[] args) throws Exception {
         LogManager.getLogManager().readConfiguration(ConvertKBBBLedenLijst.class.getResourceAsStream("/logging.properties"));
-        Path dir = Paths.get("input/kbbb/Ledenlijst-KBBB.csv");
+        Path dir = Paths.get("input/benjanssen/" + LEAGUE_NAME + ".csv");
         convertFile(dir);
         LOGGER.log(Level.INFO, "Nbr of clubs: {0}", nbrOfClubs);
         LOGGER.log(Level.INFO, "Nbr of members: {0}", nbrOfMembers);
@@ -47,8 +47,8 @@ public class ConvertKBBBLedenLijst {
     private static void convertFile(Path inputFilePath) throws Exception {
         LOGGER.log(Level.FINEST, "convertFile => file: {0}", inputFilePath);
         LeagueItem league = loadfile(inputFilePath);
-        Paths.get("output/kbbb/").toFile().mkdirs();
-        Path outputFilePath = Paths.get("output/kbbb/"+ LEAGUE_NAME + ".xml");
+        Paths.get("output/benjanssen/").toFile().mkdirs();
+        Path outputFilePath = Paths.get("output/benjanssen/"+ LEAGUE_NAME + ".xml");
         LeagueDataManager.writeFile(league, outputFilePath);
     }
     

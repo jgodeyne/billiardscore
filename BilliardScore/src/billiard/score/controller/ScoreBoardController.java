@@ -24,7 +24,6 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
-import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -36,12 +35,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -286,7 +282,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             event.consume();
         } else if (new KeyCodeCombination(KeyCode.U, KeyCombination.CONTROL_DOWN).match(event)) {
             LOGGER.log(Level.FINEST, "runOnKeyPressed => U");
-            if (!match.isEnded() && !undoOngoing) {
+            if (!match.isEnded() && !undoOngoing && match.isStarted()) {
                 undoOngoing = true;
                 undoTries();
             } else {
@@ -311,8 +307,20 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
                 event.consume();
                 break;
             case "/":
+                LOGGER.log(Level.FINEST, "runOnKeyPressed => U");
+                if (!match.isEnded() && !undoOngoing && match.isStarted()) {
+                    undoOngoing = true;
+                    undoTries();
+                } else {
+                    undoOngoing = false;
+                }
                 event.consume();
                 break;
+            case "*":
+                if (!match.isStarted()) {
+                    switchPlayers();
+                }
+                event.consume();
         }
     }
 
@@ -627,6 +635,17 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         Text textTotal = (Text) ScoreBoardController.class.getField("total" + player + pos).get(this);
         textTotal.setText(Integer.toString(total));
     }
+    
+    private void clearScorePlayer(int player) throws Exception {
+        for (int pos = 1; pos < 4; pos++) {
+            Text textInning = (Text) ScoreBoardController.class.getField("inning" + player + pos).get(this);
+            textInning.setText("");
+            Text textScore = (Text) ScoreBoardController.class.getField("score" + player + pos).get(this);
+            textScore.setText("");
+            Text textTotal = (Text) ScoreBoardController.class.getField("total" + player + pos).get(this);
+            textTotal.setText("");
+        }
+    }
 
     private boolean correctScore() throws Exception {
         boolean scoreCorrected = false;
@@ -683,7 +702,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         return scoreCorrected;
     }
 
-    private void playerScoreCorrection(int player, ScoreChange scoreChange, ArrayList<Integer> runPlayer, ArrayList<Integer> totalPlayer) throws NoSuchFieldException, IllegalArgumentException, IllegalAccessException, Exception {
+    private void playerScoreCorrection(int player, ScoreChange scoreChange, ArrayList<Integer> runPlayer, ArrayList<Integer> totalPlayer) throws Exception {
         int idx = scoreChange.getInning() - 1;
         int intDiff = scoreChange.getPoints() - runPlayer.get(idx);
         runPlayer.set(idx, scoreChange.getPoints());
@@ -703,15 +722,19 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         setTFAVG(player, formatter.format(avg));
 
         if (scoreChange.getInning() + 3 > getInnings()) {
-            int start = (runPlayer.size() < 4 ? 0 : runPlayer.size() - 3);
-            int pos = 0;
-            for (int i = start; i < runPlayer.size(); i++) {
-                pos++;
-                setScorePlayerPos(player, pos, i + 1, runPlayer.get(i), totalPlayer.get(i));
-            }
+            updateScorePlayerInfo(player, runPlayer, totalPlayer);
         }
     }
 
+    private void updateScorePlayerInfo(int player, ArrayList<Integer> runPlayer, ArrayList<Integer> totalPlayer) throws Exception {
+        clearScorePlayer(player);
+        int start = (runPlayer.size() < 4 ? 0 : runPlayer.size() - 3);
+        int pos = 0;
+        for (int i = start; i < runPlayer.size(); i++) {
+            pos++;
+            setScorePlayerPos(player, pos, i + 1, runPlayer.get(i), totalPlayer.get(i));
+        }        
+    }
     private void showHelp() throws Exception {
         Stage dialog = new Stage();
         dialog.initModality(Modality.APPLICATION_MODAL);
@@ -888,83 +911,66 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
     }
 
     private void undoTries() throws Exception {
-        TextInputDialog dialog = new TextInputDialog();
-        SceneUtil.setStylesheet(dialog.getDialogPane());
-        dialog.setTitle(bundle.getString("titel.undo.innings"));
-        dialog.setHeaderText(null);
-        dialog.setContentText(bundle.getString("label.nbr.innings"));
+        if(turn==2) {
+            //Undo Player 1
+            int inningsInt = getInnings() - 1;
+            innings.setText(Integer.toString(inningsInt));
+            runPlayer1 = new ArrayList<>(runPlayer1.subList(0, runPlayer1.size()-1));
+            totalPlayer1 = new ArrayList<>(totalPlayer1.subList(0, totalPlayer1.size()-1));
 
-        // Traditional way to get the response value.
-        Optional<String> result = dialog.showAndWait();
-        if (result.isPresent()){
-            int nbrOfInnings;
-            try {
-                nbrOfInnings = Integer.valueOf(result.get());
-            } catch (NumberFormatException e) {
-                return;
-            }
-            if(nbrOfInnings > getInnings()) {
-                nbrOfInnings = getInnings();
-            }
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            SceneUtil.setStylesheet(alert.getDialogPane());
-            alert.setTitle(bundle.getString("titel.undo.innings"));
-            alert.setHeaderText(null);
-            alert.setContentText(nbrOfInnings + " " + bundle.getString("msg.undo.innings"));
-
-            Optional<ButtonType> result2 = alert.showAndWait();
-            if (result2.get() == ButtonType.CANCEL){
-                return;
-            }
-            if(nbrOfInnings > 0) {                
-                innings.setText(String.valueOf(getInnings()-nbrOfInnings));
-                
-                //Player 1
-                runPlayer1 = new ArrayList<>(runPlayer1.subList(0, runPlayer1.size()-nbrOfInnings));
-                totalPlayer1 = new ArrayList<>(totalPlayer1.subList(0, totalPlayer1.size()-nbrOfInnings));
-                
-                int hr = 0;
-                for (int i = 0; i < totalPlayer1.size(); i++) {
-                    if (runPlayer1.get(i) > hr) {
-                        hr = runPlayer1.get(i);
-                        setLblHR(1, hr);
-                    }
+            int hr = 0;
+            for (int i = 0; i < totalPlayer1.size(); i++) {
+                if (runPlayer1.get(i) > hr) {
+                    hr = runPlayer1.get(i);
                 }
+            }
+            setLblHR(1, hr);
+            
+            if(totalPlayer1.size()>0) {
                 setLblScore(1, totalPlayer1.get(totalPlayer1.size()-1));
                 double avg = (double) getScorePlayer(1) / getInnings();
                 DecimalFormat formatter = new DecimalFormat("#0.00");
-                setTFAVG(1, formatter.format(avg));
+                setTFAVG(1, formatter.format(avg));                
+            } else {
+                setLblScore(1, 0);
+                setTFAVG(1, "0");                                
+            }
+            
+            double pct = (double) getScorePlayer1()/match.getPlayer1().getTsp();
+            player_1_progress.setProgress(pct);
 
-                int start = (runPlayer1.size() < 4 ? 0 : runPlayer1.size() - 3);
-                int pos = 0;
-                for (int i = start; i < runPlayer1.size(); i++) {
-                    pos++;
-                    setScorePlayerPos(1, pos, i + 1, runPlayer1.get(i), totalPlayer1.get(i));
-                }
-                
-                //Player 2
-                runPlayer2 = new ArrayList<>(runPlayer2.subList(0, runPlayer2.size()-nbrOfInnings));
-                totalPlayer2 = new ArrayList<>(totalPlayer2.subList(0, totalPlayer2.size()-nbrOfInnings));
-                
-                hr = 0;
-                for (int i = 0; i < totalPlayer2.size(); i++) {
-                    if (runPlayer2.get(i) > hr) {
-                        hr = runPlayer2.get(i);
-                        setLblHR(2, hr);
-                    }
-                }
-                setLblScore(2, totalPlayer2.get(totalPlayer2.size()-1));
-                avg = (double) getScorePlayer(2) / getInnings();
-                formatter = new DecimalFormat("#0.00");
-                setTFAVG(2, formatter.format(avg));
+            turn = 1;
+            updateScorePlayerInfo(1, runPlayer1, totalPlayer1);
+            switchTurnIndicator();
+        
+        } else if(turn==1) {
+            //Undo Player 2
+            runPlayer2 = new ArrayList<>(runPlayer2.subList(0, runPlayer2.size()-1));
+            totalPlayer2 = new ArrayList<>(totalPlayer2.subList(0, totalPlayer2.size()-1));
 
-                start = (runPlayer2.size() < 4 ? 0 : runPlayer2.size() - 3);
-                pos = 0;
-                for (int i = start; i < runPlayer2.size(); i++) {
-                    pos++;
-                    setScorePlayerPos(2, pos, i + 1, runPlayer2.get(i), totalPlayer2.get(i));
+            int hr = 0;
+            for (int i = 0; i < totalPlayer2.size(); i++) {
+                if (runPlayer2.get(i) > hr) {
+                    hr = runPlayer2.get(i);
                 }
             }
+            setLblHR(2, hr);
+            if(totalPlayer2.size()>0) {
+                setLblScore(2, totalPlayer2.get(totalPlayer2.size()-1));
+                double avg = (double) getScorePlayer(2) / getInnings();
+                DecimalFormat formatter = new DecimalFormat("#0.00");
+                setTFAVG(2, formatter.format(avg));
+            } else {
+                setLblScore(2, 0);
+                setTFAVG(2, "0");                
+            }
+ 
+            double pct = (double) getScorePlayer2()/match.getPlayer2().getTsp();
+            player_2_progress.setProgress(pct);
+
+            turn = 2;      
+            updateScorePlayerInfo(2, runPlayer2, totalPlayer2);
+            switchTurnIndicator();
         }
     }
 }

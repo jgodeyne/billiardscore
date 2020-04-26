@@ -154,12 +154,24 @@ public class LeagueDetailController implements Initializable, ControllerInterfac
         populateClubs();
         populateMembers();
 
-        btnDeleteClub.setDisable(true);
-        btnUpdateClub.setDisable(true);
-        
-        btnNewMember.setDisable(true);
-        btnUpdateMember.setDisable(true);
-        btnDeleteMember.setDisable(true);
+        if(tableClubs.getItems().size() == 0) {
+            btnDeleteClub.setDisable(true);
+            btnUpdateClub.setDisable(true);
+        } else if(null!=selectedClub) {
+            tableClubs.getSelectionModel().select(selectedClub);
+        } else {
+            tableClubs.getSelectionModel().select(0);
+        }
+
+        if(tableMembers.getItems().size() == 0) {
+//            btnNewMember.setDisable(true);
+            btnUpdateMember.setDisable(true);
+            btnDeleteMember.setDisable(true);
+        } else if (null!=selectedMember) {
+            tableMembers.getSelectionModel().select(selectedMember);
+        } else {
+            tableMembers.getSelectionModel().select(0);
+        }
     }
 
     public PermittedValues.Action getAction() {

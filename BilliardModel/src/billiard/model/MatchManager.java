@@ -11,6 +11,9 @@ import com.hazelcast.core.EntryListener;
 import com.hazelcast.core.IMap;
 import com.hazelcast.core.ITopic;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
@@ -123,6 +126,12 @@ public class MatchManager {
                 }
             }
         }
+        Collections.sort(matchList, new Comparator<Match>() {
+            @Override
+            public int compare(Match o1, Match o2) {
+                return o1.getNumber().compareTo(o2.getNumber());
+            }
+        });
         return matchList;
     }    
 
