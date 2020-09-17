@@ -218,26 +218,27 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         LOGGER.log(Level.FINEST, "runOnKeyPressed => event code: {0}", event.getCode());
         if (new KeyCodeCombination(KeyCode.ENTER).match(event)) {
             LOGGER.log(Level.FINEST, "runOnKeyPressed => ENTER");
+            event.consume();
             if (!match.isEnded()) {
                 endOfTurn();
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.C, KeyCombination.CONTROL_DOWN).match(event)) {
             LOGGER.log(Level.FINEST, "runOnKeyPressed => C");
+            event.consume();
             if (!scoreboardClosing) {
                 scoreboardClosing = true;
                 closeBoard();
             } else {
                 scoreboardClosing = false;
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => S");
             if (!match.isStarted()) {
                 switchPlayers();
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.W, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => W");
             if (!match.isStarted()) {
                 if (!warmingup) {
@@ -247,13 +248,13 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
                     warmingup = false;
                 }
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.I, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => I");
             extraInfo1.setVisible(!extraInfo1.isVisible());
             extraInfo2.setVisible(!extraInfo2.isVisible());
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.H, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => H");
             if (!helpShowing) {
                 helpShowing = true;
@@ -261,8 +262,8 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             } else {
                 helpShowing = false;
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.E, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => E");
             if (!match.isEnded() && match.isStarted() && !correctionOngoing) {
                 correctScore();
@@ -270,8 +271,8 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             } else {
                 correctionOngoing = false;
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.M, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => M");
             if (!match.isEnded() && !scoresheetShowing) {
                 scoresheetShowing = true;
@@ -279,16 +280,16 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
             } else {
                 scoresheetShowing = false;
             }
-            event.consume();
         } else if (new KeyCodeCombination(KeyCode.U, KeyCombination.CONTROL_DOWN).match(event)) {
+            event.consume();
             LOGGER.log(Level.FINEST, "runOnKeyPressed => U");
             if (!match.isEnded() && !undoOngoing && match.isStarted()) {
                 undoOngoing = true;
                 undoTries();
+                undoOngoing = false;
             } else {
                 undoOngoing = false;
             }
-            event.consume();
         }
     }
 
@@ -297,30 +298,31 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         LOGGER.log(Level.FINEST, "runOnKeyTyped => event char: {0}", event.getCharacter());
         switch (event.getCharacter()) {
             case "+":
+                event.consume();
                 LOGGER.log(Level.FINEST, "runOnKeyTyped => event code: +");
                 incrementRun();
-                event.consume();
                 break;
             case "-":
+                event.consume();
                 LOGGER.log(Level.FINEST, "runOnKeyTyped => event code: -");
                 decrementRun();
-                event.consume();
                 break;
             case "/":
-                LOGGER.log(Level.FINEST, "runOnKeyPressed => U");
+                event.consume();
+                LOGGER.log(Level.FINEST, "runOnKeyTyped => /");
                 if (!match.isEnded() && !undoOngoing && match.isStarted()) {
                     undoOngoing = true;
                     undoTries();
+                    undoOngoing = false;
                 } else {
                     undoOngoing = false;
                 }
-                event.consume();
                 break;
             case "*":
+                event.consume();
                 if (!match.isStarted()) {
                     switchPlayers();
                 }
-                event.consume();
         }
     }
 
