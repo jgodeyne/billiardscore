@@ -35,6 +35,7 @@ public final class AppProperties extends Properties{
     private static final String USER_HOME = "user.home";
     private static final String PRINT_MATCH_SHEET = "print_match_sheet";
     private static final String PRINT_SUMMARY_SHEET = "print_summary_sheet";
+    private static final String SHOW_EOM_DIALOG = "show_eom_dialog";
     
     private boolean emailConfigured = false;
    
@@ -48,8 +49,8 @@ public final class AppProperties extends Properties{
                 && getEmailServer()!=null && !getEmailServer().isEmpty()) {
             emailConfigured = true;
         }
-        System.out.println("getPrintMatchSheet: >" + this.getPrintMatchSheet() + "<");
-        System.out.println("getPrintSummarySheet: >" + this.getPrintSummarySheet()+ "<");
+//        System.out.println("getPrintMatchSheet: >" + this.getPrintMatchSheet() + "<");
+//        System.out.println("getPrintSummarySheet: >" + this.getPrintSummarySheet()+ "<");
     }
 
     public static AppProperties getInstance() throws Exception {
@@ -256,6 +257,12 @@ public final class AppProperties extends Properties{
         }
         return result;
     }
+
+    public int getShowEOMDialog() {
+        return Integer.parseInt(this.getProperty(SHOW_EOM_DIALOG));
+    }
+    
+    
     public void save() throws Exception {
         this.store(new FileOutputStream(file), "");
     }

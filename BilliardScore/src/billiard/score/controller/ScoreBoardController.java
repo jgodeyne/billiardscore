@@ -556,13 +556,20 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
         SceneUtil.setStylesheet(scene);
         dialog.setScene(scene);
         dialog.centerOnScreen();
+
+        AppProperties aprop = AppProperties.getInstance();
+
         PauseTransition wait = new PauseTransition(Duration.seconds(10));
-        wait.setOnFinished((e) -> {
-            dialog.hide();
-            wait.playFromStart();
-        });
-        wait.play();
-        dialog.showAndWait();
+        if(aprop.getShowEOMDialog() > 0) {
+            wait.setOnFinished((e) -> {
+                dialog.hide();
+                wait.playFromStart();
+            });
+            wait.play();
+            dialog.showAndWait();
+        } else {
+            dialog.showAndWait();
+        }
 
         if (controller.getReply().equals(EndOfMatchController.Reply.CORRECT)) {
             if (!correctScore()) {
