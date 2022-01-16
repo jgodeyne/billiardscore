@@ -286,45 +286,47 @@ public class BilliardAdmin extends Application {
             primaryStage.requestFocus();
             
             action = controller.getAction();
-            if(action.equals(PermittedValues.Action.NEW)) {
-                LeagueItem league = new LeagueItem();
-                openLeagueDetail(PermittedValues.Mode.NEW, league);
-            } else if (action.equals(PermittedValues.Action.EDIT)) {
-                String leagueName = controller.getSelectedLeagueName();
-                LeagueItem league = leagueManager.getLeague(leagueName);
-                LeagueItem leagueBackup = league.copy();
-                if(!openLeagueDetail(PermittedValues.Mode.EDIT, league)) {
-                    //restore from backup
-                    leagueManager.restoreLeague(leagueBackup);
-                }
-            } else if (action.equals(PermittedValues.Action.DELETE)) {
-                String leagueName = controller.getSelectedLeagueName();
-                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                SceneUtil.setStylesheet(alert.getDialogPane());
-                alert.setTitle(bundle.getString("titel.verwijderen.ledenlijst"));
-                alert.setHeaderText(null);
-                alert.setContentText(leagueName + " "+ bundle.getString("msg.verwijderen"));
-                
-                Optional<ButtonType> answer = alert.showAndWait();
-                if (answer.get() == ButtonType.OK){
+            if(null!=action) {
+                if(action.equals(PermittedValues.Action.NEW)) {
+                    LeagueItem league = new LeagueItem();
+                    openLeagueDetail(PermittedValues.Mode.NEW, league);
+                } else if (action.equals(PermittedValues.Action.EDIT)) {
+                    String leagueName = controller.getSelectedLeagueName();
                     LeagueItem league = leagueManager.getLeague(leagueName);
-                    leagueManager.removeLeague(league);
+                    LeagueItem leagueBackup = league.copy();
+                    if(!openLeagueDetail(PermittedValues.Mode.EDIT, league)) {
+                        //restore from backup
+                        leagueManager.restoreLeague(leagueBackup);
+                    }
+                } else if (action.equals(PermittedValues.Action.DELETE)) {
+                    String leagueName = controller.getSelectedLeagueName();
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    SceneUtil.setStylesheet(alert.getDialogPane());
+                    alert.setTitle(bundle.getString("titel.verwijderen.ledenlijst"));
+                    alert.setHeaderText(null);
+                    alert.setContentText(leagueName + " "+ bundle.getString("msg.verwijderen"));
+
+                    Optional<ButtonType> answer = alert.showAndWait();
+                    if (answer.get() == ButtonType.OK){
+                        LeagueItem league = leagueManager.getLeague(leagueName);
+                        leagueManager.removeLeague(league);
+                    }
+                } else if (action.equals(PermittedValues.Action.EXPORT)) {
+                    String leagueName = controller.getSelectedLeagueName();
+                    DirectoryChooser dirChooser = new DirectoryChooser();
+                    dirChooser.setTitle(bundle.getString("titel.kies.locatie"));
+                    File destDir = dirChooser.showDialog(mainStage);
+                    if(null!=destDir) {
+                        leagueManager.exportLeague(leagueName, destDir);
+                    }
+                } else if (action.equals(PermittedValues.Action.IMPORT)) {
+                    importData(PermittedValues.ActionObject.LEAGUE);
+                } else if (action.equals(PermittedValues.Action.SEND)) {
+                    String leagueName = controller.getSelectedLeagueName();
+                    LeagueItem league = leagueManager.getLeague(leagueName);
+                    sendDataAsXML(PermittedValues.ActionObject.LEAGUE, league.toXML());
                 }
-            } else if (action.equals(PermittedValues.Action.EXPORT)) {
-                String leagueName = controller.getSelectedLeagueName();
-                DirectoryChooser dirChooser = new DirectoryChooser();
-                dirChooser.setTitle(bundle.getString("titel.kies.locatie"));
-                File destDir = dirChooser.showDialog(mainStage);
-                if(null!=destDir) {
-                    leagueManager.exportLeague(leagueName, destDir);
-                }
-            } else if (action.equals(PermittedValues.Action.IMPORT)) {
-                importData(PermittedValues.ActionObject.LEAGUE);
-            } else if (action.equals(PermittedValues.Action.SEND)) {
-                String leagueName = controller.getSelectedLeagueName();
-                LeagueItem league = leagueManager.getLeague(leagueName);
-                sendDataAsXML(PermittedValues.ActionObject.LEAGUE, league.toXML());
-            }      
+            }
         } while (!action.equals(PermittedValues.Action.CLOSE));     
     }
     

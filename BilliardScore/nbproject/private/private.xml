@@ -4,7 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="BilliardSoftware"/>
         <group>
-            <file>file:/Z:/DevProjects/BillardSoftware/billiardscore/BilliardScore/src/billiard/score/controller/ScoreSheetController.java</file>
+            <file>file:/Z:/DevProjects/BillardSoftware/billiardscore/BilliardScore/src/billiard/score/BilliardScore.java</file>
+            <file>file:/Z:/DevProjects/BillardSoftware/billiardscore/BilliardScore/src/billiard/score/controller/EndOfMatchController.java</file>
             <file>file:/Z:/DevProjects/BillardSoftware/billiardscore/BilliardScore/src/billiard/score/controller/ScoreBoardController.java</file>
         </group>
     </open-files>

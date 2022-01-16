@@ -39,7 +39,7 @@ public class ScoreboardManager {
     }
 
     public void addScoreboard(String scoreboardId) {
-        if(SyncManager.isHazelcastEnabled()) {
+        if(SyncManager.isHazelcastEnabled() && null != scoreboards) {
             scoreboards.add(scoreboardId);
         } else {
             localScoreboards.add(scoreboardId);
@@ -47,7 +47,7 @@ public class ScoreboardManager {
     }
     
     public void removeScoreboard(String id) {
-        if(SyncManager.isHazelcastEnabled()) {
+        if(SyncManager.isHazelcastEnabled() && null != scoreboards) {
             scoreboards.remove(id);
         }else{
             localScoreboards.remove(id);
@@ -63,13 +63,13 @@ public class ScoreboardManager {
     }
     
     public void addItemListener(ItemListener listener) {
-        if(SyncManager.isHazelcastEnabled()) {
+        if(SyncManager.isHazelcastEnabled() && null != scoreboards) {
             scoreboards.addItemListener(listener, true);
         }
     }
     
     public int nbrOfScoreboards() {
-        if(SyncManager.isHazelcastEnabled()) {
+        if(SyncManager.isHazelcastEnabled() && null != scoreboards) {
             return scoreboards.size();
         }
         return 1;
