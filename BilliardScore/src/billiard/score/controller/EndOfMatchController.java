@@ -8,12 +8,15 @@ package billiard.score.controller;
 import billiard.model.Match;
 import billiard.common.ControllerInterface;
 import billiard.common.AppProperties;
+import java.math.RoundingMode;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -32,6 +35,26 @@ public class EndOfMatchController implements Initializable, ControllerInterface 
     private Stage primaryStage;
     private ResourceBundle bundle;
     private Reply reply = EndOfMatchController.Reply.OK;
+    @FXML
+    private Label player1_points;
+    @FXML
+    private Label player1_innings;
+    @FXML
+    private Label player1_average;
+    @FXML
+    private Label player1_highrun;
+    @FXML
+    private Label player2_points;
+    @FXML
+    private Label player2_innings;
+    @FXML
+    private Label player2_average;
+    @FXML
+    private Label player2_highrun;
+    @FXML
+    private Label player1_name;
+    @FXML
+    private Label player2_name;
     
     /**
      * Initializes the controller class.
@@ -57,6 +80,23 @@ public class EndOfMatchController implements Initializable, ControllerInterface 
                 text_player.setText(match.getPlayer2().getName());
             }
         }
+        String dfFormat = "#0.000";
+        DecimalFormat df = new DecimalFormat(dfFormat);
+        df = new DecimalFormat(dfFormat);
+        df.setRoundingMode(RoundingMode.DOWN);
+
+        player1_name.setText(match.getPlayer1().getName());
+        player1_points.setText(String.valueOf(match.getPlayer1Result().getPoints()));
+        player1_innings.setText(String.valueOf(match.getPlayer1Result().getInnings()));
+        player1_average.setText(df.format(match.getPlayer1Result().getAverage()));
+        player1_highrun.setText(String.valueOf(match.getPlayer1Result().getHighestRun()));
+        
+        player2_name.setText(match.getPlayer2().getName());
+        player2_points.setText(String.valueOf(match.getPlayer2Result().getPoints()));
+        player2_innings.setText(String.valueOf(match.getPlayer2Result().getInnings()));
+        player2_average.setText(df.format(match.getPlayer2Result().getAverage()));
+        player2_highrun.setText(String.valueOf(match.getPlayer2Result().getHighestRun()));
+        
     }
 
     @FXML
