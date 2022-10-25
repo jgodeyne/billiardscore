@@ -140,7 +140,7 @@ public class BilliardScore extends Application {
             }
             
             do {
-                //logger.log(Level.FINEST, "choseAction => Start");
+                //LOGGER.log(Level.FINEST, "choseAction => Start");
                 FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.MENU),bundle);
                 Parent root = loader.load();
                 
@@ -155,7 +155,7 @@ public class BilliardScore extends Application {
                 primaryStage.centerOnScreen();
                 primaryStage.showAndWait();
                 menuChoice = controller.getAction();
-                //logger.log(Level.FINEST, "Start => menuChoice: {0}", menuChoice);
+                //LOGGER.log(Level.FINEST, "Start => menuChoice: {0}", menuChoice);
                 if (menuChoice==MenuOptions.SCORE_BOARD) {
                     startScoreboard();
                 } else if (menuChoice==MenuOptions.INDIVIDUAL) {
@@ -172,7 +172,7 @@ public class BilliardScore extends Application {
             
             ScoreboardManager.getInstance().removeScoreboard(scoreboardId);
             stage.close();
-            //logger.log(Level.FINEST, "Start => End");
+            //LOGGER.log(Level.FINEST, "Start => End");
         } catch (Exception ex) {
             LOGGER.severe(Arrays.toString(ex.getStackTrace()));
             CommonDialogs.showException(ex);
@@ -193,7 +193,7 @@ public class BilliardScore extends Application {
     }
 
     private void startScoreboard() throws Exception{
-        //logger.log(Level.FINEST, "startScoreboard => Start");
+        //LOGGER.log(Level.FINEST, "startScoreboard => Start");
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.SCOREBOARD_FORM),bundle);
         Parent root;
         root = loader.load();
@@ -211,18 +211,18 @@ public class BilliardScore extends Application {
         primaryStage.showAndWait();    
         
         if (controller.getMatch()==null) {
-            //logger.log(Level.FINEST, "startScoreboard => Cancelled");
+            //LOGGER.log(Level.FINEST, "startScoreboard => Cancelled");
             return;
         }
         
         Match match = controller.getMatch();
         
         openScoreboard(match, null, 5);
-        //logger.log(Level.FINEST, "startScoreboard => End");
+        //LOGGER.log(Level.FINEST, "startScoreboard => End");
     }
     
     private void startIndividualCompetition() throws Exception {
-        //logger.log(Level.FINEST, "startIndividualCompetition => Start");
+        //LOGGER.log(Level.FINEST, "startIndividualCompetition => Start");
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.INDIVIDUAL_FORM),bundle);
         Parent root;
         root = loader.load();
@@ -239,7 +239,7 @@ public class BilliardScore extends Application {
         primaryStage.showAndWait();
         
         if(controller.getIndividualCompetition()==null) {
-            //logger.log(Level.FINEST, "startIndividualCompetition => Cancelled");
+            //LOGGER.log(Level.FINEST, "startIndividualCompetition => Cancelled");
             return;
         }
         
@@ -247,20 +247,32 @@ public class BilliardScore extends Application {
         individualCompetitionManager.putIndividualCompetition(competition);
  
         Match match = competition.getMatch();
-        openScoreboard(match, null, 5);
+        LeagueItem league = LeagueDataManager.getInstance().getLeague(competition.getLeagueName());
+        String turnindicatorsColor = null;
+        int warmingupTime = 5;
+        if(league!=null) {
+            LOGGER.log(Level.FINEST,"league: " + league.getName()
+                + " turnIndicatorColor: " + league.getTurnIndicatorsColor()
+                + " warmingupTime: " + league.getWarmingUpTime());
+            turnindicatorsColor = league.getTurnIndicatorsColor();
+            warmingupTime = Integer.parseInt(league.getWarmingUpTime());
+        } else {
+            LOGGER.log(Level.FINEST, "leadue is null");
+        }
+        openScoreboard(match, turnindicatorsColor, warmingupTime);
         competition.setPlayer1Result(match.getPlayer1Result());
         competition.setPlayer2Result(match.getPlayer2Result());
         
         if (match.isEnded()) {
-            //logger.log(Level.FINEST, "startIndividualCompetition => Ended match: {0}", match);
+            //LOGGER.log(Level.FINEST, "startIndividualCompetition => Ended match: {0}", match);
             ScoreSheetController.showScoreSheet(match, PermittedValues.Mode.EDIT);
             individualCompetitionManager.removeIndividualCompetition(competition);
         }
-        //logger.log(Level.FINEST, "startIndividualCompetition => End");
+        //LOGGER.log(Level.FINEST, "startIndividualCompetition => End");
     }
     
     private void startTeamCompetition(TeamCompetition competition) throws Exception {
-        //logger.log(Level.FINEST, "startTeamCompetition => Start");
+        //LOGGER.log(Level.FINEST, "startTeamCompetition => Start");
         do {
             ArrayList<Match> selectableMatches = new ArrayList();
             for(Match teammatch : competition.getMatches()) {
@@ -275,23 +287,23 @@ public class BilliardScore extends Application {
             } else {
                 break;
             }
-            //logger.log(Level.FINEST, "startTeamCompetition => Start match: {0}", match);
+            //LOGGER.log(Level.FINEST, "startTeamCompetition => Start match: {0}", match);
         } while (true);
 
         //competition = teamCompetitionManager.getTeamCompetition(competition);
         if (competition.isAllMatchedEnded()) {
-            //logger.log(Level.FINEST, "startTeamCompetition => AllMatchedEnded");
+            //LOGGER.log(Level.FINEST, "startTeamCompetition => AllMatchedEnded");
             calculateCompetitionResult(competition);
 
             //PointSystemFactory.getPointSystem(competition.getPointsSystem()).determineCompetitionPoints(competition);
             TeamCompetitionSummarySheetController.showSummarySheet(competition);
             teamCompetitionManager.removeTeamCompetition(competition);
         }
-        //logger.log(Level.FINEST, "startTeamCompetition => End");
+        //LOGGER.log(Level.FINEST, "startTeamCompetition => End");
     }
 
     private void startAdminConfiguration() throws Exception{
-        //logger.log(Level.FINEST, "startAdminConfiguration => Start");
+        //LOGGER.log(Level.FINEST, "startAdminConfiguration => Start");
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.CONFIGURATION),bundle);
         Parent root;
         root = loader.load();
@@ -308,7 +320,7 @@ public class BilliardScore extends Application {
 
         primaryStage.showAndWait();    
         
-        //logger.log(Level.FINEST, "startAdminConfiguration => End");
+        //LOGGER.log(Level.FINEST, "startAdminConfiguration => End");
     }
 
     private void importData(PermittedValues.ActionObject actionObject) throws Exception {
@@ -337,21 +349,8 @@ public class BilliardScore extends Application {
         }
     }
     
-    private synchronized void startTournamentMatch(Match match) throws Exception{
-        //logger.log(Level.FINEST, "startTournamentMatch => Start");
-        //logger.log(Level.FINEST, "startTournamentMatch => match: {0}", match);
-        openScoreboard(match, null, 5);
-
-        if (match.isEnded()) {
-            //logger.log(Level.FINEST, "startTournamentMatch => match ended: {0}", match);
-            ScoreSheetController.showScoreSheet(match, PermittedValues.Mode.EDIT);
-        }
-        //logger.log(Level.FINEST, "startTournamentMatch => End");
-    }
-    
     private void openScoreboard(Match match, String color, int warmingUpTime) throws Exception {
-        //logger.log(Level.FINEST, "openScoreboard => Start");
-        //logger.log(Level.FINEST, "openScoreboard => match: {0}", match);
+        LOGGER.finest("TurnIndicatorColor: " + color + " warmingUpTime: " + warmingUpTime);
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.SCOREBOARD),bundle);
         Parent root;
         root = loader.load();
@@ -371,12 +370,12 @@ public class BilliardScore extends Application {
         primaryStage.setMaximized(true);
         primaryStage.showAndWait();
         primaryStage.setMaximized(false);
-        //logger.log(Level.FINEST, "openScoreboard => End");
+        //LOGGER.log(Level.FINEST, "openScoreboard => End");
     }
     
     private boolean selectMatch(Competition competition, ArrayList<Match> selectableMatches) throws Exception{
-        //logger.log(Level.FINEST, "selectMatch => Start");
-        //logger.log(Level.FINEST, "selectMatch => competition: {0}", competition.getName());
+        //LOGGER.log(Level.FINEST, "selectMatch => Start");
+        //LOGGER.log(Level.FINEST, "selectMatch => competition: {0}", competition.getName());
         Match selectedMatch;
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.SELECT_TEAM_MATCH),bundle);
         Parent root;
@@ -407,7 +406,7 @@ public class BilliardScore extends Application {
             }
             openScoreboard(selectedMatch, turnindicatorsColor, warmingupTime);
             if(selectedMatch.isEnded()) {
-                //logger.log(Level.FINEST, "startTeamCompetition => Match ended: {0}", match);
+                //LOGGER.log(Level.FINEST, "startTeamCompetition => Match ended: {0}", match);
                 //PointSystemFactory.getPointSystem(competition.getPointsSystem()).determineMatchPoints(match);
                 ScoreSheetController.showScoreSheet(selectedMatch, PermittedValues.Mode.EDIT);
             }
@@ -431,32 +430,32 @@ public class BilliardScore extends Application {
 
             return true;
         }
-        //logger.log(Level.FINEST, "selectMatch => match: {0}", selectedMatch);
+        //LOGGER.log(Level.FINEST, "selectMatch => match: {0}", selectedMatch);
         return false;
     }
     
     public void calculateCompetitionResult(TeamCompetition competition){
-        //logger.log(Level.FINEST, "calculateCompetitionResult => Start");
-        //logger.log(Level.FINEST, "calculateCompetitionResult => competition: {0}", competition.getName());
+        //LOGGER.log(Level.FINEST, "calculateCompetitionResult => Start");
+        //LOGGER.log(Level.FINEST, "calculateCompetitionResult => competition: {0}", competition.getName());
         int tsp1 = 0, points1 = 0, innings1 = 0, hr1 = 0, mp1= 0, cp1 = 0;
         int tsp2 = 0, points2 = 0, innings2 = 0, hr2 = 0, mp2= 0, cp2 = 0;
         double perc1, perc2;
         
         PointsSystemInterface pointSystem = PointSystemFactory.getPointSystem(competition.getPointsSystem());
         for(Match match: competition.getMatches()) {
-            //logger.log(Level.FINEST, "calculateCompetitionResult => match: {0}", match);
+            //LOGGER.log(Level.FINEST, "calculateCompetitionResult => match: {0}", match);
             pointSystem.determineMatchPoints(match);
             matchManager.updateMatch(match);
             PlayerMatchResult playerResult = match.getPlayer1Result();
             if(competition.getTeam1().isPlayerOfTeam(match.getPlayer1())) {
-                //logger.log(Level.FINEST, "calculateCompetitionResult => player1OfTeam1", match.getPlayer1().getName());
+                //LOGGER.log(Level.FINEST, "calculateCompetitionResult => player1OfTeam1", match.getPlayer1().getName());
                 tsp1 += match.getPlayer1().getTsp();
                 points1+= playerResult.getPoints();
                 innings1 += playerResult.getInnings();
                 hr1 = (hr1>playerResult.getHighestRun()?hr1:playerResult.getHighestRun());
                 mp1 += playerResult.getMatchPoints();
             } else if(competition.getTeam2().isPlayerOfTeam(match.getPlayer1())) {
-                //logger.log(Level.FINEST, "calculateCompetitionResult => player1OfTeam2", match.getPlayer1().getName());
+                //LOGGER.log(Level.FINEST, "calculateCompetitionResult => player1OfTeam2", match.getPlayer1().getName());
                 tsp2 += match.getPlayer1().getTsp();
                 points2+= playerResult.getPoints();
                 innings2 += playerResult.getInnings();
@@ -466,14 +465,14 @@ public class BilliardScore extends Application {
             
             playerResult = match.getPlayer2Result();
             if(competition.getTeam1().isPlayerOfTeam(match.getPlayer2())) {
-                //logger.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam1", match.getPlayer2().getName());
+                //LOGGER.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam1", match.getPlayer2().getName());
                 tsp1 += match.getPlayer2().getTsp();
                 points1+= playerResult.getPoints();
                 innings1 += playerResult.getInnings();
                 hr1 = (hr1>playerResult.getHighestRun()?hr1:playerResult.getHighestRun());
                 mp1 += playerResult.getMatchPoints();
             } else if(competition.getTeam2().isPlayerOfTeam(match.getPlayer2())) {
-                //logger.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam2", match.getPlayer2().getName());
+                //LOGGER.log(Level.FINEST, "calculateCompetitionResult => player2OfTeam2", match.getPlayer2().getName());
                 tsp2 += match.getPlayer2().getTsp();
                 points2+= playerResult.getPoints();
                 innings2 += playerResult.getInnings();
@@ -486,11 +485,11 @@ public class BilliardScore extends Application {
         perc2 = (double) points2 / tsp2 * 100;
         competition.setTeam2Result(new TeamResult(tsp2, points2, innings2, hr2, mp2, perc2));
         pointSystem.determineCompetitionPoints(competition);
-        //logger.log(Level.FINEST, "calculateCompetitionResult => End");
+        //LOGGER.log(Level.FINEST, "calculateCompetitionResult => End");
     }
     
     private void selectTeamCompetition() throws Exception {
-        //logger.log(Level.FINEST, "selectTeamCompetition => Start");
+        //LOGGER.log(Level.FINEST, "selectTeamCompetition => Start");
         TeamCompetition selectedCompetition;
         ArrayList<TeamCompetition> teamCompetionList = teamCompetitionManager.listTeamCompetitions();
         if(!teamCompetionList.isEmpty()) {
@@ -523,7 +522,7 @@ public class BilliardScore extends Application {
             } else if (action.equals(PermittedValues.Action.CANCEL)) {
                 return;
             }
-            //logger.log(Level.FINEST, "selectTeamCompetition => competition: {0}", selectedCompetition.getName());
+            //LOGGER.log(Level.FINEST, "selectTeamCompetition => competition: {0}", selectedCompetition.getName());
         } else {
             selectedCompetition = newTeamCompetition();
         }
@@ -534,7 +533,7 @@ public class BilliardScore extends Application {
     }
     
     private TeamCompetition newTeamCompetition() throws Exception {
-        //logger.log(Level.FINEST, "startTeamCompetition => New Teamcompetition");
+        //LOGGER.log(Level.FINEST, "startTeamCompetition => New Teamcompetition");
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXML.TEAM_FORM),bundle);
         Parent root;
         root = loader.load();
@@ -551,7 +550,7 @@ public class BilliardScore extends Application {
         primaryStage.showAndWait();
 
         if(controller.getTeamCompetition()==null) {
-            //logger.log(Level.FINEST, "startTeamCompetition => New Teamcompetition Cancelled");
+            //LOGGER.log(Level.FINEST, "startTeamCompetition => New Teamcompetition Cancelled");
             return null;
         }
 

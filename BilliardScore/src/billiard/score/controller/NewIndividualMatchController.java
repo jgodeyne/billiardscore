@@ -180,6 +180,13 @@ public class NewIndividualMatchController implements Initializable, ControllerIn
                                     if(null==league) {
                                         league = defaultLeague;
                                     }
+                                    if(null==league) {
+                                        btnSearchMember1.setDisable(true);
+                                        btnSearchMember2.setDisable(true);
+                                    } else {
+                                        btnSearchMember1.setDisable(false);
+                                        btnSearchMember2.setDisable(false);
+                                    }
                                 }
                             }
                         } else {

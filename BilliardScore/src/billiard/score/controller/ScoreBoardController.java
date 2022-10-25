@@ -83,6 +83,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
     private boolean scoresheetShowing = false;
     private boolean undoOngoing = false;
     private int warmingUpTime = 0;
+    private String turnIdicatorColor = "WHITE";
     private MatchManager matchManager;
 
     private ResourceBundle bundle;
@@ -495,7 +496,7 @@ public class ScoreBoardController implements Initializable, ControllerInterface 
     }
 
     public void setTurnIdnicatorsColor(String color) {
-        if (color != null && color.equals("WHITE")) {
+        if (color != null && color.equals("YELLOW")) {
             // Flip Turnindicator Color
             RadialGradient rgFillp1 = (RadialGradient) player_1_turn_indicator.getFill();
             RadialGradient rgFillp2 = (RadialGradient) player_2_turn_indicator.getFill();
