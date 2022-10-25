@@ -259,7 +259,7 @@ public final class AppProperties extends Properties{
     }
 
     public int getShowEOMDialog() {
-        return Integer.parseInt(this.getProperty(SHOW_EOM_DIALOG));
+        return Integer.parseInt(this.getProperty(SHOW_EOM_DIALOG, "0"));
     }
     
     
