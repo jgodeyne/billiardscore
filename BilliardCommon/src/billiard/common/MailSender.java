@@ -7,14 +7,17 @@ package billiard.common;
 
 import java.util.Arrays;
 import java.util.Properties;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
+import javax.mail.Authenticator;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
@@ -34,7 +37,11 @@ public class MailSender {
         Properties properties = System.getProperties();
 
         // Setup mail server
-        properties.setProperty("mail.smtp.host", host);
+//        properties.setProperty("mail.smtp.host", host);
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.port", "587");        
 
         // Get the default Session object.
         Session session = Session.getDefaultInstance(properties);
@@ -70,10 +77,24 @@ public class MailSender {
         Properties properties = System.getProperties();
 
         // Setup mail server
-        properties.setProperty("mail.smtp.host", host);
-        
+//        properties.setProperty("mail.smtp.host", host);
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.port", "587");        
         // Get the default Session object.
-        Session session = Session.getDefaultInstance(properties);
+        Authenticator authenticator = new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                try {
+                    return new PasswordAuthentication(AppProperties.getInstance().getEmailUID(), AppProperties.getInstance().getEmailPWD());
+                } catch (Exception ex) {
+                    Logger.getLogger(MailSender.class.getName()).log(Level.SEVERE, null, ex);
+                    return null;
+                }
+            }
+        };
+        Session session = Session.getInstance(properties,  authenticator);
 
         try {
             // Create a default MimeMessage object.

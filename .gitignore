@@ -2,4 +2,7 @@
 **/jfx-impl_backup*.xml
 **/build/
 **/dist/
+**/nbproject/
 ***/.DS_Store/
+.DS_Store
+**/nbproject/private/
